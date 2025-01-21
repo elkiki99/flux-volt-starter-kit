@@ -42,9 +42,9 @@ new #[Layout('layouts.guest')] class extends Component {
             <flux:subheading>Create your account!</flux:subheading>
         </div>
 
-        <flux:input label="Name" type="text" placeholder="Your name" id="name" wire:model="name" required />
+        <flux:input label="Name" type="text" autofocus placeholder="Your name" id="name" wire:model="name" required />
 
-        <flux:input label="Email" type="email" placeholder="Your email" id="email" wire:model="email" required />
+        <flux:input label="Email" type="email" placeholder="Your email address" id="email" wire:model="email" required />
 
         <flux:input viewable label="Password" type="password" placeholder="Your password" id="password" wire:model="password" required/>
 
@@ -53,7 +53,7 @@ new #[Layout('layouts.guest')] class extends Component {
         <div class="space-y-2">
             <flux:button type="submit" variant="primary" class="w-full">Register</flux:button>
 
-            <flux:button variant="ghost" class="w-full" href="{{ route('login') }}">Already have an account?
+            <flux:button variant="ghost" class="w-full" wire:navigate href="{{ route('login') }}">Already have an account?
             </flux:button>
         </div>
     </flux:card>

@@ -23,7 +23,7 @@
         <livewire:layout.navigation />
 
         <!-- Page Content -->
-        <main>
+        <main class="max-w-4xl mx-auto mt-6">
             {{ $slot }}
         </main>
     </div>

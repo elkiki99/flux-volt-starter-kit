@@ -24,9 +24,6 @@ new #[Layout('layouts.guest')] class extends Component {
 }; ?>
 
 <div>
-    <!-- Session Status -->
-    <x-auth-session-status class="mb-4" :status="session('status')" />
-
     <form wire:submit="login">
         <flux:card class="space-y-6">
             <div>
@@ -36,14 +33,14 @@ new #[Layout('layouts.guest')] class extends Component {
 
             <div class="space-y-6">
                 <flux:input label="Email" type="email" placeholder="Your email address" id="email"
-                    wire:model="form.email" required autocomplete="username" id="email" />
+                    wire:model="form.email" required autofocus autocomplete="username" id="email" />
 
                 <flux:field>
                     <div class="flex justify-between mb-3">
                         <flux:label>Password</flux:label>
 
                         @if (Route::has('password.request'))
-                            <flux:link href="{{ route('password.request') }}" variant="subtle" class="text-sm">Forgot
+                            <flux:link wire:navigate href="{{ route('password.request') }}" variant="subtle" class="text-sm">Forgot
                                 your
                                 password?</flux:link>
                         @endif
@@ -61,7 +58,7 @@ new #[Layout('layouts.guest')] class extends Component {
             <div class="space-y-2">
                 <flux:button type="submit" variant="primary" class="w-full">Log in</flux:button>
 
-                <flux:button variant="ghost" class="w-full" href="{{ route('register') }}">Sign up for a new account
+                <flux:button variant="ghost" class="w-full" wire:navigate href="{{ route('register') }}">Sign up for a new account
                 </flux:button>
             </div>
         </flux:card>

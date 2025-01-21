@@ -1,5 +1,6 @@
 <?php
 
+use App\Livewire\Actions\Logout;
 use Illuminate\Auth\Events\PasswordReset;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Password;
@@ -67,39 +68,35 @@ new #[Layout('layouts.guest')] class extends Component
 
         $this->redirectRoute('login', navigate: true);
     }
+    
+    /**
+     * Log the current user out of the application.
+     */
+     public function logout(Logout $logout): void
+    {
+        $logout();
+
+        $this->redirect('/', navigate: true);
+    }
 }; ?>
 
-<div>
-    <form wire:submit="resetPassword">
-        <!-- Email Address -->
-        <div>
-            <x-input-label for="email" :value="__('Email')" />
-            <x-text-input wire:model="email" id="email" class="block mt-1 w-full" type="email" name="email" required autofocus autocomplete="username" />
-            <x-input-error :messages="$errors->get('email')" class="mt-2" />
-        </div>
+<flux:card>
+    <form wire:submit="resetPassword" class="space-y-6">
+        <flux:input label="Email" type="email" placeholder="Your email address" id="email" wire:model="email"
+            name="email" required autofocus autocomplete="username" />
 
-        <!-- Password -->
-        <div class="mt-4">
-            <x-input-label for="password" :value="__('Password')" />
-            <x-text-input wire:model="password" id="password" class="block mt-1 w-full" type="password" name="password" required autocomplete="new-password" />
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
+        <flux:input label="Password" type="password" placeholder="Your password" id="password" wire:model="password"
+            name="password" required autocomplete="new-password" viewable />
 
-        <!-- Confirm Password -->
-        <div class="mt-4">
-            <x-input-label for="password_confirmation" :value="__('Confirm Password')" />
+        <flux:input label="Confirm password" type="password" placeholder="Confirm your password"
+            id="password_confirmation" wire:model="password_confirmation" name="password_confirmation" required
+            autocomplete="new-password" viewable />
 
-            <x-text-input wire:model="password_confirmation" id="password_confirmation" class="block mt-1 w-full"
-                          type="password"
-                          name="password_confirmation" required autocomplete="new-password" />
+            <div class="space-y-2">
+            <flux:button type="submit" variant="primary" class="w-full">Reset password</flux:button>
 
-            <x-input-error :messages="$errors->get('password_confirmation')" class="mt-2" />
-        </div>
-
-        <div class="flex items-center justify-end mt-4">
-            <x-primary-button>
-                {{ __('Reset Password') }}
-            </x-primary-button>
+            <flux:button wire:click="logout" variant="ghost" class="w-full">Log out
+            </flux:button>
         </div>
     </form>
-</div>
+</flux:card>
