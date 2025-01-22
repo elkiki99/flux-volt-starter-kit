@@ -18,9 +18,10 @@
     @fluxStyles
 </head>
 
-<body class="font-sans antialiased min-h-screen flex flex-col bg-white dark:bg-zinc-800">
-    <!-- Navigation Bar -->
-    <livewire:layout.navigation />
+<body class="flex flex-col min-h-screen font-sans antialiased bg-white dark:bg-zinc-800">
+    <!-- Primary nav bar & it's responsive sidebar -->
+    <livewire:layout.primary-navigation />
+    <livewire:layout.primary-sidebar />
 
     <!-- Page Content -->
     <main class="flex-grow w-full py-6">
@@ -28,7 +29,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="w-full border-t bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
+    <footer class="border-t bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
         <livewire:layout.footer />
     </footer>
 

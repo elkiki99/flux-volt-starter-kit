@@ -18,16 +18,26 @@
     @fluxStyles
 </head>
 
-<body class="font-sans antialiased min-h-screen flex flex-col bg-white dark:bg-zinc-800">
-    <livewire:layout.navigation />
+<body class="flex flex-col min-h-screen font-sans antialiased bg-white dark:bg-zinc-800">
+    <!-- Primary nav bar & it's responsive sidebar -->
+    <livewire:layout.primary-navigation />
+    <livewire:layout.primary-sidebar />
 
-    <!-- Page Content -->
-    <main class="flex-grow w-full py-12">
-        {{ $slot }}
-    </main>
-    
+    <!-- Dashboard responsive nav bar -->
+    <livewire:layout.dashboard-navigation />
+
+    <div class="flex flex-grow max-w-4xl px-6 mx-auto max-lg:flex-col">
+        <!-- Dashboard responsive -->
+        <livewire:layout.dashboard-sidebar />
+
+        <!-- Page Content -->
+        <main class="flex-grow w-full my-8 lg:my-12">
+            {{ $slot }}
+        </main>
+    </div>
+
     <!-- Footer -->
-    <footer class="w-full border-t bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
+    <footer class="border-t bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
         <livewire:layout.footer />
     </footer>
 
