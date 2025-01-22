@@ -71,8 +71,8 @@ new class extends Component {
 
                     <flux:menu.separator />
 
-                    <flux:menu.item icon="at-symbol" wire:navigate href="{{ route('profile') }}">Profile</flux:menu.item>
-                    <flux:menu.item icon="user" href="#">Account</flux:menu.item>
+                    <flux:menu.item icon="user" wire:navigate href="{{ route('profile') }}">Dashboard</flux:menu.item>
+                    <flux:menu.item icon="cog-6-tooth" wire:navigate href="{{ route('settings') }}">Settings</flux:menu.item>
 
                     <flux:menu.separator />
 

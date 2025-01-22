@@ -6,8 +6,7 @@ use Illuminate\Validation\Rules\Password;
 use Illuminate\Validation\ValidationException;
 use Livewire\Volt\Component;
 
-new class extends Component
-{
+new class extends Component {
     public string $current_password = '';
     public string $password = '';
     public string $password_confirmation = '';
@@ -34,24 +33,21 @@ new class extends Component
 
         $this->reset('current_password', 'password', 'password_confirmation');
 
-        Flux::toast(
-            heading: 'Password updated.',
-            text: 'Your password has been updated successfully.',
-            variant: 'success',
-        );
+        Flux::toast(heading: 'Password updated.', text: 'Your password has been updated successfully.', variant: 'success');
     }
 }; ?>
 
-<section>
-    <form wire:submit="updatePassword" class="space-y-6">
-        <flux:input viewable name="current_password" type="password" autocomplete="current-password" wire:model="current_password" id="udpate_password_current_password" label="Current password" />
+<form wire:submit="updatePassword" class="space-y-6">
+    <flux:input viewable name="current_password" type="password" autocomplete="current-password"
+        wire:model="current_password" id="udpate_password_current_password" label="Current password" />
 
-        <flux:input viewable name="password" type="password" autocomplete="new-password" wire:model="password" id="update_password_password" label="New password" />
+    <flux:input viewable name="password" type="password" autocomplete="new-password" wire:model="password"
+        id="update_password_password" label="New password" />
 
-        <flux:input viewable name="password_confirmation" type="password" autocomplete="new-password" wire:model="password_confirmation" id="update_password_password_confirmation" label="Confirm new password" />
-        
-        <div class="flex justify-end">
-            <flux:button variant="primary" type="submit">Save password</flux:button>
-        </div>
-    </form>
-</section>
+    <flux:input viewable name="password_confirmation" type="password" autocomplete="new-password"
+        wire:model="password_confirmation" id="update_password_password_confirmation" label="Confirm new password" />
+
+    <div class="flex justify-end">
+        <flux:button variant="primary" type="submit">Save password</flux:button>
+    </div>
+</form>

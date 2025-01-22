@@ -6,7 +6,7 @@ new class extends Component {
     //
 }; ?>
 
-<div class="w-full md:w-[220px] pb-4 mr-10">
+<div class="max-lg:hidden lg:w-[220px] pb-4 mr-10">
     <flux:navlist>
         <flux:navlist.item icon="squares-2x2" wire:navigate href="{{ route('dashboard') }}">Dashboard</flux:navlist.item>
         <flux:navlist.item icon="user" wire:navigate href="{{ route('profile') }}">Profile</flux:navlist.item>

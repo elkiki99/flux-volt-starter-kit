@@ -1,5 +1,5 @@
 <x-app-layout>
-    <flux:main class="min-h-[200vh]" container>
+    <flux:main container>
         <flux:heading size="xl">Welcome to your new app!</flux:heading>
         <flux:subheading size="lg">Your journey starts here.</flux:subheading>
     </flux:main>

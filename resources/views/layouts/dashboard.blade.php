@@ -18,18 +18,21 @@
     @fluxStyles
 </head>
 
-<body class="font-sans antialiased">
-    <div class="min-h-screen bg-white dark:bg-zinc-800">
-        <livewire:layout.navigation />
+<body class="font-sans antialiased min-h-screen flex flex-col bg-white dark:bg-zinc-800">
+    <livewire:layout.navigation />
 
-        <!-- Page Content -->
-        <main class="max-w-4xl mx-auto mt-6">
-            {{ $slot }}
-        </main>
-    </div>
+    <!-- Page Content -->
+    <main class="flex-grow w-full py-12">
+        {{ $slot }}
+    </main>
+    
+    <!-- Footer -->
+    <footer class="w-full border-t bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
+        <livewire:layout.footer />
+    </footer>
 
     @fluxScripts
-    
+
     @persist('toast')
         <flux:toast />
     @endpersist
