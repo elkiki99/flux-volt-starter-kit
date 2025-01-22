@@ -26,13 +26,17 @@
     <!-- Dashboard responsive nav bar -->
     <livewire:layout.dashboard-navigation />
 
-    <div class="flex flex-grow max-w-4xl px-6 mx-auto max-lg:flex-col">
-        <!-- Dashboard responsive -->
-        <livewire:layout.dashboard-sidebar />
+    <div class="container flex flex-grow max-w-4xl px-6 mx-auto max-lg:flex-col">
+        <!-- Sidebar -->
+        <aside class="w-[220px] shrink-0 sticky top-0 my-12 lg:mr-10 max-lg:hidden">
+            <livewire:layout.dashboard-sidebar />
+        </aside>
 
-        <!-- Page Content -->
-        <main class="flex-grow w-full my-8 lg:my-12">
-            {{ $slot }}
+        <!-- Contenido principal -->
+        <main class="flex flex-col items-center flex-grow my-8 lg:my-12">
+            <div class="w-full max-w-2xl">
+                {{ $slot }}
+            </div>
         </main>
     </div>
 
