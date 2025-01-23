@@ -20,4 +20,8 @@ Route::view('settings', 'user.settings')
     ->middleware(['auth'])
     ->name('settings');
 
-require __DIR__.'/auth.php';
+Route::view('panel', 'admin.panel')
+    ->middleware(['auth', 'verified'])
+    ->name('panel');
+
+require __DIR__ . '/auth.php';

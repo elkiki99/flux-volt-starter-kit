@@ -19,12 +19,14 @@ new class extends Component {
     class="flex items-center border-b bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
     <flux:sidebar.toggle class="lg:hidden" icon="bars-2" inset="left" />
 
-    <flux:brand wire:navigate href="{{ route('welcome') }}" logo="https://fluxui.dev/img/demo/logo.png" name="Laravel"
-        class="max-lg:hidden dark:hidden" />
-    <flux:brand wire:navigate href="{{ route('welcome') }}" logo="https://fluxui.dev/img/demo/dark-mode-logo.png"
-        name="Laravel" class="max-lg:!hidden hidden dark:flex" />
+    <div class="-mb-2">
+        <flux:brand wire:navigate href="/" logo="https://fluxui.dev/img/demo/logo.png" name="Laravel"
+            class="max-lg:hidden dark:hidden" />
+        <flux:brand wire:navigate href="/" logo="https://fluxui.dev/img/demo/dark-mode-logo.png" name="Laravel"
+            class="max-lg:!hidden hidden dark:flex" />
+    </div>
 
-    <flux:navbar class="-mb-px max-lg:hidden">
+    <flux:navbar class="-mb-2 max-lg:hidden">
         <flux:navbar.item wire:navigate href="/" icon="home">Home</flux:navbar.item>
         <flux:navbar.item wire:navigate href="/blog" icon="book-open" badge="12">Blog</flux:navbar.item>
         <flux:navbar.item wire:navigate href="/about" icon="information-circle">About</flux:navbar.item>
@@ -71,7 +73,11 @@ new class extends Component {
 
                 <flux:menu.separator />
 
-                <flux:menu.item icon="user" wire:navigate href="{{ route('profile') }}">Dashboard</flux:menu.item>
+                @if (Auth::user()->is_admin)
+                    <flux:menu.item icon="chart-bar" wire:navigate href="/panel">Panel</flux:menu.item>
+                @else
+                    <flux:menu.item icon="user" wire:navigate href="{{ route('profile') }}">Dashboard</flux:menu.item>
+                @endif
                 <flux:menu.item icon="cog-6-tooth" wire:navigate href="{{ route('settings') }}">Settings</flux:menu.item>
 
                 <flux:menu.separator />
