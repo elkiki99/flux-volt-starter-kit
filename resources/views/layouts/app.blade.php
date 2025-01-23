@@ -40,4 +40,14 @@
     @endpersist
 </body>
 
+{{-- Wire navigate bug fix for dropdown links --}}
+<script>
+    document.addEventListener("livewire:navigate", () => {
+        const htmlElement = document.documentElement;
+        if (htmlElement.hasAttribute("style")) {
+            htmlElement.removeAttribute("style");
+        }
+    });
+</script>
+
 </html>

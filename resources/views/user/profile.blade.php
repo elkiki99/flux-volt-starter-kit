@@ -23,3 +23,12 @@
         </div>
     </div>
 </x-dashboard-layout>
+{{-- 
+<script>
+    document.addEventListener('livewire:navigate', () => {
+        const htmlElement = document.documentElement;
+        if (htmlElement.hasAttribute('style')) {
+            htmlElement.removeAttribute('style');
+        }
+    });
+</script> --}}

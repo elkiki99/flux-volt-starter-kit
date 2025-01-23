@@ -88,8 +88,8 @@ new class extends Component {
         </flux:dropdown>
     @else
         <flux:navbar class="-mb-px ">
-            <flux:navbar.item wire:navigate href="{{ route('login') }}">Login</flux:navbar.item>
-            <flux:navbar.item wire:navigate href="{{ route('register') }}">Register</flux:navbar.item>
+            <flux:navbar.item wire:navigate href="/login">Login</flux:navbar.item>
+            <flux:navbar.item wire:navigate href="/register">Register</flux:navbar.item>
         </flux:navbar>
     @endauth
 </flux:header>
