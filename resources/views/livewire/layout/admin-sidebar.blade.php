@@ -1,13 +1,23 @@
 <?php
 
+use App\Livewire\Actions\Logout;
 use Livewire\Volt\Component;
 
 new class extends Component {
-    //
+    /**
+     * Log the current user out of the application.
+     */
+    public function logout(Logout $logout): void
+    {
+        $logout();
+
+        $this->redirect('/', navigate: true);
+    }
 }; ?>
 
 <div>
-    <flux:sidebar sticky stashable class="h-screen border-r bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
+    <flux:sidebar sticky stashable
+        class="h-screen border-r bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
         <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
         <flux:brand href="/" logo="https://fluxui.dev/img/demo/logo.png" name="{{ config('app.name') }}"
@@ -18,10 +28,10 @@ new class extends Component {
         <flux:input as="button" variant="filled" placeholder="Search..." icon="magnifying-glass" />
 
         <flux:navlist variant="outline">
-            <flux:navlist.item icon="chart-bar" href="/panel">Panel</flux:navlist.item>
-            <flux:navlist.item icon="inbox" badge="5" href="#">Messages</flux:navlist.item>
-            <flux:navlist.item icon="document-text" href="#">Reports</flux:navlist.item>
-            <flux:navlist.item icon="calendar" href="#">Calendar</flux:navlist.item>
+            <flux:navlist.item wire:navigate icon="chart-bar" href="/panel">Panel</flux:navlist.item>
+            <flux:navlist.item wire:navigate icon="inbox" badge="5" href="/messages">Messages</flux:navlist.item>
+            <flux:navlist.item wire:navigate icon="document-text" href="/reports">Reports</flux:navlist.item>
+            <flux:navlist.item wire:navigate icon="calendar" href="/calendar">Calendar</flux:navlist.item>
 
             <flux:navlist.group expandable heading="Projects">
                 <flux:navlist.item href="#">Project Alpha</flux:navlist.item>
@@ -52,9 +62,8 @@ new class extends Component {
 
                 <flux:menu.separator />
 
-                <flux:menu.item icon="home" wire:navigate href="/">Home</flux:menu.item>
-                <flux:menu.item icon="cog-6-tooth" wire:navigate href="{{ route('settings') }}">Settings
-                </flux:menu.item>
+                <flux:menu.item wire:navigate icon="home" href="/">Home</flux:menu.item>
+                <flux:menu.item wire:navigate icon="cog-6-tooth" href="/configuration">Configuration</flux:menu.item>
 
                 <flux:menu.separator />
 

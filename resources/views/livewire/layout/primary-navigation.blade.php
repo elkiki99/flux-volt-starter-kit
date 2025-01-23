@@ -75,10 +75,11 @@ new class extends Component {
 
                 @if (Auth::user()->is_admin)
                     <flux:menu.item icon="chart-bar" wire:navigate href="/panel">Panel</flux:menu.item>
+                    <flux:menu.item icon="cog-6-tooth" wire:navigate href="/configuration">Configuration</flux:menu.item>
                 @else
-                    <flux:menu.item icon="user" wire:navigate href="{{ route('profile') }}">Dashboard</flux:menu.item>
+                    <flux:menu.item icon="user" wire:navigate href="/profile">Profile</flux:menu.item>
+                    <flux:menu.item icon="cog-6-tooth" wire:navigate href="/settings">Settings</flux:menu.item>
                 @endif
-                <flux:menu.item icon="cog-6-tooth" wire:navigate href="{{ route('settings') }}">Settings</flux:menu.item>
 
                 <flux:menu.separator />
 

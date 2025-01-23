@@ -40,6 +40,14 @@
             <main class="flex-1 p-8">
                 {{ $slot }}
             </main>
-        </div>
+        </div>    
     </div>
+    
+    @fluxScripts
+    
+    @persist('toast')
+        <flux:toast />
+    @endpersist
 </body>
+
+</html>
