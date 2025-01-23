@@ -32,7 +32,7 @@
             <livewire:layout.dashboard-sidebar />
         </aside>
 
-        <!-- Contenido principal -->
+        <!-- Main -->
         <main class="flex flex-col items-center flex-grow my-8 lg:my-12">
             <div class="w-full max-w-2xl">
                 {{ $slot }}

@@ -23,7 +23,7 @@
     <livewire:layout.primary-navigation />
     <livewire:layout.primary-sidebar />
 
-    <!-- Page Content -->
+    <!-- Main -->
     <main class="flex-grow w-full py-6">
         {{ $slot }}
     </main>
