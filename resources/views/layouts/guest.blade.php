@@ -19,10 +19,10 @@
 </head>
 
 <body class="font-sans antialiased">
-    <div class="flex flex-col items-center min-h-screen pt-6 bg-white sm:justify-center sm:pt-0 dark:bg-zinc-800">
+    <div class="flex flex-col items-center min-h-screen py-6 bg-white sm:justify-center sm:pt-0 dark:bg-zinc-800">
         <div>
             <a href="/" wire:navigate>
-                <x-application-logo class="w-20 h-20 text-gray-500 fill-current" />
+                <x-application-logo class="w-20 h-20 mt-6 text-gray-500 fill-current" />
             </a>
         </div>
 

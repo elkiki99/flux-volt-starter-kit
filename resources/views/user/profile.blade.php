@@ -10,7 +10,7 @@
             <livewire:profile.update-profile-information-form />
         </div>
 
-        <flux:separator />
+        <flux:separator variant="subtle" />
 
         <div class="space-y-6">
             <div>
@@ -23,12 +23,3 @@
         </div>
     </div>
 </x-dashboard-layout>
-{{-- 
-<script>
-    document.addEventListener('livewire:navigate', () => {
-        const htmlElement = document.documentElement;
-        if (htmlElement.hasAttribute('style')) {
-            htmlElement.removeAttribute('style');
-        }
-    });
-</script> --}}
