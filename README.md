@@ -62,13 +62,13 @@ To use **Laravel Flux UI Starter Kit**, follow these steps:
 9. **Create database/database.sqlite (if applicable)**
     
 10. **Run your migrations and seeder:**
-   
-   - This will create an Admin account & a User account.
-   - Emails: admin@laravel.com & user@laravel.com, Password: password.
 
     ```bash
     php artisan migrate && php artisan db:seed
     ```
+    
+    - This will create an Admin account & a User account
+    - Emails: admin@laravel.com & user@laravel.com, Password: password
 
 ## Contributions
 
