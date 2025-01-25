@@ -47,7 +47,7 @@ new class extends Component {
 
         <!-- User dropdown -->
         <flux:dropdown position="top" align="end" class="hidden lg:flex">
-            <flux:profile name="{{ Auth::user()->name }}" avatar="https://fluxui.dev/img/demo/user.png" />
+            <flux:profile name="{{ Auth::user()->name }}" avatar="{{ Auth::user()->profile_picture ?? 'https://fluxui.dev/img/demo/user.png' }}" />
 
             <flux:menu>
                 <div class="px-2 py-1.5">

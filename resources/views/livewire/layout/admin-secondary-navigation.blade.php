@@ -16,14 +16,14 @@ new class extends Component {
 }; ?>
 
 <flux:header
-    class="w-full px-6 bg-white border-b lg:bg-zinc-50 dark:bg-zinc-900 lg:hidden border-zinc-200 dark:border-zinc-700">
+    class="w-full px-6 border-b bg-zinc-50 dark:bg-zinc-900 lg:hidden border-zinc-200 dark:border-zinc-700">
     <flux:sidebar.toggle class="lg:hidden" icon="bars-2" inset="left" />
 
     <flux:spacer />
 
     <flux:dropdown position="top" align="start">
-        <flux:profile avatar="https://fluxui.dev/img/demo/user.png" />
-
+        <flux:profile avatar="{{ Auth::user()->profile_picture ?? 'https://fluxui.dev/img/demo/user.png' }}" />
+            
         <flux:menu>
             <div class="px-2 py-1.5">
                 <flux:subheading class="!text-xs">

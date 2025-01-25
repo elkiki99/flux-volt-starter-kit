@@ -18,7 +18,7 @@
     @fluxStyles
 </head>
 
-<body class="flex flex-col min-h-screen font-sans antialiased bg-white dark:bg-zinc-800">
+<body class="flex flex-col min-h-screen font-sans antialiased bg-white dark:bg-zinc-800 ">
     <div class="flex">
         <!-- Sidebar -->
         <div class="z-40 h-screen lg:fixed lg:w-64">
@@ -32,7 +32,7 @@
             </div>
 
             <!-- Primary Navigation -->
-            <div class="bg-white dark:bg-zinc-900 lg:sticky lg:top-[0rem]">
+            <div class="bg-white dark:bg-zinc-900 lg:sticky lg:top-[0rem] z-50">
                 <livewire:layout.admin-primary-navigation />
             </div>
 

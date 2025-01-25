@@ -1,14 +1,18 @@
 <?php
 
-use App\Models\User;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
+use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\Rule;
+use Livewire\WithFileUploads;
 use Livewire\Volt\Component;
+use App\Models\User;
 
 new class extends Component {
+    use WithFileUploads;
+    
     public string $name = '';
     public string $email = '';
+    public $profile_picture = null;
 
     /**
      * Mount the component.
@@ -17,6 +21,7 @@ new class extends Component {
     {
         $this->name = Auth::user()->name;
         $this->email = Auth::user()->email;
+        $this->profile_picture = Auth::user()->profile_picture ?? null;
     }
 
     /**
@@ -29,12 +34,17 @@ new class extends Component {
         $validated = $this->validate([
             'name' => ['required', 'string', 'max:255'],
             'email' => ['required', 'string', 'lowercase', 'email', 'max:255', Rule::unique(User::class)->ignore($user->id)],
+            'profile_picture' => ['nullable', 'image', 'max:2048'],
         ]);
 
         $user->fill($validated);
 
         if ($user->isDirty('email')) {
             $user->email_verified_at = null;
+        }
+
+        if ($this->profile_picture) {
+            $user->profile_picture = $this->profile_picture->store('profile-pictures', 'public');
         }
 
         $user->save();
@@ -83,7 +93,9 @@ new class extends Component {
         @endif
     </flux:field>
 
+    <flux:input type="file" wire:model='profile_picture' label="Profile picture" />
+
     <div class="flex justify-end">
-        <flux:button variant="primary" type="submit">Save name</flux:button>
+        <flux:button variant="primary" type="submit">Save info</flux:button>
     </div>
 </form>

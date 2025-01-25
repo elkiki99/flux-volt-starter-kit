@@ -6,7 +6,7 @@ new class extends Component {
     //
 }; ?>
 
-<flux:navbar class="border-b border-zinc-200 dark:border-zinc-700 max-lg:items-center max-lg:justify-center max-lg:flex"
+<flux:navbar class="z-50 border-b border-zinc-200 bg-zinc-50 dark:bg-zinc-900 dark:border-zinc-700 max-lg:items-center max-lg:justify-center max-lg:flex"
     scrollable>
     <flux:navbar.item wire:navigate icon="chart-pie" href="/overview">Overview</flux:navbar.item>
     <flux:navbar.item wire:navigate icon="check-circle" badge="8" href="/tasks">Tasks</flux:navbar.item>
