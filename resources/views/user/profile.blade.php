@@ -1,5 +1,5 @@
 <x-dashboard-layout>
-    <div class="self-stretch flex-1 space-y-8 max-lg:max-w-xl max-lg:mx-auto">
+    <div class="self-stretch flex-1 space-y-8 max-lg:max-w-2xl max-lg:mx-auto">
         <div class="space-y-6">
             <div>
                 <flux:heading size="lg">Profile information</flux:heading>
