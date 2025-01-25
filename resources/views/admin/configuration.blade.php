@@ -20,14 +20,25 @@
 
             <flux:separator variant="subtle" />
 
-            <div class="">
-                <livewire:profile.update-profile-information-form />
+            <div class="space-y-6">
+                <div>
+                    <flux:heading size="lg">Update password</flux:heading>
+                    <flux:subheading>Ensure your account is using a long, random password to stay secure.
+                    </flux:subheading>
+                </div>
+
+                <livewire:profile.update-password-form />
             </div>
 
             <flux:separator variant="subtle" />
 
-            <div class="">
-                <livewire:profile.update-password-form />
+            <div class="space-y-6">
+                <div>
+                    <flux:heading size="lg">Delete account</flux:heading>
+                    <flux:subheading>Delete your account and all of its resources.</flux:subheading>
+                </div>
+
+                <livewire:profile.delete-user-form />
             </div>
         </div>
     </div>

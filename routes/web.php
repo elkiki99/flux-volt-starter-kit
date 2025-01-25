@@ -23,9 +23,9 @@ Route::middleware([EnsureUserIsNotAdmin::class])->group(function () {
 Route::middleware([EnsureUserIsAdmin::class])->group(function () {
     Route::get('panel', [AdminPanel::class, 'panel'])->middleware(['auth', 'verified'])->name('panel');
     Route::get('messages', [AdminPanel::class, 'messages'])->middleware(['auth', 'verified'])->name('messages');
-    Route::get('reports', [AdminPanel::class, 'reports'])->middleware(['auth', 'verified'])->name('reports');
+    Route::get('marketing', [AdminPanel::class, 'marketing'])->middleware(['auth', 'verified'])->name('marketing');
     Route::get('tasks', [AdminPanel::class, 'tasks'])->middleware(['auth', 'verified'])->name('tasks');
-    Route::get('overview', [AdminPanel::class, 'overview'])->middleware(['auth', 'verified'])->name('overview');
+    Route::get('seo', [AdminPanel::class, 'seo'])->middleware(['auth', 'verified'])->name('seo');
     Route::get('calendar', [AdminPanel::class, 'calendar'])->middleware(['auth', 'verified'])->name('calendar');
     Route::get('configuration', [AdminPanel::class, 'configuration'])->middleware(['auth', 'verified'])->name('configuration');
     Route::get('analytics', [AdminPanel::class, 'analytics'])->middleware(['auth', 'verified'])->name('analytics');

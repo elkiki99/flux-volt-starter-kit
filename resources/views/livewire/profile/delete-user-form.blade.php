@@ -30,7 +30,7 @@ new class extends Component {
     <flux:description>You're about to delete your account. Once your account is deleted, all of its resources and data
         will be permanently deleted. This action is irreversible.</flux:description>
 
-    <flux:modal name="delete-account">
+    <flux:modal variant="flyout" position="right" name="delete-account">
         <form wire:submit="deleteUser" class="space-y-6 md:w-96">
             <div>
                 <flux:heading size="lg">Delete account?</flux:heading>

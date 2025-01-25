@@ -16,9 +16,9 @@ class AdminPanel extends Controller
         return view('admin.messages');
     }
 
-    public function reports()
+    public function marketing()
     {
-        return view('admin.reports');
+        return view('admin.marketing');
     }
 
     public function tasks()
@@ -26,9 +26,9 @@ class AdminPanel extends Controller
         return view('admin.tasks');
     }
 
-    public function overview()
+    public function seo()
     {
-        return view('admin.overview');
+        return view('admin.seo');
     }
 
     public function calendar()

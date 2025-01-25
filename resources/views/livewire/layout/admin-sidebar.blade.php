@@ -30,8 +30,8 @@ new class extends Component {
         <flux:navlist variant="outline">
             <flux:navlist.item wire:navigate icon="chart-bar" href="/panel">Panel</flux:navlist.item>
             <flux:navlist.item wire:navigate icon="inbox" badge="5" href="/messages">Messages</flux:navlist.item>
-            <flux:navlist.item wire:navigate icon="document-text" href="/reports">Reports</flux:navlist.item>
             <flux:navlist.item wire:navigate icon="calendar" href="/calendar">Calendar</flux:navlist.item>
+            <flux:navlist.item wire:navigate icon="megaphone" href="/marketing">Marketing</flux:navlist.item>
 
             <flux:navlist.group expandable heading="Projects">
                 <flux:navlist.item href="#">Project Alpha</flux:navlist.item>
