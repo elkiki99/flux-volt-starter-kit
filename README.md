@@ -8,7 +8,7 @@
 ## Key Features
 
 - **Responsive Design**: Flux UI components ensure a seamless experience across desktops, tablets, and mobile devices with Tailwind CSS.
-- **Livewire Integration:**: Real-time data updates and interactive UI components without needing page reloads.
+- **Livewire Integration**: Real-time data updates and interactive UI components without needing page reloads.
 - **Pre-built User & Admin Dashboards**: Ready-to-use dashboards with essential components.
 - **Authentication & Authorization**: Built-in user authentication and role-based access control for secure applications.
 - **Laravel Breeze Integration**: Comes bundled with Laravel Breeze for fast, simple authentication setup.
