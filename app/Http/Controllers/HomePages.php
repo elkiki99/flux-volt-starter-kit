@@ -26,6 +26,16 @@ class HomePages extends Controller
         return view('homepages.blog');
     }
 
+    public function services()
+    {
+        return view('homepages.services');
+    }
+
+    public function pricing()
+    {
+        return view('homepages.pricing');
+    }
+    
     public function terms()
     {
         return view('homepages.terms');

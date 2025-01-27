@@ -3,5 +3,7 @@
 
 {{ $message }}
 
+Industry: {{ implode(', ', $industry) }}
+
 {{ config('app.name') }}
 </x-mail::message>

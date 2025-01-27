@@ -15,15 +15,14 @@ new class extends Component {
     #[Validate('required|string|max:1000')]
     public string $message = '';
 
+    #[Validate('required|array|min:1')]
+    public array $industry = [];
+
     public function contactUs()
     {
         $this->validate();
 
-        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactUs(
-            name: $this->name, 
-            email: $this->email, 
-            message: $this->message
-        ));
+        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactUs(name: $this->name, email: $this->email, message: $this->message, industry: $this->industry));
 
         Flux::toast(heading: 'Thanks for reaching out', text: 'We will get back to you in no time.', variant: 'success');
 
@@ -39,6 +38,21 @@ new class extends Component {
         autocomplete="username"></flux:input>
 
     <flux:textarea label="Message" wire:model='message' placeholder="Your message" required></flux:textarea>
+
+    <flux:field>
+        <flux:label>Industry</flux:label>
+
+        <flux:select wire:model='industry' placeholder="Choose industry..." variant="listbox"
+            selected-suffix="industries selected" multiple>
+            <flux:option>UX/UI design</flux:option>
+            <flux:option>Web design</flux:option>
+            <flux:option>E-commerce</flux:option>
+            <flux:option>App development</flux:option>
+            <flux:option>Other</flux:option>
+        </flux:select>
+
+        <flux:error name="industry"></flux:error>
+    </flux:field>
 
     <div class="flex justify-end">
         <flux:button variant="primary" type="submit">Contact us</flux:button>

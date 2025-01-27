@@ -24,7 +24,7 @@
     <livewire:layout.primary-sidebar />
 
     <!-- Main -->
-    <main class="flex-grow w-full py-6">
+    <main class="flex-grow w-full py-3">
         {{ $slot }}
     </main>
 

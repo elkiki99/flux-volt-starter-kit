@@ -12,6 +12,8 @@ Route::get('contact', [HomePages::class, 'contact'])->name('contact');
 Route::get('about', [HomePages::class, 'about'])->name('about');
 Route::get('blog', [HomePages::class, 'blog'])->name('blog');
 Route::get('terms', [HomePages::class, 'terms'])->name('terms');
+Route::get('services', [HomePages::class, 'services'])->name('services');
+Route::get('pricing', [HomePages::class, 'pricing'])->name('pricing');
 
 Route::middleware([EnsureUserIsNotAdmin::class])->group(function () {
     Route::get('dashboard', [UserDashboard::class, 'dashboard'])->middleware(['auth', 'verified'])->name('dashboard');
