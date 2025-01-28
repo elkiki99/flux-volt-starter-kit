@@ -18,7 +18,7 @@
     @fluxStyles
 </head>
 
-<body class="flex flex-col min-h-screen font-sans antialiased bg-white dark:bg-zinc-800">
+<body class="flex flex-col min-h-screen font-sans antialiased bg-white dark:bg-zinc-950">
     <!-- Primary nav bar & it's responsive sidebar -->
     <livewire:layout.primary-navigation />
     <livewire:layout.primary-sidebar />

@@ -4,6 +4,7 @@
 {{ $message }}
 
 Industry: {{ implode(', ', $industry) }}
+Budget: {{ $budget }}
 
 {{ config('app.name') }}
 </x-mail::message>

@@ -21,12 +21,14 @@ class ContactUs extends Mailable
         public string $name,
         public string $email,
         public string $message,
-        public array $industry
+        public array $industry,
+        public string $budget
     ) {
         $this->name = $name;
         $this->email = $email;
         $this->message = $message;
         $this->industry = $industry;
+        $this->budget = $budget;
     }
 
     /**
@@ -54,7 +56,8 @@ class ContactUs extends Mailable
                 'name' => $this->name,
                 'email' => $this->email,
                 'message' => $this->message,
-                'industry' => $this->industry
+                'industry' => $this->industry,
+                'budget' => $this->budget
             ]
         );
     }

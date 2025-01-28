@@ -15,14 +15,19 @@ new class extends Component {
     }
 }; ?>
 
-<flux:header container sticky
-    class="flex items-center border-b bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
+<flux:header container sticky x-data="{ atTop: true }" @scroll.window="atTop = window.pageYOffset <= 25"
+    class="flex items-center transition duration-300"
+    x-bind:class="{
+        'bg-transparent': atTop,
+        'dark:bg-zinc-900 bg-zinc-50': !atTop,
+        'border-b border-zinc-200 dark:border-zinc-700': !atTop && !document.documentElement.classList.contains('dark')
+    }">
     <flux:sidebar.toggle class="md:hidden" icon="bars-2" inset="left" />
 
     <flux:brand wire:navigate href="/" logo="https://fluxui.dev/img/demo/logo.png" name="Flux Starter Kit"
         class="max-md:hidden dark:hidden" />
-    <flux:brand wire:navigate href="/" logo="https://fluxui.dev/img/demo/dark-mode-logo.png" name="Flux Starter Kit"
-        class="max-md:!hidden hidden dark:flex" />
+    <flux:brand wire:navigate href="/" logo="https://fluxui.dev/img/demo/dark-mode-logo.png"
+        name="Flux Starter Kit" class="max-md:!hidden hidden dark:flex" />
 
     <flux:spacer />
 
@@ -68,7 +73,8 @@ new class extends Component {
 
                 @if (Auth::user()->is_admin)
                     <flux:menu.item icon="chart-bar" wire:navigate href="/panel">Panel</flux:menu.item>
-                    <flux:menu.item icon="cog-6-tooth" wire:navigate href="/configuration">Configuration</flux:menu.item>
+                    <flux:menu.item icon="cog-6-tooth" wire:navigate href="/configuration">Configuration
+                    </flux:menu.item>
                 @else
                     <flux:menu.item icon="user" wire:navigate href="/profile">Profile</flux:menu.item>
                     <flux:menu.item icon="cog-6-tooth" wire:navigate href="/settings">Settings</flux:menu.item>

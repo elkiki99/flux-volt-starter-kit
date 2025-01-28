@@ -18,11 +18,14 @@ new class extends Component {
     #[Validate('required|array|min:1')]
     public array $industry = [];
 
+    #[Validate('required|string|max:255')]
+    public string $budget = '';
+
     public function contactUs()
     {
         $this->validate();
 
-        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactUs(name: $this->name, email: $this->email, message: $this->message, industry: $this->industry));
+        Mail::to(env('MAIL_FROM_ADDRESS'))->send(new ContactUs(name: $this->name, email: $this->email, message: $this->message, industry: $this->industry, budget: $this->budget));
 
         Flux::toast(heading: 'Thanks for reaching out', text: 'We will get back to you in no time.', variant: 'success');
 
@@ -39,21 +42,24 @@ new class extends Component {
 
     <flux:textarea label="Message" wire:model='message' placeholder="Your message" required></flux:textarea>
 
-    <flux:field>
-        <flux:label>Industry</flux:label>
 
-        <flux:select wire:model='industry' placeholder="Choose industry..." variant="listbox"
-            selected-suffix="industries selected" multiple>
-            <flux:option>UX/UI design</flux:option>
-            <flux:option>Web design</flux:option>
-            <flux:option>E-commerce</flux:option>
-            <flux:option>App development</flux:option>
-            <flux:option>Other</flux:option>
-        </flux:select>
+    <flux:select label="Industry" wire:model='industry' placeholder="Choose industry..." variant="listbox"
+        selected-suffix="industries selected" multiple>
+        <flux:option>E-commerce</flux:option>
+        <flux:option>UX/UI design</flux:option>
+        <flux:option>App development</flux:option>
+        <flux:option>Web development</flux:option>
+        <flux:option>Backend development</flux:option>
+        <flux:option>Software development</flux:option>
+        <flux:option>Other</flux:option>
+    </flux:select>
 
-        <flux:error name="industry"></flux:error>
-    </flux:field>
-
+    <flux:radio.group label="Budget" wire:model="budget" variant="cards" class="flex-col">
+        <flux:radio value="growth-plan" label="Growth Plan" description="<$3,000 USD" />
+        <flux:radio value="premium-plan" label="Premium Plan" description="$3,000 USD - $6,000 USD" />
+        <flux:radio value="elite-plan" label="Elite Plan" description="$6,000 USD> " />
+    </flux:radio.group>
+    
     <div class="flex justify-end">
         <flux:button variant="primary" type="submit">Contact us</flux:button>
     </div>

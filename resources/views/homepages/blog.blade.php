@@ -1,16 +1,29 @@
 <x-app-layout>
     <flux:main container>
         <div class="space-y-6">
-            <div>
-                <flux:heading size="xl">Our blog</flux:heading>
-                <flux:subheading size="lg">Find out what's new on our blog.</flux:subheading>
+            <div class="space-y-3">
+                <div class="!text-center lg:!text-start">
+                    <p class="text-xs font-semibold text-gray-700 dark:hidden">BLOG</p>
+                    <p class="hidden text-xs font-semibold text-gray-300 dark:block">BLOG</p>
+                </div>
+
+                <flux:heading
+                    class="!text-4xl md:!text-5xl font-thin max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
+                    Whats up in the world of digital marketing <br class="hidden lg:block">and
+                    <span class="font-black text-teal-600 dark:text-teal-400"> online presence</span>
+                </flux:heading>
+                <flux:subheading
+                    class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">With
+                    your bussiness and our services, you will thrive by making you<br class="hidden lg:block"> grow your
+                    business and take it to the next level.
+                </flux:subheading>
             </div>
 
             <flux:separator variant="subtle" />
 
             <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
                 {{-- @forelse ($posts as $post) --}}
-                <div class="space-y-1">
+                <article class="space-y-1">
                     <a href="#" class="relative group">
                         <img class="transition-all duration-500 rounded-lg group-hover:brightness-75" loading="lazy"
                             src="{{ asset('php.jpg') }}" alt="Blog post image">
@@ -27,7 +40,7 @@
                         <flux:subheading size="md">Learn how to use Flux Volt in this in-depth tutorial.
                         </flux:subheading>
                     </div>
-                </div>
+                </article>
                 {{-- </div> --}}
 
                 {{-- @empty
