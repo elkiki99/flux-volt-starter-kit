@@ -12,13 +12,19 @@
     <link rel="preconnect" href="https://fonts.bunny.net">
     <link href="https://fonts.bunny.net/css?family=inter:400,500,600&display=swap" rel="stylesheet" />
 
+    <style>
+        [x-cloak] {
+            display: none;
+        }
+    </style>
+
     <!-- Scripts -->
     @vite(['resources/css/app.css', 'resources/js/app.js'])
 
     @fluxStyles
 </head>
 
-<body class="flex flex-col min-h-screen font-sans antialiased bg-white dark:bg-zinc-800">
+<body class="flex flex-col min-h-screen font-sans antialiased bg-white dark:bg-zinc-900">
     <!-- Primary nav bar & it's responsive sidebar -->
     <livewire:layout.primary-navigation />
     <livewire:layout.primary-sidebar />
@@ -41,7 +47,7 @@
     </div>
 
     <!-- Footer -->
-    <footer class="border-t bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
+    <footer class="border-t bg-zinc-50 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700">
         <livewire:layout.footer />
     </footer>
 

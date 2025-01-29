@@ -6,7 +6,7 @@ new class extends Component {
     //
 }; ?>
 
-<flux:navbar class="flex justify-center border-b lg:hidden bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700" scrollable>
+<flux:navbar class="flex justify-center bg-white border-b lg:hidden dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700" scrollable>
     <flux:navbar.item icon="squares-2x2" wire:navigate href="/dashboard">Dashboard</flux:navbar.item>
     <flux:navbar.item icon="user" wire:navigate href="/profile">Profile</flux:navbar.item>
     <flux:navbar.item icon="credit-card" wire:navigate href="/billing">Billing</flux:navbar.item>

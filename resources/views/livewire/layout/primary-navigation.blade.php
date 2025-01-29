@@ -19,8 +19,7 @@ new class extends Component {
     class="flex items-center transition duration-300"
     x-bind:class="{
         'bg-transparent': atTop,
-        'dark:bg-zinc-900 bg-zinc-50': !atTop,
-        'border-b border-zinc-200 dark:border-zinc-700': !atTop && !document.documentElement.classList.contains('dark')
+        'dark:bg-zinc-800 border-b dark:border-none bg-zinc-100 dark:border-zinc-700': !atTop,
     }">
     <flux:sidebar.toggle class="md:hidden" icon="bars-2" inset="left" />
 

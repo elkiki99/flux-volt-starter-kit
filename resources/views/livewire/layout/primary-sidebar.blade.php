@@ -8,7 +8,7 @@ new class extends Component {
 
 <div>
     <flux:sidebar stashable sticky
-        class="border-r md:hidden bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
+        class="border-r md:hidden bg-zinc-100 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700">
         <flux:sidebar.toggle class="md:hidden" icon="x-mark" />
 
         <flux:brand wire:navigate href="/" logo="https://fluxui.dev/img/demo/logo.png" name="Flux Starter Kit" class="px-2 dark:hidden" />

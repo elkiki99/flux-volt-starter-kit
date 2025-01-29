@@ -17,7 +17,7 @@ new class extends Component {
 
 <div>
     <flux:sidebar sticky stashable
-        class="h-screen border-r bg-zinc-50 dark:bg-zinc-900 border-zinc-200 dark:border-zinc-700">
+        class="h-screen border-r bg-zinc-100 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700">
         <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
         <flux:brand href="/" logo="https://fluxui.dev/img/demo/logo.png" name="{{ config('app.name') }}"
@@ -29,7 +29,7 @@ new class extends Component {
 
         <flux:navlist variant="outline">
             <flux:navlist.item wire:navigate icon="chart-bar" href="/panel">Panel</flux:navlist.item>
-            <flux:navlist.item wire:navigate icon="inbox" badge="5" href="/messages">Messages</flux:navlist.item>
+            <flux:navlist.item wire:navigate icon="inbox" href="/messages">Messages</flux:navlist.item>
             <flux:navlist.item wire:navigate icon="calendar" href="/calendar">Calendar</flux:navlist.item>
             <flux:navlist.item wire:navigate icon="megaphone" href="/marketing">Marketing</flux:navlist.item>
 
