@@ -3,14 +3,13 @@
         <div class="space-y-6">
             <div class="space-y-3">
                 <div class="!text-center lg:!text-start">
-                    <p class="text-xs font-semibold text-gray-700 dark:hidden">PRICING</p>
-                    <p class="hidden text-xs font-semibold text-gray-300 dark:block">PRICING</p>
+                    <flux:badge icon="globe-alt" color="yellow" size="sm" variant="pill">Global reach</flux:badge>
                 </div>
 
                 <flux:heading
-                    class="!text-4xl md:!text-5xl font-thin max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
-                    You are gonna love this! Get ready for<br class="hidden lg:block"> remarkable<span
-                        class="text-4xl font-black text-transparent md:text-5xl dark:from-teal-500 dark:via-teal-300 dark:to-teal-600 bg-gradient-to-r from-teal-600 via-teal-300 to-teal-500 bg-clip-text">
+                    class="!text-5xl md:!text-7xl font-thin max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
+                    You are gonna love this! Get ready <br class="hidden lg:block">for a remarkable<span
+                        class="text-5xl font-black text-transparent md:text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">
                         online presence</span></flux:heading>
                 <flux:subheading
                     class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">With
@@ -28,8 +27,8 @@
                     <flux:card class="flex flex-col h-full p-6 bg-white rounded-lg shadow-sm md:p-8 lg:rounded-r-none">
                         <div class="space-y-6">
                             <div class="space-y-2">
-                                <flux:subheading class="text-sm">Growth Plan</flux:subheading>
-                                <flux:heading class="text-3xl">$2,990</flux:heading>
+                                <flux:subheading class="!text-sm">Growth Plan</flux:subheading>
+                                <flux:heading class="!text-3xl">$2,990</flux:heading>
                             </div>
 
                             <div class="flex flex-col gap-2">
@@ -39,17 +38,17 @@
                                 </div>
 
                                 <div class="flex items-center gap-2">
-                                    <flux:icon.check-circle class="text-teal-600 dark:text-teal-400" variant="solid" />
+                                    <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                     <flux:heading>Advanced website design</flux:heading>
                                 </div>
 
                                 <div class="flex items-center gap-2">
-                                    <flux:icon.check-circle class="text-teal-600 dark:text-teal-400" variant="solid" />
+                                    <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                     <flux:heading>SEO optimization</flux:heading>
                                 </div>
 
                                 <div class="flex items-center gap-2">
-                                    <flux:icon.check-circle class="text-teal-600 dark:text-teal-400" variant="solid" />
+                                    <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                     <flux:heading>Performance analytics</flux:heading>
                                 </div>
                             </div>
@@ -61,16 +60,16 @@
                 </div>
 
                 <div
-                    class="flex flex-col flex-1 gap-2 p-2 border-2 border-teal-800 rounded-2xl dark:border-teal-200 bg-zinc-100 dark:bg-zinc-900 lg:-mb-4">
+                    class="flex flex-col flex-1 gap-2 p-2 border-2 border-yellow-800 rounded-2xl dark:border-yellow-200 bg-zinc-100 dark:bg-zinc-900 lg:-mb-4">
 
                     <!-- Premium Plan -->
                     <flux:card class="flex flex-col h-full p-6 bg-white rounded-lg shadow-sm md:p-8 lg:pb-12">
                         <div class="space-y-6">
                             <div class="space-y-2">
-                                <flux:badge icon="fire" size="sm" color="teal" class="mb-1">Popular package
+                                <flux:badge icon="fire" size="sm" color="yellow" class="mb-1">Popular package
                                 </flux:badge>
-                                <flux:subheading class="text-sm">Premium Plan</flux:subheading>
-                                <flux:heading class="text-3xl">$4,990</flux:heading>
+                                <flux:subheading class="!text-sm">Premium Plan</flux:subheading>
+                                <flux:heading class="!text-3xl">$4,990</flux:heading>
                             </div>
 
                             <div class="flex flex-col gap-2">
@@ -80,22 +79,22 @@
                                 </div>
 
                                 <div class="flex items-center gap-2">
-                                    <flux:icon.check-circle class="text-teal-600 dark:text-teal-400" variant="solid" />
+                                    <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                     <flux:heading>Custom website design</flux:heading>
                                 </div>
 
                                 <div class="flex items-center gap-2">
-                                    <flux:icon.check-circle class="text-teal-600 dark:text-teal-400" variant="solid" />
+                                    <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                     <flux:heading>eCommerce integration</flux:heading>
                                 </div>
 
                                 <div class="flex items-center gap-2">
-                                    <flux:icon.check-circle class="text-teal-600 dark:text-teal-400" variant="solid" />
+                                    <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                     <flux:heading>Marketing strategy</flux:heading>
                                 </div>
 
                                 <div class="flex items-center gap-2">
-                                    <flux:icon.check-circle class="text-teal-600 dark:text-teal-400" variant="solid" />
+                                    <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                     <flux:heading>Advanced analytics</flux:heading>
                                 </div>
                             </div>
@@ -113,8 +112,8 @@
                     <flux:card class="flex flex-col h-full p-6 bg-white rounded-lg shadow-sm md:p-8 lg:rounded-l-none">
                         <div class="space-y-6">
                             <div class="space-y-2">
-                                <flux:subheading class="text-sm">Elite Plan</flux:subheading>
-                                <flux:heading class="text-3xl">$7,990</flux:heading>
+                                <flux:subheading class="!text-sm">Elite Plan</flux:subheading>
+                                <flux:heading class="!text-3xl">$7,990</flux:heading>
                             </div>
 
                             <div class="flex flex-col gap-2">
@@ -124,17 +123,17 @@
                                 </div>
 
                                 <div class="flex items-center gap-2">
-                                    <flux:icon.check-circle class="text-teal-600 dark:text-teal-400" variant="solid" />
+                                    <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                     <flux:heading>Comprehensive website</flux:heading>
                                 </div>
 
                                 <div class="flex items-center gap-2">
-                                    <flux:icon.check-circle class="text-teal-600 dark:text-teal-400" variant="solid" />
+                                    <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                     <flux:heading>Custom animations</flux:heading>
                                 </div>
 
                                 <div class="flex items-center gap-2">
-                                    <flux:icon.check-circle class="text-teal-600 dark:text-teal-400" variant="solid" />
+                                    <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                     <flux:heading>Lifetime support</flux:heading>
                                 </div>
                             </div>
@@ -149,7 +148,7 @@
             <flux:separator variant="subtle" />
 
             <p class="text-sm text-center">Looking for a more customized plan? <a wire:navigate href="contact"
-                    class="font-semibold text-teal-600 dark:text-teal-400">Contact us</a></p>
+                    class="font-semibold text-yellow-600 dark:text-yellow-400">Contact us</a></p>
         </div>
     </flux:main>
 </x-app-layout>

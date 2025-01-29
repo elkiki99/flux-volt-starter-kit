@@ -25,8 +25,6 @@ new class extends Component {
         <flux:brand href="/" logo="https://fluxui.dev/img/demo/dark-mode-logo.png" name="{{ config('app.name') }}"
             class="hidden px-2 dark:flex" />
 
-        <flux:input as="button" variant="filled" placeholder="Search..." icon="magnifying-glass" />
-
         <flux:navlist variant="outline">
             <flux:navlist.item wire:navigate icon="chart-bar" href="/panel">Panel</flux:navlist.item>
             <flux:navlist.item wire:navigate icon="inbox" href="/messages">Messages</flux:navlist.item>

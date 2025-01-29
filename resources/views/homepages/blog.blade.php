@@ -11,7 +11,7 @@
                     class="!text-4xl md:!text-5xl font-thin max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
                     Whats up in the world of digital marketing <br class="hidden lg:block">and
                     <span
-                        class="text-4xl font-black text-transparent md:text-5xl dark:from-teal-500 dark:via-teal-300 dark:to-teal-600 bg-gradient-to-r from-teal-600 via-teal-300 to-teal-500 bg-clip-text">
+                        class="text-4xl font-black text-transparent md:text-5xl dark:from-teal-500 dark:via-teal-200 dark:to-teal-600 bg-gradient-to-r from-teal-600 via-teal-300 to-teal-500 bg-clip-text">
                         online presence</span>
                 </flux:heading>
                 <flux:subheading

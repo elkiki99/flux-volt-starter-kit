@@ -29,8 +29,13 @@
     <livewire:layout.primary-navigation />
     <livewire:layout.primary-sidebar />
 
+    <!-- Glowing Blob -->
+    <div
+        class="absolute top-1/4 right-1/4 w-96 h-96 dark:bg-yellow-100 bg-yellow-900 blur-[150px] animate-pulse opacity-40 rounded-full">
+    </div>
+
     <!-- Main -->
-    <main class="relative flex-grow w-full py-3 bg-white dark:bg-zinc-900 shadow-lg dark:shadow-[inset_0_0_30px_rgba(255,255,255,0.1)]">
+    <main class="flex-grow w-full py-3">
         {{ $slot }}
     </main>
 

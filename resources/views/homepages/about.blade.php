@@ -4,14 +4,13 @@
             <!-- Hero section -->
             <div class="space-y-3">
                 <div class="!text-center lg:!text-start">
-                    <p class="text-xs font-semibold text-gray-700 dark:hidden">ABOUT US</p>
-                    <p class="hidden text-xs font-semibold text-gray-300 dark:block">ABOUT US</p>
+                    <flux:badge icon="lock-closed" color="yellow" size="sm" variant="pill">Security first</flux:badge>
                 </div>
 
                 <flux:heading
-                    class="!text-4xl md:!text-5xl font-thin max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
-                    Turning your creative ideas into<br class="hidden lg:block">dominant <span
-                        class="text-4xl font-black text-transparent md:text-5xl dark:from-teal-500 dark:via-teal-300 dark:to-teal-600 bg-gradient-to-r from-teal-600 via-teal-300 to-teal-500 bg-clip-text">digital
+                    class="!text-5xl md:!text-7xl font-thin max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
+                    Turning your creative ideas <br class="hidden lg:block">into <span
+                        class="!text-7xl font-black text-transparent md:!text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">digital
                         success</span></flux:heading>
                 <flux:subheading
                     class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">Meet

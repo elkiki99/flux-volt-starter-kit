@@ -4,14 +4,13 @@
             <!-- Hero section -->
             <div class="space-y-3">
                 <div class="!text-center lg:!text-start">
-                    <p class="text-xs font-semibold text-gray-700 dark:hidden">SERVICES</p>
-                    <p class="hidden text-xs font-semibold text-gray-300 dark:block">SERVICES</p>
+                    <flux:badge icon="light-bulb" color="yellow" size="sm" variant="pill">Innovative</flux:badge>
                 </div>
 
                 <flux:heading
-                    class="!text-4xl md:!text-5xl font-thin max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
+                    class="!text-5xl md:!text-7xl font-thin max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
                     Online solutions that resonate<br class="hidden lg:block"> with<span
-                        class="text-4xl font-black text-transparent md:text-5xl dark:from-teal-500 dark:via-teal-300 dark:to-teal-600 bg-gradient-to-r from-teal-600 via-teal-300 to-teal-500 bg-clip-text">
+                        class="!text-5xl font-black text-transparent md:!text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">
                         your
                         bussiness</span></flux:heading>
                 <flux:subheading
@@ -24,57 +23,57 @@
 
             <!-- Card services -->
             <div class="grid grid-cols-2 gap-4 py-6 md:grid-cols-3 lg:grid-cols-4">
-                <flux:card size="sm">
-                    <flux:icon.cpu-chip class="mb-3 text-teal-600 dark:text-teal-400" variant="solid" />
+                <flux:card size="sm" class="!bg-transparent">
+                    <flux:icon.cpu-chip class="mb-3 text-yellow-600 dark:text-yellow-400" variant="solid" />
                     <flux:heading>System Integration</flux:heading>
                     <flux:subheading>We connect your app with tools you use daily, ensuring
                         a seamless and efficient experience.</flux:subheading>
                 </flux:card>
 
-                <flux:card size="sm">
-                    <flux:icon.credit-card class="mb-3 text-teal-600 dark:text-teal-400" variant="solid" />
+                <flux:card size="sm" class="!bg-transparent">
+                    <flux:icon.credit-card class="mb-3 text-yellow-600 dark:text-yellow-400" variant="solid" />
                     <flux:heading>Payment Methods</flux:heading>
                     <flux:subheading>Accept payments with Stripe, PayPal, MercadoPago,
                         and many other popular options.</flux:subheading>
                 </flux:card>
 
-                <flux:card size="sm">
-                    <flux:icon.arrow-trending-up class="mb-3 text-teal-600 dark:text-teal-400" variant="solid" />
+                <flux:card size="sm" class="!bg-transparent">
+                    <flux:icon.arrow-trending-up class="mb-3 text-yellow-600 dark:text-yellow-400" variant="solid" />
                     <flux:heading>Analytics</flux:heading>
                     <flux:subheading>Track your business performance and key metrics in
                         one convenient, centralized place.</flux:subheading>
                 </flux:card>
 
-                <flux:card size="sm">
-                    <flux:icon.globe-alt class="mb-3 text-teal-600 dark:text-teal-400" variant="solid" />
+                <flux:card size="sm" class="!bg-transparent">
+                    <flux:icon.globe-alt class="mb-3 text-yellow-600 dark:text-yellow-400" variant="solid" />
                     <flux:heading>Global Reach</flux:heading>
                     <flux:subheading>Expand your business globally with multi-language
                         and multi-currency support.</flux:subheading>
                 </flux:card>
 
-                <flux:card size="sm">
-                    <flux:icon.wrench class="mb-3 text-teal-600 dark:text-teal-400" variant="solid" />
+                <flux:card size="sm" class="!bg-transparent">
+                    <flux:icon.wrench class="mb-3 text-yellow-600 dark:text-yellow-400" variant="solid" />
                     <flux:heading>Custom Development</flux:heading>
                     <flux:subheading>We build tailored solutions to fit your business
                         needs and strategic goals.</flux:subheading>
                 </flux:card>
 
-                <flux:card size="sm">
-                    <flux:icon.chart-bar class="mb-3 text-teal-600 dark:text-teal-400" variant="solid" />
+                <flux:card size="sm" class="!bg-transparent">
+                    <flux:icon.chart-bar class="mb-3 text-yellow-600 dark:text-yellow-400" variant="solid" />
                     <flux:heading>Marketing Automation</flux:heading>
                     <flux:subheading>Optimize your campaigns with AI-powered marketing
                         tools that drive engagement.</flux:subheading>
                 </flux:card>
 
-                <flux:card size="sm">
-                    <flux:icon.lock-closed class="mb-3 text-teal-600 dark:text-teal-400" variant="solid" />
+                <flux:card size="sm" class="!bg-transparent">
+                    <flux:icon.lock-closed class="mb-3 text-yellow-600 dark:text-yellow-400" variant="solid" />
                     <flux:heading>Security & Compliance</flux:heading>
                     <flux:subheading>We ensure compliance with top security standards
                         to protect your data and users.</flux:subheading>
                 </flux:card>
 
-                <flux:card size="sm">
-                    <flux:icon.lifebuoy class="mb-3 text-teal-600 dark:text-teal-400" variant="solid" />
+                <flux:card size="sm" class="!bg-transparent">
+                    <flux:icon.lifebuoy class="mb-3 text-yellow-600 dark:text-yellow-400" variant="solid" />
                     <flux:heading>24/7 Support</flux:heading>
                     <flux:subheading>Our support team is available anytime to assist
                         with any technical challenges.</flux:subheading>

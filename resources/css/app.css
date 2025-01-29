@@ -4,14 +4,14 @@
 
 @layer base {
     :root {
-        --color-accent: var(--color-teal-600);
-        --color-accent-content: var(--color-teal-600);
-        --color-accent-foreground: var(--color-white);
+        --color-accent: var(--color-amber-400);
+        --color-accent-content: var(--color-amber-600);
+        --color-accent-foreground: var(--color-amber-950);
     }
 
     .dark {
-        --color-accent: var(--color-teal-600);
-        --color-accent-content: var(--color-teal-400);
-        --color-accent-foreground: var(--color-white);
+        --color-accent: var(--color-amber-400);
+        --color-accent-content: var(--color-amber-400);
+        --color-accent-foreground: var(--color-amber-950);
     }
 }
