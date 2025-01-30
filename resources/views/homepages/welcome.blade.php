@@ -1,7 +1,7 @@
 <x-app-layout>
     <flux:main container class="">
         <!-- Hero section -->
-        <section class="space-y-6 min-h-[80vh]">
+        <section class="space-y-6 min-h-[85vh]">
             <div class="space-y-3">
                 <div class="!text-center lg:!text-start">
                     <flux:badge icon="rocket-launch" color="yellow" size="sm" variant="pill">Enterprise partner
@@ -32,7 +32,7 @@
 
         <!-- More of us (services, about us, case studies) -->
         <section class="min-h-screen space-y-6 py-6">
-            <flux:heading class="font-bold py-6 !text-4xl text-center">All in one team for personalized
+            <flux:heading class="font-bold py-6 !text-4xl text-center lg:!text-5xl">All in one team for <br>personalized
                 services
             </flux:heading>
 
@@ -42,7 +42,7 @@
                     <div class="w-full flex flex-col lg:w-1/2 space-y-6">
                         <div class="gap-2">
                             <flux:heading class="!text-3xl">Web design</flux:heading>
-                            <flux:subheading>75% of users base a company's credibility on it's
+                            <flux:subheading class="max-w-xl">75% of users base a company's credibility on it's
                                 website design. Make it stand out - entrust your website design to a specialized digital
                                 agency.</flux:subheading>
                         </div>
@@ -53,7 +53,8 @@
                                     <flux:icon.check-circle />
                                     <flux:heading class="!text-xl">UX/UI Design</flux:heading>
                                 </div>
-                                <flux:subheading class="ml-[2rem]">We focus on the user experience and user interface
+                                <flux:subheading class="max-w- ml-[2rem]">We focus on the user experience and user
+                                    interface
                                     for maximum engagement, while still maintaining optimized functionality.
                                 </flux:subheading>
                             </div>
@@ -63,7 +64,8 @@
                                     <flux:icon.check-circle />
                                     <flux:heading class="!text-xl">Solid integrations</flux:heading>
                                 </div>
-                                <flux:subheading class="ml-[2rem]">We ensure seamless integration with popular tools and
+                                <flux:subheading class="max-w-2xl ml-[2rem]">We ensure seamless integration with popular
+                                    tools and
                                     platforms, ensuring maximum efficiency for your bussiness.</flux:subheading>
                             </div>
                         </div>
@@ -87,7 +89,8 @@
                     <div class="w-full flex flex-col lg:w-1/2 space-y-6">
                         <div class="gap-2">
                             <flux:heading class="!text-3xl">Our principles</flux:heading>
-                            <flux:subheading>We believe in handcraftsmanship and attention to detail. We are a group of
+                            <flux:subheading class="max-w-xl">We believe in handcraftsmanship and attention to detail.
+                                We are a group of
                                 dedicated individuals trying to build awesome stuff, and we try to strike for
                                 uniqueness.</flux:subheading>
                         </div>
@@ -98,7 +101,8 @@
                                     <flux:icon.check-circle />
                                     <flux:heading class="!text-xl">UX/UI Design</flux:heading>
                                 </div>
-                                <flux:subheading class="ml-[2rem]">We focus on the user experience and user interface
+                                <flux:subheading class="max-w- ml-[2rem]">We focus on the user experience and user
+                                    interface
                                     for maximum engagement, while still maintaining optimized functionality.
                                 </flux:subheading>
                             </div>
@@ -108,7 +112,8 @@
                                     <flux:icon.check-circle />
                                     <flux:heading class="!text-xl">Solid integrations</flux:heading>
                                 </div>
-                                <flux:subheading class="ml-[2rem]">We ensure seamless integration with popular tools and
+                                <flux:subheading class="max-w-2xl ml-[2rem]">We ensure seamless integration with popular
+                                    tools and
                                     platforms, ensuring maximum efficiency for your bussiness.</flux:subheading>
                             </div>
                         </div>
@@ -132,7 +137,7 @@
                     <div class="w-full flex flex-col lg:w-1/2 space-y-6">
                         <div class="gap-2">
                             <flux:heading class="!text-3xl">Web design</flux:heading>
-                            <flux:subheading>75% of users base a company's credibility on it's
+                            <flux:subheading class="max-w-xl">75% of users base a company's credibility on it's
                                 website design. Make it stand out - entrust your website design to a specialized digital
                                 agency</flux:subheading>
                         </div>
@@ -143,7 +148,8 @@
                                     <flux:icon.check-circle />
                                     <flux:heading class="!text-xl">UX/UI Design</flux:heading>
                                 </div>
-                                <flux:subheading class="ml-[2rem]">We focus on the user experience and user interface
+                                <flux:subheading class="max-w-2xl ml-[2rem]">We focus on the user experience and user
+                                    interface
                                     for maximum engagement, while still maintaining optimized functionality.
                                 </flux:subheading>
                             </div>
@@ -153,7 +159,8 @@
                                     <flux:icon.check-circle />
                                     <flux:heading class="!text-xl">Solid integrations</flux:heading>
                                 </div>
-                                <flux:subheading class="ml-[2rem]">We ensure seamless integration with popular tools and
+                                <flux:subheading class="max-w- ml-[2rem]">We ensure seamless integration with popular
+                                    tools and
                                     platforms, ensuring maximum efficiency for your bussiness.</flux:subheading>
                             </div>
                         </div>
@@ -173,46 +180,94 @@
         </section>
 
         <!-- What set us apart -->
-        <section class="min-h-screen space-y-6 py-6">
+        <section class=" space-y-6 py-6">
             <div class="text-center py-6">
-                <flux:heading class="font-bold !text-4xl">There are thousands of <br>agencies, so why
+                <flux:heading class="font-bold !text-4xl lg:!text-5xl">There are thousands of <br>agencies, so why
                     choose us?
                 </flux:heading>
                 <flux:subheading>From day one, focused on our core values:
                 </flux:subheading>
             </div>
 
-            <ul class="grid grid-cols-2 lg:grid-cols-3 gap-4 gap-y-16">
-                <li
-                    class="flex flex-col gap-2 items-center">
-                    <flux:icon.cursor-arrow-ripple class="text-amber-400 size-10 justify-center stroke-[1]" />
-                    <flux:heading class="text-center !text-xl !font-thin">Human-centered design</flux:heading>
-                </li>
-                <li
-                    class="flex flex-col gap-2 items-center">
-                    <flux:icon.cube-transparent class="text-amber-400 size-10 justify-center stroke-[1]" />
-                    <flux:heading class="text-center !text-xl !font-thin">Simplicity with depth</flux:heading>
-                </li>
-                <li class="flex flex-col gap-2 items-center">
-                    <flux:icon.squares-plus class="text-amber-400 size-10 justify-center stroke-[1]" />
-                    <flux:heading class="text-center !text-xl !font-thin">Timeless aesthetics</flux:heading>
-                </li>
-                <li
-                    class="flex flex-col gap-2 items-center">
-                    <flux:icon.arrow-trending-up class="text-amber-400 size-10 justify-center stroke-[1]" />
-                    <flux:heading class="text-center !text-xl !font-thin">Performance as a standard</flux:heading>
-                </li>
-                <li
-                    class="flex flex-col gap-2 items-center">
-                    <flux:icon.lock-closed class="text-amber-400 size-10 justify-center stroke-[1]" />
-                    <flux:heading class="text-center !text-xl !font-thin">Ethical & transparent practices
-                    </flux:heading>
-                </li>
-                <li class="flex flex-col gap-2 items-center">
-                    <flux:icon.signal class="text-amber-400 size-10 justify-center stroke-[1]" />
-                    <flux:heading class="text-center !text-xl !font-thin">Relentless curiosity</flux:heading>
-                </li>
+            <ul class="grid grid-cols-2 lg:grid-cols-3 gap-4 gap-4 max-w-4xl mx-auto">
+                <flux:card class="!bg-transparent !p-8">
+                    <li class="flex flex-col gap-2 items-center">
+                        <flux:icon.cursor-arrow-ripple class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:heading class="text-center !text-xl !font-thin">Human-centered design</flux:heading>
+                    </li>
+                </flux:card>
+                <flux:card class="!bg-transparent !p-8">
+                    <li class="flex flex-col gap-2 items-center">
+                        <flux:icon.cube-transparent class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:heading class="text-center !text-xl !font-thin">Simplicity with depth</flux:heading>
+                    </li>
+                </flux:card>
+                <flux:card class="!bg-transparent !p-8">
+                    <li class="flex flex-col gap-2 items-center">
+                        <flux:icon.squares-plus class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:heading class="text-center !text-xl !font-thin">Timeless aesthetics</flux:heading>
+                    </li>
+                </flux:card>
+                <flux:card class="!bg-transparent !p-8">
+                    <li class="flex flex-col gap-2 items-center">
+                        <flux:icon.arrow-trending-up class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:heading class="text-center !text-xl !font-thin">Performance as a standard</flux:heading>
+                    </li>
+                </flux:card>
+                <flux:card class="!bg-transparent !p-8">
+                    <li class="flex flex-col gap-2 items-center">
+                        <flux:icon.lock-closed class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:heading class="text-center !text-xl !font-thin">Ethical & transparent practices
+                        </flux:heading>
+                    </li>
+                </flux:card>
+                <flux:card class="!bg-transparent !p-8">
+                    <li class="flex flex-col gap-2 items-center">
+                        <flux:icon.signal class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:heading class="text-center !text-xl !font-thin">Relentless curiosity</flux:heading>
+                    </li>
+                </flux:card>
             </ul>
+        </section>
+
+        <!-- Our blog -->
+        <section class="min-h-screen space-y-6 py-6">
+            <flux:heading class="font-bold text-center py-6 !text-4xl lg:!text-5xl">Check out our most popular resources
+            </flux:heading>
+
+            <div class="flex gap-4 items-center">
+                <flux:card class="relative !p-0 w-1/3 h-[80vh]">
+                    <a href="#">
+                        <img class="h-full rounded-lg object-cover w-full" src="{{ asset('4.jpg') }}">
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/90 to-transparent rounded-b-lg">
+                        </div>
+                        <h2 class="absolute bottom-4 left-4 text-white text-3xl font-bold">Web data & conversion</h2>
+                    </a>
+                </flux:card>
+
+                <flux:card class="relative !p-0 w-1/3 h-[80vh]">
+                    <a href="#">
+                        <img class="h-full rounded-lg object-cover w-full" src="{{ asset('5.jpg') }}">
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/90 to-transparent rounded-b-lg">
+                        </div>
+                        <h2 class="absolute bottom-4 left-4 text-white text-3xl font-bold">On page SEO optimization
+                        </h2>
+                    </a>
+                </flux:card>
+
+                <flux:card class="relative !p-0 w-1/3 h-[80vh]">
+                    <a href="#">
+                        <img class="h-full rounded-lg object-cover w-full" src="{{ asset('6.jpg') }}">
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-32 bg-gradient-to-t from-black/90 to-transparent rounded-b-lg">
+                        </div>
+                        <h2 class="absolute bottom-4 left-4 text-white text-3xl font-bold">Performance as a standard
+                        </h2>
+                    </a>
+                </flux:card>
+            </div>
         </section>
     </flux:main>
 </x-app-layout>

@@ -7,10 +7,10 @@
                 </div>
 
                 <flux:heading
-                    class="!text-5xl md:!text-7xl font-thin max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
-                    You are gonna love this! Get ready <br class="hidden lg:block">for a remarkable<span
+                    class="!text-5xl md:!text-7xl font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
+                    Ready for a sleek website<br class="hidden lg:block"> that<span
                         class="text-5xl font-black text-transparent md:text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">
-                        online presence</span></flux:heading>
+                        boosts your sales?</span></flux:heading>
                 <flux:subheading
                     class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">With
                     your bussiness and our services, you will thrive by making you<br class="hidden lg:block"> grow your

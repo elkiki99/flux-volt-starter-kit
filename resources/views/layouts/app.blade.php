@@ -31,7 +31,7 @@
 
     <!-- Glowing Blob -->
     <div
-        class="absolute top-1/4 right-1/4 w-96 h-96 dark:bg-yellow-100 bg-yellow-900 blur-[150px] animate-pulse opacity-40 rounded-full">
+        class="absolute top-1/4 right-1/4 w-96 h-96 dark:bg-yellow-100 bg-yellow-600 blur-[150px] animate-pulse opacity-40 rounded-full">
     </div>
 
     <!-- Main -->
