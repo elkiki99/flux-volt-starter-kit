@@ -35,6 +35,11 @@ class HomePages extends Controller
     {
         return view('homepages.pricing');
     }
+
+    public function caseStudies()
+    {
+        return view('homepages.case-studies');
+    }
     
     public function terms()
     {

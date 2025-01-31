@@ -31,7 +31,7 @@
 
     <!-- Glowing Blob -->
     <div
-        class="absolute top-1/4 right-1/4 w-96 h-96 dark:bg-yellow-100 bg-yellow-600 blur-[150px] animate-pulse opacity-40 rounded-full">
+        class="absolute top-1/4 right-1/4 w-96 h-96 dark:lg:bottom-1/4 dark:lg:right-1/4 dark:bottom-3/4 dark:right-1/2 dark:lg:w-96 dark:lg:h-96 dark:h-48 dark:w-48 dark:bg-yellow-100 bg-yellow-600 blur-[150px] animate-pulse opacity-40 rounded-full">
     </div>
 
     <!-- Main -->
@@ -40,7 +40,7 @@
     </main>
 
     <!-- Footer -->
-    <footer class="border-t bg-zinc-50 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700">
+    <footer>
         <livewire:layout.footer />
     </footer>
 

@@ -16,7 +16,7 @@ new class extends Component {
 }; ?>
 
 <flux:header container sticky x-data="{ atTop: true }" @scroll.window="atTop = window.pageYOffset <= 25"
-    class="flex items-center transition duration-300"
+    class="z-20 flex items-center transition duration-300"
     x-bind:class="{
         'bg-transparent': atTop,
         'dark:bg-zinc-800 border-b dark:border-none bg-zinc-100 dark:border-zinc-700': !atTop,
