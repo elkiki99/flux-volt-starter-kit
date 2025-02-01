@@ -5,7 +5,6 @@
             <!-- Video background -->
             <video autoplay loop muted class="absolute inset-0 object-cover w-full h-full">
                 <source src="{{ asset('video1.mp4') }}" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
             </video>
 
             <!-- Gradient -->
@@ -14,17 +13,17 @@
             <div class="z-10 pb-10 my-6 mt-auto space-y-6">
                 <div class="space-y-3">
                     <div class="!text-center lg:!text-start">
-                        <flux:badge icon="lock-closed" color="yellow" size="sm" variant="pill">Security first
+                        <flux:badge class="!text-yellow-200 [&_button]:!text-yellow-200 !bg-yellow-400/40 [&:is(button)]:hover:!bg-yellow-400/50" icon="lock-closed" size="sm" variant="pill">Security first
                         </flux:badge>
                     </div>
 
                     <flux:heading
-                        class="!text-5xl md:!text-7xl font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
+                        class="!text-5xl md:!text-7xl !text-white font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
                         Turning your creative ideas <br class="hidden lg:block">into <span
                             class="!text-5xl font-black text-transparent md:!text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">digital
                             success</span></flux:heading>
                     <flux:subheading
-                        class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">
+                        class="max-w-xl mx-auto !text-white/70 text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">
                         Meet
                         the team behind our innovative digital solutions.
                         Our passion is <br class="hidden lg:block">helping your business grow with tailored strategies
@@ -204,8 +203,8 @@
                     </div>
                     <div class="absolute space-y-3 left-4 bottom-4">
                         <div>
-                            <flux:heading class="!text-2xl">Bruno Rossani</flux:heading>
-                            <flux:subheading>Software Engineer & Web Designer</flux:subheading>
+                            <flux:heading class="!text-2xl !text-white">Bruno Rossani</flux:heading>
+                            <flux:subheading class="!text-white/70">Software Engineer & Web Designer</flux:subheading>
                         </div>
                         <ul class="ml-[-1.25px] flex space-x-2">
                             <li class="p-0.5">
@@ -249,8 +248,8 @@
                     </div>
                     <div class="absolute space-y-3 left-4 bottom-4">
                         <div>
-                            <flux:heading class="!text-2xl">Camila Fernández</flux:heading>
-                            <flux:subheading>Creative Solutions & Marketing Expert</flux:subheading>
+                            <flux:heading class="!text-2xl !text-white">Camila Fernández</flux:heading>
+                            <flux:subheading class="!text-white/70">Creative Solutions & Marketing Expert</flux:subheading>
                         </div>
                         <ul class="ml-[-1.25px] flex space-x-2">
                             <li class="p-0.5">

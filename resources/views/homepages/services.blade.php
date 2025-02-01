@@ -4,7 +4,6 @@
         <section class="flex h-[85vh] pb-6 overflow-hidden">
             <video autoplay loop muted class="absolute inset-0 object-cover w-full h-full">
                 <source src="{{ asset('video2.mp4') }}" type="video/mp4">
-                Tu navegador no soporta la etiqueta de video.
             </video>
 
             <!-- Gradient -->
@@ -13,18 +12,18 @@
             <div class="z-10 pb-10 my-6 mt-auto space-y-6">
                 <div class="space-y-3">
                     <div class="!text-center lg:!text-start">
-                        <flux:badge icon="light-bulb" color="yellow" size="sm" variant="pill">Innovative
+                        <flux:badge icon="light-bulb" class="!text-yellow-200 [&_button]:!text-yellow-200 !bg-yellow-400/40 [&:is(button)]:hover:!bg-yellow-400/50" size="sm" variant="pill">Innovative
                         </flux:badge>
                     </div>
 
                     <flux:heading
-                        class="!text-5xl md:!text-7xl font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
+                        class="!text-5xl md:!text-7xl !text-white font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
                         Online solutions that line<br class="hidden lg:block"> up with<span
                             class="!text-5xl font-black text-transparent md:!text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">
                             your
                             brand</span></flux:heading>
                     <flux:subheading
-                        class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">
+                        class="max-w-xl mx-auto !text-white/70 text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">
                         From
                         web development to digital marketing strategies, discover
                         how<br class="hidden lg:block"> we solve your unique challenges and take your <br
@@ -209,6 +208,65 @@
                     <flux:heading>24/7 Support</flux:heading>
                     <flux:subheading>Our support team is available anytime to assist
                         with any technical challenges.</flux:subheading>
+                </flux:card>
+            </div>
+        </section>
+
+        <!-- Our blog -->
+        <section class="min-h-screen py-6 space-y-6">
+            <flux:heading class="font-bold text-center py-6 !text-4xl lg:!text-5xl">Want to stay updated?
+            </flux:heading>
+
+            <div class="items-center gap-4 space-y-6 lg:flex lg:space-y-0">
+                <flux:card
+                    class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
+                    <a wire:navigate href="/blog">
+                        <img loading="lazy" class="object-cover w-full h-full rounded-lg"
+                            src="{{ asset('joe.jpg') }}">
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
+                        </div>
+                        <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">On page SEO optimization
+                        </flux:heading>
+                        <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
+                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
+                        </div>
+                    </a>
+                </flux:card>
+
+                <flux:card
+                    class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
+                    <a wire:navigate href="/blog">
+                        <img loading="lazy" class="object-cover w-full h-full rounded-lg"
+                            src="{{ asset('umb.jpg') }}">
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
+                        </div>
+                        <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">Web data & conversion
+                        </flux:heading>
+                        <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
+                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
+                        </div>
+                    </a>
+                </flux:card>
+
+                <flux:card
+                    class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
+                    <a wire:navigate href="/blog">
+                        <img loading="lazy" class="object-cover w-full h-full rounded-lg"
+                            src="{{ asset('blog-3.webp') }}">
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
+                        </div>
+                        <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">Performance as a standard
+                        </flux:heading>
+                        <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
+                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
+                        </div>
+                    </a>
                 </flux:card>
             </div>
         </section>

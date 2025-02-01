@@ -8,7 +8,7 @@
         <!-- Hero section -->
         <section class="min-h-[85vh] flex flex-col space-y-6">
             <div class="flex-grow"></div>
-            
+
             <div class="mt-auto space-y-3">
                 <div class="!text-center lg:!text-start">
                     <flux:badge icon="rocket-launch" color="yellow" size="sm" variant="pill">Enterprise partner
@@ -360,15 +360,15 @@
                     class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
                     <a wire:navigate href="/blog">
                         <img loading="lazy" class="object-cover w-full h-full rounded-lg"
-                            src="{{ asset('blog-1.webp') }}">
+                            src="{{ asset('joe.jpg') }}">
                         <div
                             class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
                         </div>
-                        <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">Web data & conversion
+                        <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">On page SEO optimization
                         </flux:heading>
                         <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
                             <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
-                            <flux:icon.arrow-up-right class="!text-zinc-300" />
+                            <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
                         </div>
                     </a>
                 </flux:card>
@@ -377,15 +377,15 @@
                     class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
                     <a wire:navigate href="/blog">
                         <img loading="lazy" class="object-cover w-full h-full rounded-lg"
-                            src="{{ asset('blog-2.webp') }}">
+                            src="{{ asset('umb.jpg') }}">
                         <div
                             class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
                         </div>
-                        <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">On page SEO optimization
+                        <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">Web data & conversion
                         </flux:heading>
                         <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
                             <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
-                            <flux:icon.arrow-up-right class="!text-zinc-300" />
+                            <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
                         </div>
                     </a>
                 </flux:card>
@@ -402,7 +402,7 @@
                         </flux:heading>
                         <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
                             <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
-                            <flux:icon.arrow-up-right class="!text-zinc-300" />
+                            <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
                         </div>
                     </a>
                 </flux:card>

@@ -69,7 +69,7 @@ new class extends Component {
                     <a wire:navigate href="/pricing">
                         <flux:card
                             class="!bg-transparent hover:border-yellow-50/50 transition duration-300">
-                            <flux:heading class="text-center !text-xl">Our prices</flux:heading>
+                            <flux:heading class="text-center">Our prices</flux:heading>
                             <div class="flex items-center justify-center gap-2">
                                 <flux:subheading>We offer a wide range of pricing</flux:subheading>
                                 <flux:icon.arrow-up-right variant="micro" />
@@ -82,7 +82,7 @@ new class extends Component {
                     <a wire:navigate href="/contact">
                         <flux:card
                             class="!bg-transparent hover:border-yellow-50/50 transition duration-300">
-                            <flux:heading class="text-center !text-xl">Get in touch</flux:heading>
+                            <flux:heading class="text-center">Get in touch</flux:heading>
                             <div class="flex items-center justify-center gap-2">
                                 <flux:subheading>Got any questions? We're here to help</flux:subheading>
                                 <flux:icon.arrow-up-right variant="micro" />
@@ -94,13 +94,13 @@ new class extends Component {
 
             <div class="flex justify-between w-full gap-4 mt-6 lg:mt-0 lg:w-1/2 text-start">
                 <div class="flex flex-col gap-4">
-                    <a wire:navigate href="/" class="font-semibold text-black w-fit dark:text-white">Home</a>
-                    <a wire:navigate href="/about" class="font-semibold text-black w-fit dark:text-white">About</a>
+                    <a wire:navigate href="/" class="text-zinc-800 w-fit dark:text-white">Home</a>
+                    <a wire:navigate href="/about" class="text-zinc-800 w-fit dark:text-white">About</a>
                     <a wire:navigate href="/services"
-                        class="font-semibold text-black w-fit dark:text-white">Services</a>
-                    <a wire:navigate href="/pricing" class="font-semibold text-black w-fit dark:text-white">Pricing</a>
-                    <a wire:navigate href="contact" class="font-semibold text-black w-fit dark:text-white">Contact</a>
-                    <a wire:navigate href="/case-studies" class="font-semibold text-black w-fit dark:text-white">Case
+                        class="text-zinc-800 w-fit dark:text-white">Services</a>
+                    <a wire:navigate href="/pricing" class="text-zinc-800 w-fit dark:text-white">Pricing</a>
+                    <a wire:navigate href="contact" class="text-zinc-800 w-fit dark:text-white">Contact</a>
+                    <a wire:navigate href="/case-studies" class="text-zinc-800 w-fit dark:text-white">Case
                         studies</a>
                 </div>
 
