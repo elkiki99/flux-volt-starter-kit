@@ -47,9 +47,9 @@
     </div>
 
     <!-- Footer -->
-    <footer class="border-t bg-zinc-50 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700">
+    {{-- <footer>
         <livewire:layout.footer />
-    </footer>
+    </footer> --}}
 
     @fluxScripts
 

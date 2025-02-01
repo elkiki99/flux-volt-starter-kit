@@ -7,10 +7,10 @@ new class extends Component {
 }; ?>
 
 
-<div class="px-12 py-6 mx-auto space-y-6">
+<div class="container px-6 py-6 mx-auto space-y-6">
     <div class="py-0 lg:py-6">
-        <div class="flex flex-col items-start justify-between gap-4 py-6 lg:items-end lg:flex-row">
-            <div class="space-y-6">
+        <div class="flex flex-col items-start justify-between gap-8 py-6 lg:items-end lg:flex-row">
+            <div class="w-full space-y-6 lg:w-1/2">
                 <div class="flex gap-4">
                     <x-application-logo class="text-black fill-current dark:text-white size-10" />
                     <flux:heading class="!text-4xl">{{ config('app.name') }}</flux:heading>
@@ -53,7 +53,7 @@ new class extends Component {
                 </ul>
             </div>
 
-            <div class="flex flex-col gap-4 text-start">
+            <div class="flex flex-col w-full gap-4 text-start lg:w-1/2">
                 <flux:subheading>Stay ahead in the curve! <br>Subscribe now for expert insights.
                 </flux:subheading>
                 <div class="flex items-center gap-4">
@@ -63,16 +63,12 @@ new class extends Component {
             </div>
         </div>
 
-        <div class="flex flex-col justify-between gap-6 py-6 mt-0 lg:mt-6 lg:flex-row lg:py-0">
+        <div class="flex flex-col justify-between gap-8 py-6 mt-0 lg:mt-6 lg:flex-row lg:py-0">
             <div class="w-full space-y-6 lg:w-1/2">
                 <div>
                     <a wire:navigate href="/pricing">
                         <flux:card
-                            class="relative max-w-full !bg-zinc-900 lg:max-w-md rounded-xl border border-yellow-500/10 
-                                   shadow-lg shadow-yellow-500/5 p-10 transition-all duration-300
-                                   before:absolute before:inset-0 before:rounded-xl before:border before:border-yellow-500/20 
-                                   before:blur-[10px] before:opacity-0 hover:before:opacity-50
-                                   hover:border-yellow-500/30 hover:shadow-yellow-500/20">
+                            class="!bg-transparent hover:border-yellow-50/50">
                             <flux:heading class="text-center !text-xl">Our prices</flux:heading>
                             <div class="flex items-center justify-center gap-2">
                                 <flux:subheading>We offer a wide range of pricing</flux:subheading>
@@ -85,11 +81,7 @@ new class extends Component {
                 <div>
                     <a wire:navigate href="/contact">
                         <flux:card
-                            class="relative max-w-full !bg-zinc-900 lg:max-w-md rounded-xl border border-yellow-500/10 
-                                   shadow-lg shadow-yellow-500/5 p-10 transition-all duration-300
-                                   before:absolute before:inset-0 before:rounded-xl before:border before:border-yellow-500/20 
-                                   before:blur-[10px] before:opacity-0 hover:before:opacity-50
-                                   hover:border-yellow-500/30 hover:shadow-yellow-500/20">
+                            class="!bg-transparent hover:border-yellow-50/50">
                             <flux:heading class="text-center !text-xl">Get in touch</flux:heading>
                             <div class="flex items-center justify-center gap-2">
                                 <flux:subheading>Got any questions? We're here to help</flux:subheading>

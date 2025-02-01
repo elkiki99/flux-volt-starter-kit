@@ -1,5 +1,10 @@
 <x-app-layout>
     <flux:main container>
+        <!-- Glowing Blob -->
+        <div
+            class="absolute top-1/4 right-1/4 w-96 h-96 dark:lg:bottom-1/4 dark:lg:right-1/4 dark:bottom-3/4 dark:right-1/2 dark:lg:w-96 dark:lg:h-96 dark:h-48 dark:w-48 dark:bg-yellow-100 bg-yellow-600 blur-[150px] animate-pulse opacity-40 rounded-full">
+        </div>
+            
         <div class="space-y-6">
             <div class="space-y-3">
                 <div class="!text-center lg:!text-start">
