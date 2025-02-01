@@ -68,7 +68,7 @@ new class extends Component {
                 <div>
                     <a wire:navigate href="/pricing">
                         <flux:card
-                            class="!bg-transparent hover:border-yellow-50/50">
+                            class="!bg-transparent hover:border-yellow-50/50 transition duration-300">
                             <flux:heading class="text-center !text-xl">Our prices</flux:heading>
                             <div class="flex items-center justify-center gap-2">
                                 <flux:subheading>We offer a wide range of pricing</flux:subheading>
@@ -81,7 +81,7 @@ new class extends Component {
                 <div>
                     <a wire:navigate href="/contact">
                         <flux:card
-                            class="!bg-transparent hover:border-yellow-50/50">
+                            class="!bg-transparent hover:border-yellow-50/50 transition duration-300">
                             <flux:heading class="text-center !text-xl">Get in touch</flux:heading>
                             <div class="flex items-center justify-center gap-2">
                                 <flux:subheading>Got any questions? We're here to help</flux:subheading>

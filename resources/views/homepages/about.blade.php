@@ -34,7 +34,7 @@
                 </div>
 
                 <div class="flex items-center justify-center gap-4 lg:justify-start">
-                    <flux:button wire:navigate href="/contact" icon-trailing="arrow-up-right">Contact us
+                    <flux:button wire:navigate href="/services" icon-trailing="arrow-up-right">Our services
                     </flux:button>
                     <flux:button variant="primary" wire:navigate href="/pricing" icon-trailing="arrow-up-right">Get
                         started
@@ -57,7 +57,7 @@
 
             <div class="flex flex-col py-6 space-y-6">
                 <flux:card
-                    class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 !border-transparent hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
+                    class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
                     <a href="/services" wire:navigate>
 
                         <div class="flex flex-col-reverse gap-4 lg:flex-row">
@@ -82,7 +82,7 @@
                 <flux:separator class="!mb-6 !mt-12" />
 
                 <flux:card
-                    class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 !border-transparent hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
+                    class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
                     <a href="/services" wire:navigate>
 
                         <div class="flex flex-col-reverse gap-4 lg:flex-row">
@@ -95,7 +95,8 @@
                                 <div>
                                     <flux:heading class="!text-4xl mb-3">02</flux:heading>
                                     <flux:heading class="!text-2xl">Optimizing for Speed & Performance</flux:heading>
-                                    <flux:subheading class="">We ensure fast loading times and smooth performance to improve user engagement and SEO rankings.</flux:subheading>
+                                    <flux:subheading class="">We ensure fast loading times and smooth performance
+                                        to improve user engagement and SEO rankings.</flux:subheading>
                                 </div>
 
                             </div>
@@ -106,7 +107,7 @@
                 <flux:separator class="!mb-6 !mt-12" />
 
                 <flux:card
-                    class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 !border-transparent hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
+                    class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
                     <a href="/services" wire:navigate>
 
                         <div class="flex flex-col-reverse gap-4 lg:flex-row">
@@ -119,18 +120,18 @@
                                 <div>
                                     <flux:heading class="!text-4xl mb-3">03</flux:heading>
                                     <flux:heading class="!text-2xl">Leveraging Data-Driven Decisions</flux:heading>
-                                    <flux:subheading class="">We use analytics and user feedback to make informed decisions and continuously refine your website’s strategy.</flux:subheading>
+                                    <flux:subheading class="">We use analytics and user feedback to make informed
+                                        decisions and continuously refine your website’s strategy.</flux:subheading>
                                 </div>
-
                             </div>
                         </div>
                     </a>
                 </flux:card>
 
                 <flux:separator class="!mb-6 !mt-12" />
-                
+
                 <flux:card
-                    class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 !border-transparent hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
+                    class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
                     <a href="/services" wire:navigate>
 
                         <div class="flex flex-col-reverse gap-4 lg:flex-row">
@@ -143,7 +144,8 @@
                                 <div>
                                     <flux:heading class="!text-4xl mb-3">04</flux:heading>
                                     <flux:heading class="!text-2xl">Develop a Strong Content Strategy</flux:heading>
-                                    <flux:subheading class="">Provide valuable, relevant, and high-quality content that educates, informs, and engages your audience.</flux:subheading>
+                                    <flux:subheading class="">Provide valuable, relevant, and high-quality content
+                                        that educates, informs, and engages your audience.</flux:subheading>
                                 </div>
 
                             </div>
@@ -152,9 +154,9 @@
                 </flux:card>
 
                 <flux:separator class="!mb-6 !mt-12" />
-                
+
                 <flux:card
-                    class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 !border-transparent hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
+                    class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
                     <a href="/services" wire:navigate>
 
                         <div class="flex flex-col-reverse gap-4 lg:flex-row">
@@ -167,7 +169,8 @@
                                 <div>
                                     <flux:heading class="!text-4xl mb-3">05</flux:heading>
                                     <flux:heading class="!text-2xl">Enhance Mobile-First Experience</flux:heading>
-                                    <flux:subheading class="">Prioritize mobile responsiveness and design to capture the growing number of users on mobile devices.</flux:subheading>
+                                    <flux:subheading class="">Prioritize mobile responsiveness and design to
+                                        capture the growing number of users on mobile devices.</flux:subheading>
                                 </div>
 
                             </div>
@@ -298,40 +301,40 @@
             </div>
 
             <ul class="grid max-w-4xl grid-cols-2 gap-4 mx-auto lg:grid-cols-3">
-                <flux:card class="!bg-transparent !p-8">
+                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
-                        <flux:icon.cursor-arrow-ripple class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:icon.cursor-arrow-ripple class="justify-center text-amber-400" />
                         <flux:heading class="text-center !text-xl !font-thin">Human-centered design</flux:heading>
                     </li>
                 </flux:card>
-                <flux:card class="!bg-transparent !p-8">
+                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
-                        <flux:icon.cube-transparent class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:icon.cube-transparent class="justify-center text-amber-400" />
                         <flux:heading class="text-center !text-xl !font-thin">Simplicity with depth</flux:heading>
                     </li>
                 </flux:card>
-                <flux:card class="!bg-transparent !p-8">
+                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
-                        <flux:icon.squares-plus class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:icon.squares-plus variant="mini" class="justify-center text-amber-400" />
                         <flux:heading class="text-center !text-xl !font-thin">Timeless aesthetics</flux:heading>
                     </li>
                 </flux:card>
-                <flux:card class="!bg-transparent !p-8">
+                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
-                        <flux:icon.arrow-trending-up class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:icon.arrow-trending-up class="justify-center text-amber-400" />
                         <flux:heading class="text-center !text-xl !font-thin">Performance as a standard</flux:heading>
                     </li>
                 </flux:card>
-                <flux:card class="!bg-transparent !p-8">
+                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
-                        <flux:icon.lock-closed class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:icon.lock-open class="justify-center text-amber-400" />
                         <flux:heading class="text-center !text-xl !font-thin">Ethical & transparent practices
                         </flux:heading>
                     </li>
                 </flux:card>
-                <flux:card class="!bg-transparent !p-8">
+                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
-                        <flux:icon.signal class="text-amber-400 size-10 justify-center stroke-[1]" />
+                        <flux:icon.signal class="justify-center text-amber-400" />
                         <flux:heading class="text-center !text-xl !font-thin">Relentless curiosity</flux:heading>
                     </li>
                 </flux:card>

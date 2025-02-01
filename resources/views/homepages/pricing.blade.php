@@ -40,24 +40,24 @@
 
                                 <div class="flex flex-col gap-2">
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.fire class="text-amber-600 dark:text-amber-400" variant="solid" />
+                                        <flux:icon.fire class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                         <flux:heading>Monthly support</flux:heading>
                                     </div>
 
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400"
+                                        <flux:icon.check-circle class="text-green-600 dark:text-green-400"
                                             variant="solid" />
                                         <flux:heading>Advanced website design</flux:heading>
                                     </div>
 
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400"
+                                        <flux:icon.check-circle class="text-green-600 dark:text-green-400"
                                             variant="solid" />
                                         <flux:heading>SEO optimization</flux:heading>
                                     </div>
 
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400"
+                                        <flux:icon.check-circle class="text-green-600 dark:text-green-400"
                                             variant="solid" />
                                         <flux:heading>Performance analytics</flux:heading>
                                     </div>
@@ -70,13 +70,13 @@
                     </div>
 
                     <div
-                        class="flex flex-col flex-1 gap-2 p-2 border-2 border-yellow-800 rounded-2xl dark:border-yellow-200 bg-zinc-100 dark:bg-zinc-900 lg:-mb-4">
+                        class="flex flex-col flex-1 gap-2 p-2 border-2 border-green-800 rounded-2xl dark:border-green-200 bg-zinc-100 dark:bg-zinc-900 lg:-mb-4">
 
                         <!-- Premium Plan -->
                         <flux:card class="flex flex-col h-full p-6 bg-white rounded-lg shadow-sm md:p-8 lg:pb-12">
                             <div class="space-y-6">
                                 <div class="space-y-2">
-                                    <flux:badge icon="fire" size="sm" color="yellow" class="mb-1">Popular
+                                    <flux:badge icon="fire" size="sm" color="green" class="mb-1">Popular
                                         package
                                     </flux:badge>
                                     <flux:subheading class="!text-sm">Premium Plan</flux:subheading>
@@ -85,30 +85,30 @@
 
                                 <div class="flex flex-col gap-2">
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.fire class="text-amber-600 dark:text-amber-400" variant="solid" />
+                                        <flux:icon.fire class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                         <flux:heading>Weekly support</flux:heading>
                                     </div>
 
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400"
+                                        <flux:icon.check-circle class="text-green-600 dark:text-green-400"
                                             variant="solid" />
                                         <flux:heading>Custom website design</flux:heading>
                                     </div>
 
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400"
+                                        <flux:icon.check-circle class="text-green-600 dark:text-green-400"
                                             variant="solid" />
                                         <flux:heading>eCommerce integration</flux:heading>
                                     </div>
 
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400"
+                                        <flux:icon.check-circle class="text-green-600 dark:text-green-400"
                                             variant="solid" />
                                         <flux:heading>Marketing strategy</flux:heading>
                                     </div>
 
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400"
+                                        <flux:icon.check-circle class="text-green-600 dark:text-green-400"
                                             variant="solid" />
                                         <flux:heading>Advanced analytics</flux:heading>
                                     </div>
@@ -134,24 +134,24 @@
 
                                 <div class="flex flex-col gap-2">
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.fire class="text-amber-600 dark:text-amber-400" variant="solid" />
+                                        <flux:icon.fire class="text-yellow-600 dark:text-yellow-400" variant="solid" />
                                         <flux:heading>24/7 support</flux:heading>
                                     </div>
 
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400"
+                                        <flux:icon.check-circle class="text-green-600 dark:text-green-400"
                                             variant="solid" />
                                         <flux:heading>Comprehensive website</flux:heading>
                                     </div>
 
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400"
+                                        <flux:icon.check-circle class="text-green-600 dark:text-green-400"
                                             variant="solid" />
                                         <flux:heading>Custom animations</flux:heading>
                                     </div>
 
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.check-circle class="text-yellow-600 dark:text-yellow-400"
+                                        <flux:icon.check-circle class="text-green-600 dark:text-green-400"
                                             variant="solid" />
                                         <flux:heading>Lifetime support</flux:heading>
                                     </div>

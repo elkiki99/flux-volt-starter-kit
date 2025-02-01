@@ -61,6 +61,6 @@ new class extends Component {
     </flux:radio.group>
     
     <div class="flex justify-end">
-        <flux:button variant="primary" type="submit">Contact us</flux:button>
+        <flux:button variant="filled" type="submit">Contact us</flux:button>
     </div>
 </form>
