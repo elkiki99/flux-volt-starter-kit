@@ -34,32 +34,54 @@ new class extends Component {
 }; ?>
 
 <form wire:submit="contactUs" class="space-y-6">
-    <flux:input label="Name" type="text" placeholder="Your name" id="name" wire:model='name' id="name" required
-        autofocus autocomplete />
+    <div class="grid grid-cols-2 gap-x-4 gap-y-6">
+        <flux:input class="flex-1 w-full" label="Name" type="text" placeholder="Your name" id="name"
+            wire:model='name' required autofocus autocomplete />
 
-    <flux:input label="Email" type="email" id="email" wire:model='email' placeholder="Your email" required
-        autocomplete="username"></flux:input>
+        <flux:input class="flex-1 w-full" label="Email" type="email" id="email" wire:model='email'
+            placeholder="Your email" required autocomplete="username"></flux:input>
+
+        <flux:input class="flex-1 w-full" label="Company" type="text" placeholder="Your company name" id="company"
+            wire:model='company' required autofocus autocomplete />
+
+        <div class="space-y-3">
+            <flux:label>Website link</flux:label>
+            
+            <flux:input.group>
+                <flux:input.group.prefix>https://</flux:input.group.prefix>
+
+                <flux:input class="flex-1 w-full" type="url" id="website" wire:model='website'
+                    placeholder="example.com" required autocomplete="website"></flux:input>
+            </flux:input.group>
+        </div>
+
+        <div class="">
+            <flux:select label="Industry" wire:model="industry" placeholder="Choose industry..." variant="listbox"
+                selected-suffix="industries selected" multiple>
+                <flux:option selected>E-commerce</flux:option>
+                <flux:option>UX/UI design</flux:option>
+                <flux:option>App development</flux:option>
+                <flux:option>Web development</flux:option>
+                <flux:option>Backend development</flux:option>
+                <flux:option>Software development</flux:option>
+                <flux:option>Other</flux:option>
+            </flux:select>
+        </div>
+
+        <flux:select label="Budget" wire:model="budget" placeholder="Choose budget..." variant="listbox">
+            <flux:option>
+                -$3k</flux:option>
+            <flux:option>
+                $3k - $6k</flux:option>
+            <flux:option>
+                $6k - $9k</flux:option>
+            <flux:option>
+                $9k+</flux:option>
+        </flux:select>
+    </div>
 
     <flux:textarea label="Message" wire:model='message' placeholder="Your message" required></flux:textarea>
 
-
-    <flux:select label="Industry" wire:model='industry' placeholder="Choose industry..." variant="listbox"
-        selected-suffix="industries selected" multiple>
-        <flux:option>E-commerce</flux:option>
-        <flux:option>UX/UI design</flux:option>
-        <flux:option>App development</flux:option>
-        <flux:option>Web development</flux:option>
-        <flux:option>Backend development</flux:option>
-        <flux:option>Software development</flux:option>
-        <flux:option>Other</flux:option>
-    </flux:select>
-
-    <flux:radio.group label="Budget" wire:model="budget" variant="cards" class="flex-col">
-        <flux:radio value="growth-plan" label="Growth Plan" description="<$3,000 USD" />
-        <flux:radio value="premium-plan" label="Premium Plan" description="$3,000 USD - $6,000 USD" />
-        <flux:radio value="elite-plan" label="Elite Plan" description="$6,000 USD> " />
-    </flux:radio.group>
-    
     <div class="flex justify-end">
         <flux:button variant="filled" type="submit">Contact us</flux:button>
     </div>
