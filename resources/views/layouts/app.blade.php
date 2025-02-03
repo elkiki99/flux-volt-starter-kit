@@ -40,9 +40,15 @@
     </main>
 
     <!-- Footer -->
-    <footer>
-        <livewire:layout.footer />
-    </footer>
+    @if (request()->routeIs('contact') || request()->routeIs('pricing'))
+        <footer>
+            <livewire:layout.footer-2 />
+        </footer>
+    @else
+        <footer>
+            <livewire:layout.footer />
+        </footer>
+    @endIf
 
     @fluxScripts
 

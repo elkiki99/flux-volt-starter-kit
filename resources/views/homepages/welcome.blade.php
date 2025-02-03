@@ -18,10 +18,8 @@
 
                 <flux:heading
                     class="!text-5xl md:!text-7xl font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
-                    Lead the way in the digital <br class="hidden lg:block">crowd and unlock your <br
-                        class="hidden lg:block">full <span
-                        class="!text-5xl font-black text-transparent md:!text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">growth
-                        potential</span></flux:heading>
+                    Transform low engagement<br class="hidden lg:block"> into <span
+                        class="!text-5xl font-black text-transparent md:!text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">paying customers</span></flux:heading>
                 <flux:subheading
                     class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">Cut
                     through the noise and build a strong, lasting
@@ -38,7 +36,9 @@
             </div>
 
             <!-- Pines UI Marquee -->
-            <livewire:components.marquee class="!mb-6" />
+            <div class="!my-6">
+                <livewire:components.marquee />
+            </div>
         </section>
 
         <!-- More of us (services, about us, case studies) -->
@@ -208,79 +208,73 @@
             <div class="flex flex-col py-6 space-y-6">
                 <flux:card
                     class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 !border-transparent hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
-                    <a href="/case-studies" wire:navigate>
 
-                        <div class="block gap-4 lg:flex">
-                            <div class="w-full lg:w-1/2">
-                                <img class="object-cover md:w-full rounded-lg md:h-[60vh]"
-                                    src="{{ asset('case_studie-1.jpg') }}">
-                            </div>
+                    <div class="block gap-4 lg:flex">
+                        <div class="w-full lg:w-1/2">
+                            <img class="object-cover md:w-full rounded-lg md:h-[60vh]"
+                                src="{{ asset('case_studie-1.jpg') }}">
+                        </div>
 
+                        <div
+                            class="lg:w-1/2 w-full flex flex-col md:flex-row-reverse lg:flex-col justify-start min-h-[60vh] gap-4">
                             <div
-                                class="lg:w-1/2 w-full flex flex-col md:flex-row-reverse lg:flex-col justify-start min-h-[60vh] gap-4">
-                                <div
-                                    class="flex flex-row w-full gap-4 pt-4 md:flex-col md:w-1/2 lg:flex lg:flex-row lg:w-full lg:space-y-0 lg:pt-0">
-                                    <img class="object-cover rounded-lg h-[15vh] sm:h-[25vh] w-1/2 md:w-full lg:w-1/2"
-                                        src="{{ asset('case_studie-13.webp') }}">
-                                    <img class="object-cover rounded-lg h-[15vh] sm:h-[25vh] w-1/2 md:w-full lg:w-1/2"
-                                        src="{{ asset('case_studie-12.webp') }}">
+                                class="flex flex-row w-full gap-4 pt-4 md:flex-col md:w-1/2 lg:flex lg:flex-row lg:w-full lg:space-y-0 lg:pt-0">
+                                <img class="object-cover rounded-lg h-[15vh] sm:h-[25vh] w-1/2 md:w-full lg:w-1/2"
+                                    src="{{ asset('case_studie-13.webp') }}">
+                                <img class="object-cover rounded-lg h-[15vh] sm:h-[25vh] w-1/2 md:w-full lg:w-1/2"
+                                    src="{{ asset('case_studie-12.webp') }}">
+                            </div>
+                            <div class="flex flex-col flex-1 w-full gap-4 md:py-4 md:w-1/2 lg:w-full lg:p-0">
+                                <div class="items-start flex-1 text-start">
+                                    <flux:heading class="!text-xl !px-0">
+                                        Technology-based website that resulted in a 50% increase in sales
+                                    </flux:heading>
                                 </div>
-                                <div class="flex flex-col flex-1 w-full gap-4 md:py-4 md:w-1/2 lg:w-full lg:p-0">
-                                    <div class="items-start flex-1 text-start">
-                                        <flux:header class="text-xl !px-0">
-                                            Technology-based website that resulted in a 50% increase in sales
-                                        </flux:header>
-                                    </div>
-                                    <div class="mt-auto">
-                                        <div class="flex items-end">
-                                            <flux:header class="text-9xl !px-0">x40</flux:header>
-                                            <flux:header class="!px-0">traffic SEO</flux:header>
-                                        </div>
-                                        <flux:separator class="hidden md:block" />
-                                    </div>
+                                <div class="flex items-end gap-2">
+                                    <flux:heading class="!text-7xl md:!text-9xl !px-0">40x</flux:heading>
+                                    <flux:subheading class="!px-0 pb-4 md:pb-6">traffic SEO</flux:subheading>
                                 </div>
+                                <flux:separator class="hidden md:block" />
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </flux:card>
 
                 <flux:separator class="!mb-6 !mt-12" />
 
                 <flux:card
                     class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 !border-transparent hover:!border-zinc-200 hover:!cursor-pointer !bg-transparent">
-                    <a href="/case-studies" wire:navigate>
 
-                        <div class="block gap-4 lg:flex">
-                            <div class="w-full lg:w-1/2">
-                                <img class="object-cover w-full rounded-lg md:h-[60vh]"
-                                    src="{{ asset('case_studie-5.webp') }}">
-                            </div>
+                    <div class="block gap-4 lg:flex">
+                        <div class="w-full lg:w-1/2">
+                            <img class="object-cover w-full rounded-lg md:h-[60vh]"
+                                src="{{ asset('case_studie-5.webp') }}">
+                        </div>
 
+                        <div
+                            class="lg:w-1/2 w-full flex flex-col md:flex-row-reverse lg:flex-col justify-start min-h-[60vh] gap-4">
                             <div
-                                class="lg:w-1/2 w-full flex flex-col md:flex-row-reverse lg:flex-col justify-start min-h-[60vh] gap-4">
-                                <div
-                                    class="flex flex-row w-full gap-4 pt-4 md:flex-col md:w-1/2 lg:flex lg:flex-row lg:w-full lg:space-y-0 lg:pt-0">
-                                    <img class="object-cover rounded-lg h-[15vh] sm:h-[25vh] w-1/2 md:w-full lg:w-1/2"
-                                        src="{{ asset('case_studie-4.webp') }}">
-                                    <img class="object-cover rounded-lg h-[15vh] sm:h-[25vh] w-1/2 md:w-full lg:w-1/2"
-                                        src="{{ asset('case_studie-6.webp') }}">
+                                class="flex flex-row w-full gap-4 pt-4 md:flex-col md:w-1/2 lg:flex lg:flex-row lg:w-full lg:space-y-0 lg:pt-0">
+                                <img class="object-cover rounded-lg h-[15vh] sm:h-[25vh] w-1/2 md:w-full lg:w-1/2"
+                                    src="{{ asset('case_studie-4.webp') }}">
+                                <img class="object-cover rounded-lg h-[15vh] sm:h-[25vh] w-1/2 md:w-full lg:w-1/2"
+                                    src="{{ asset('case_studie-6.webp') }}">
+                            </div>
+                            <div class="flex flex-col flex-1 w-full gap-4 md:py-4 md:w-1/2 lg:w-full lg:p-0">
+                                <div class="items-start flex-1 text-start">
+                                    <flux:heading class="!text-xl !px-0">UX/UI improvement resulting in a more
+                                        engaging user experience</flux:heading>
                                 </div>
-                                <div class="flex flex-col flex-1 w-full gap-4 md:py-4 md:w-1/2 lg:w-full lg:p-0">
-                                    <div class="items-start flex-1 text-start">
-                                        <flux:header class="text-xl !px-0">UX/UI improvement resulting in a more
-                                            engaging user experience</flux:header>
+                                <div class="mt-auto">
+                                    <div class="flex items-end gap-2">
+                                        <flux:heading class="!text-7xl md:!text-9xl !px-0">3x</flux:heading>
+                                        <flux:subheading class="!px-0 pb-4 md:pb-6">click-through rate</flux:subheading>
                                     </div>
-                                    <div class="mt-auto">
-                                        <div class="flex items-end">
-                                            <flux:header class="text-9xl !px-0">x3</flux:header>
-                                            <flux:header class="!px-0">click-through rate</flux:header>
-                                        </div>
-                                        <flux:separator class="hidden md:block" />
-                                    </div>
+                                    <flux:separator class="hidden md:block" />
                                 </div>
                             </div>
                         </div>
-                    </a>
+                    </div>
                 </flux:card>
 
                 <div class="flex justify-end">
@@ -302,7 +296,7 @@
                 </flux:subheading>
             </div>
 
-            <ul class="grid max-w-4xl grid-cols-2 gap-4 mx-auto lg:grid-cols-3">
+            <ul class="grid max-w-4xl grid-cols-1 gap-4 mx-auto sm:grid-cols-2 lg:grid-cols-3">
                 <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.cursor-arrow-ripple class="justify-center text-amber-400" />

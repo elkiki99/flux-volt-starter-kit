@@ -9,6 +9,7 @@ use Illuminate\Mail\Mailable;
 use Illuminate\Mail\Mailables\Content;
 use Illuminate\Mail\Mailables\Envelope;
 use Illuminate\Queue\SerializesModels;
+use Illuminate\Mail\Mailables\Attachment;
 
 class ContactUs extends Mailable
 {
@@ -22,13 +23,19 @@ class ContactUs extends Mailable
         public string $email,
         public string $message,
         public array $industry,
-        public string $budget
+        public string $budget,
+        public string $company,
+        public string $website,
+        public ?string $attachment = null
     ) {
         $this->name = $name;
         $this->email = $email;
         $this->message = $message;
         $this->industry = $industry;
         $this->budget = $budget;
+        $this->company = $company;
+        $this->website = $website;
+        $this->attachment = $attachment;
     }
 
     /**
@@ -57,7 +64,9 @@ class ContactUs extends Mailable
                 'email' => $this->email,
                 'message' => $this->message,
                 'industry' => $this->industry,
-                'budget' => $this->budget
+                'budget' => $this->budget,
+                'company' => $this->company,
+                'website' => $this->website
             ]
         );
     }
@@ -69,6 +78,8 @@ class ContactUs extends Mailable
      */
     public function attachments(): array
     {
-        return [];
+        return $this->attachment
+            ? [Attachment::fromPath(storage_path("app/public/{$this->attachment}"))]
+            : [];
     }
 }

@@ -33,17 +33,18 @@ new class extends Component {
     <flux:navbar class="-mb-1 max-md:hidden">
         <flux:navbar.item wire:navigate href="/about">About</flux:navbar.item>
         <flux:navbar.item wire:navigate href="/services">Services</flux:navbar.item>
+        {{-- <flux:navbar.item wire:navigate href="/case-studies">Use Cases</flux:navbar.item> --}}
         <flux:navbar.item wire:navigate href="/pricing">Pricing</flux:navbar.item>
         <flux:navbar.item wire:navigate href="/contact">Contact</flux:navbar.item>
 
         <flux:dropdown class="max-md:hidden">
-            <flux:navbar.item icon-trailing="chevron-down">More</flux:navbar.item>
+            <flux:navbar.item icon-trailing="chevron-down">Resources</flux:navbar.item>
 
             <flux:navmenu>
-                <flux:navmenu.item href="#">Marketing site</flux:navmenu.item>
-                <flux:navmenu.item href="#">Case studies</flux:navmenu.item>
-                <flux:navmenu.item href="#">FAQs</flux:navmenu.item>
-                <flux:navmenu.item href="#">Blog</flux:navmenu.item>
+                {{-- <flux:navmenu.item href="#">Marketing site</flux:navmenu.item> --}}
+                <flux:navmenu.item href="/case-studies">Case studies</flux:navmenu.item>
+                {{-- <flux:navmenu.item href="#">FAQs</flux:navmenu.item> --}}
+                <flux:navmenu.item href="/blog">Blog</flux:navmenu.item>
             </flux:navmenu>
         </flux:dropdown>
 

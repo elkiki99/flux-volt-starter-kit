@@ -3,9 +3,9 @@
         <!-- Hero section -->
         <section class="flex h-[85vh] pb-6 overflow-hidden">
             <!-- Video background -->
-            <video autoplay loop muted class="absolute inset-0 object-cover w-full h-full">
+            {{-- <video autoplay loop muted class="absolute inset-0 object-cover w-full h-full">
                 <source src="{{ asset('video1.mp4') }}" type="video/mp4">
-            </video>
+            </video> --}}
 
             <!-- Gradient -->
             <div class="absolute inset-0 bg-gradient-to-b from-transparent to-zinc-900"></div>
@@ -13,7 +13,9 @@
             <div class="z-10 pb-10 my-6 mt-auto space-y-6">
                 <div class="space-y-3">
                     <div class="!text-center lg:!text-start">
-                        <flux:badge class="!text-yellow-200 [&_button]:!text-yellow-200 !bg-yellow-400/40 [&:is(button)]:hover:!bg-yellow-400/50" icon="lock-closed" size="sm" variant="pill">Security first
+                        <flux:badge
+                            class="!text-yellow-200 [&_button]:!text-yellow-200 !bg-yellow-400/40 [&:is(button)]:hover:!bg-yellow-400/50"
+                            icon="lock-closed" size="sm" variant="pill">Security first
                         </flux:badge>
                     </div>
 
@@ -249,7 +251,8 @@
                     <div class="absolute space-y-3 left-4 bottom-4">
                         <div>
                             <flux:heading class="!text-2xl !text-white">Camila Fernández</flux:heading>
-                            <flux:subheading class="!text-white/70">Creative Solutions & Marketing Expert</flux:subheading>
+                            <flux:subheading class="!text-white/70">Creative Solutions & Marketing Expert
+                            </flux:subheading>
                         </div>
                         <ul class="ml-[-1.25px] flex space-x-2">
                             <li class="p-0.5">
@@ -299,7 +302,7 @@
                 </flux:subheading>
             </div>
 
-            <ul class="grid max-w-4xl grid-cols-2 gap-4 mx-auto lg:grid-cols-3">
+            <ul class="grid max-w-4xl grid-cols-1 gap-4 mx-auto sm:grid-cols-2 lg:grid-cols-3">
                 <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.cursor-arrow-ripple class="justify-center text-amber-400" />
@@ -348,45 +351,79 @@
         </section>
 
         <!-- FAQs -->
-        {{-- <flux:accordion class="max-w-3xl py-6 mx-auto mt-6 lg:mx-none lg:max-w-full">
-            <flux:accordion.item expanded transition heading="Our story">
-                We are a dynamic team of visionary strategists, creative designers, and tech-savvy
-                developers.
-                Together, we craft digital experiences that leave a lasting impact, helping our clients
-                transform
-                their ideas into thriving digital realities.
-            </flux:accordion.item>
-            <flux:accordion.item transition heading="Our mission">
-                Our mission is to empower businesses by providing cutting-edge digital solutions tailored to
-                their
-                unique goals. We aim to bridge the gap between innovation and accessibility, enabling our
-                clients to
-                thrive in the digital landscape.
-            </flux:accordion.item>
-            <flux:accordion.item transition heading="Our approach">
-                At the heart of our process is a commitment to understanding your vision. We combine
-                data-driven insights, creative ingenuity, and agile methodologies to deliver solutions that
-                are both impactful and sustainable.
-            </flux:accordion.item>
+        <section class="min-h-screen py-6 space-y-6">
+            <flux:heading class="font-bold text-center !text-4xl lg:!text-5xl py-6">Get to know us a little better
+            </flux:heading>
 
-            <flux:accordion.item transition heading="Our values">
-                At the core of our agency lies a commitment to excellence, collaboration, and innovation. We
-                prioritize understanding our clients' needs and delivering solutions that not only meet but
-                exceed
-                their expectations, fostering meaningful and lasting partnerships.
-            </flux:accordion.item>
-            <flux:accordion.item transition heading="Our specialty">
-                We specialize in creating tailored digital strategies, cutting-edge web development, and
-                visually
-                compelling designs. Our expertise lies in turning complex challenges into seamless
-                solutions,
-                ensuring your business stands out in the competitive digital world.
-            </flux:accordion.item>
-            <flux:accordion.item transition heading="Our vision">
-                Our vision is to be a trusted global leader in digital transformation. We aspire to empower
-                businesses of all sizes by providing innovative, sustainable, and impactful digital
-                solutions that drive growth and create a positive impact on the communities we serve.
-            </flux:accordion.item>
-        </flux:accordion> --}}
+            <div class="grid grid-cols-1 gap-8 mt-6 lg:grid-cols-3">
+                <flux:card class="w-full py-6 lg:col-span-1 !bg-transparent">
+                    <img class="rounded-lg" src="{{ asset('faq.jpg') }}">
+                </flux:card>
+
+                <flux:accordion exclusive transition class="w-full py-6 lg:col-span-2">
+                    <flux:accordion.item expanded>
+                        <flux:accordion.heading>Our story</flux:accordion.heading>
+                        <flux:accordion.content>
+                            We are a dynamic team of visionary strategists, creative designers, and tech-savvy
+                            developers. Together, we craft digital experiences that leave a lasting impact, helping
+                            our
+                            clients transform their ideas into thriving digital realities.
+                        </flux:accordion.content>
+                    </flux:accordion.item>
+
+                    <flux:accordion.item>
+                        <flux:accordion.heading>Our mission</flux:accordion.heading>
+                        <flux:accordion.content>
+                            Our mission is to empower businesses by providing cutting-edge digital solutions
+                            tailored to
+                            their unique goals. We aim to bridge the gap between innovation and accessibility,
+                            enabling
+                            our clients to thrive in the digital landscape.
+                        </flux:accordion.content>
+                    </flux:accordion.item>
+
+                    <flux:accordion.item>
+                        <flux:accordion.heading>Our approach</flux:accordion.heading>
+                        <flux:accordion.content>
+                            At the heart of our process is a commitment to understanding your vision. We combine
+                            data-driven insights, creative ingenuity, and agile methodologies to deliver solutions
+                            that
+                            are both impactful and sustainable.
+                        </flux:accordion.content>
+                    </flux:accordion.item>
+
+                    <flux:accordion.item>
+                        <flux:accordion.heading>Our values</flux:accordion.heading>
+                        <flux:accordion.content>
+                            At the core of our agency lies a commitment to excellence, collaboration, and
+                            innovation. We
+                            prioritize understanding our clients' needs and delivering solutions that not only meet
+                            but
+                            exceed their expectations, fostering meaningful and lasting partnerships.
+                        </flux:accordion.content>
+                    </flux:accordion.item>
+
+                    <flux:accordion.item>
+                        <flux:accordion.heading>Our specialty</flux:accordion.heading>
+                        <flux:accordion.content>
+                            We specialize in creating tailored digital strategies, cutting-edge web development, and
+                            visually compelling designs. Our expertise lies in turning complex challenges into
+                            seamless
+                            solutions, ensuring your business stands out in the competitive digital world.
+                        </flux:accordion.content>
+                    </flux:accordion.item>
+
+                    <flux:accordion.item>
+                        <flux:accordion.heading>Our vision</flux:accordion.heading>
+                        <flux:accordion.content>
+                            Our vision is to be a trusted global leader in digital transformation. We aspire to
+                            empower
+                            businesses of all sizes by providing innovative, sustainable, and impactful digital
+                            solutions that drive growth and create a positive impact on the communities we serve.
+                        </flux:accordion.content>
+                    </flux:accordion.item>
+                </flux:accordion>
+            </div>
+        </section>
     </flux:main>
 </x-app-layout>

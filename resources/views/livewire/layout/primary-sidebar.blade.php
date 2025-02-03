@@ -18,14 +18,15 @@ new class extends Component {
         <flux:navlist variant="outline">
             <flux:navlist.item wire:navigate icon="book-open" href="/about">About</flux:navlist.item>
             <flux:navlist.item wire:navigate icon="light-bulb" href="/services">Services</flux:navlist.item>
+            {{-- <flux:navlist.item wire:navigate icon="paper-clip" href="/case-studies">Use Cases</flux:navlist.item> --}}
             <flux:navlist.item wire:navigate icon="currency-dollar" href="/pricing">Pricing</flux:navlist.item>
             <flux:navlist.item wire:navigate icon="phone" href="/contact">Contact</flux:navlist.item>
 
-            <flux:navlist.group expandable heading="More">
-                <flux:navlist.item href="#">Marketing site</flux:navlist.item>
-                <flux:navlist.item href="#">Case studies</flux:navlist.item>
-                <flux:navlist.item href="#">FAQs</flux:navlist.item>
-                <flux:navlist.item href="#">Blog</flux:navlist.item>
+            <flux:navlist.group expandable heading="Resources">
+                {{-- <flux:navlist.item href="#">Marketing site</flux:navlist.item> --}}
+                <flux:navlist.item href="/case-studies">Case studies</flux:navlist.item>
+                {{-- <flux:navlist.item href="#">FAQs</flux:navlist.item> --}}
+                <flux:navlist.item href="/blog">Blog</flux:navlist.item>
             </flux:navlist.group>
         </flux:navlist>
 
