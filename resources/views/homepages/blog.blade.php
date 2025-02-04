@@ -1,54 +1,149 @@
 <x-app-layout>
     <flux:main container>
-        <div class="space-y-6">
-            <div class="space-y-3">
-                <div class="!text-center lg:!text-start">
-                    <p class="text-xs font-semibold text-gray-700 dark:hidden">BLOG</p>
-                    <p class="hidden text-xs font-semibold text-gray-300 dark:block">BLOG</p>
+        <!-- Hero section -->
+        <section class="flex flex-col min-h-[85vh] mb-12 space-y-6">
+            <!-- Gradient -->
+            <div class="space-y-12">
+                <div class="flex flex-col items-center justify-between text-center lg:items-end lg:text-start lg:flex-row">
+                    <flux:heading
+                        class="!text-5xl md:!text-7xl font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full">
+                        Blog by <span
+                            class="!text-5xl font-black text-transparent md:!text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">{{ config('app.name') }}</span>
+                    </flux:heading>
+
+                    <flux:subheading class="mt-3 mr-0 lg:mr-8 lg:mt-0">
+                        Your go-to blog for digital marketing, SEO & <br class="hidden lg:block">web performance.    
+                    </flux:subheading>
                 </div>
-
-                <flux:heading
-                    class="!text-4xl md:!text-5xl font-thin max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
-                    Whats up in the world of digital marketing <br class="hidden lg:block">and
-                    <span
-                        class="text-4xl font-black text-transparent md:text-5xl dark:from-teal-500 dark:via-teal-200 dark:to-teal-600 bg-gradient-to-r from-teal-600 via-teal-300 to-teal-500 bg-clip-text">
-                        online presence</span>
-                </flux:heading>
-                <flux:subheading
-                    class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">With
-                    your bussiness and our services, you will thrive by making you<br class="hidden lg:block"> grow your
-                    business and take it to the next level.
-                </flux:subheading>
             </div>
 
-            <flux:separator variant="subtle" />
+            <div class="py-6">
+                <flux:separator />
+            </div>
 
-            <div class="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4">
-                {{-- @forelse ($posts as $post) --}}
-                <article class="space-y-1">
-                    <a href="#" class="relative group">
-                        <img class="transition-all duration-500 rounded-lg group-hover:brightness-75" loading="lazy"
-                            src="{{ asset('php.jpg') }}" alt="Blog post image">
+            <flux:card
+                class="hover:!bg-zinc-50 transition-[border,background] duration-300 dark:hover:!border-zinc-700 !border dark:hover:!bg-zinc-800 hover:!border-zinc-200 hover:!cursor-pointer !p-0 !bg-transparent">
+                <div class="flex flex-col gap-4 lg:flex-row">
+                    <div class="w-full lg:w-1/2">
+                        <img class="object-cover w-full rounded-lg h-[60vh]" src="{{ asset('33.webp') }}">
+                    </div>
+
+                    <div class="flex flex-col justify-center w-full p-8 space-y-6 lg:w-1/2">
+                        <flux:subheading>News</flux:subheading>
+                        <flux:heading class="!text-3xl">Website awards 2025: {{ config('app.name') }}
+                            nominated
+                            in 3 categories</flux:heading>
+                        <flux:subheading class="">We focus on creating seamless, intuitive experiences
+                            that prioritize user needs and expectations.</flux:subheading>
+                        <flux:link href="#" wire:navigate>
+                            Read more
+                        </flux:link>
+                    </div>
+                </div>
+            </flux:card>
+        </section>
+
+        <!-- Main articles -->
+        <section class="min-h-screen py-6 space-y-6 ">
+            <flux:heading class="font-bold py-6 text-center !text-4xl lg:!text-5xl">Our latest content
+            </flux:heading>
+
+            <div class="grid grid-cols-1 gap-4 pt-6 sm:grid-cols-2 lg:grid-cols-3">
+                <a wire:navigate href="/blog">
+                    <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
+                        <img loading="lazy"
+                            class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
+                            src="{{ asset('success1.jpg') }}">
+                        <div class="p-4">
+                            <flux:subheading>SEO</flux:subheading>
+                            <flux:heading>How Cristal Electronics increased its organic traffic (SEO) by 540%
+                            </flux:heading>
+                        </div>
+                    </flux:card>
+                </a>
+
+                <a wire:navigate href="/blog">
+                    <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
+                        <img loading="lazy"
+                            class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
+                            src="{{ asset('success2.jpg') }}">
+                        <div class="p-4">
+                            <flux:subheading>Analytics</flux:subheading>
+                            <flux:heading>How Mountain Lion optimized their website speed by 40%</flux:heading>
+                        </div>
+                    </flux:card>
+                </a>
+
+                <a wire:navigate href="/blog">
+                    <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
+                        <img loading="lazy"
+                            class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
+                            src="{{ asset('success3.jpg') }}">
+                        <div class="p-4">
+                            <flux:subheading>Development</flux:subheading>
+                            <flux:heading>How our agency managed to deliver +30 websitesin 2024</flux:heading>
+                        </div>
+                    </flux:card>
+                </a>
+            </div>
+        </section>
+
+        <!-- Popular resources -->
+        <section class="min-h-screen py-6 space-y-6">
+            <flux:heading class="font-bold text-center py-6 !text-4xl lg:!text-5xl">Check out our most popular
+                resources
+            </flux:heading>
+
+            <div class="items-center gap-4 space-y-6 lg:flex lg:space-y-0">
+                <flux:card
+                    class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
+                    <a wire:navigate href="/blog">
+                        <img loading="lazy" class="object-cover w-full h-full rounded-lg" src="{{ asset('joe.jpg') }}">
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
+                        </div>
+                        <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">On page SEO optimization
+                        </flux:heading>
+                        <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
+                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
+                        </div>
                     </a>
+                </flux:card>
 
-                    <!-- Flex container for badge and button -->
-                    <div class="flex items-center justify-between">
-                        <flux:badge size="sm" variant="pill">Category</flux:badge>
-                        <flux:button href="#" variant="ghost" icon-trailing="arrow-up-right"></flux:button>
-                    </div>
+                <flux:card
+                    class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
+                    <a wire:navigate href="/blog">
+                        <img loading="lazy" class="object-cover w-full h-full rounded-lg" src="{{ asset('umb.jpg') }}">
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
+                        </div>
+                        <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">Web data & conversion
+                        </flux:heading>
+                        <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
+                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
+                        </div>
+                    </a>
+                </flux:card>
 
-                    <div>
-                        <flux:heading size="lg">How to use Flux Volt</flux:heading>
-                        <flux:subheading size="md">Learn how to use Flux Volt in this in-depth tutorial.
-                        </flux:subheading>
-                    </div>
-                </article>
-                {{-- </div> --}}
-
-                {{-- @empty
-                <p class="text-gray-500">No blog posts found.</p>
-                @endforelse --}}
+                <flux:card
+                    class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
+                    <a wire:navigate href="/blog">
+                        <img loading="lazy" class="object-cover w-full h-full rounded-lg"
+                            src="{{ asset('blog-3.webp') }}">
+                        <div
+                            class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
+                        </div>
+                        <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">Performance as a standard
+                        </flux:heading>
+                        <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
+                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
+                        </div>
+                    </a>
+                </flux:card>
             </div>
-        </div>
+        </section>
     </flux:main>
 </x-app-layout>

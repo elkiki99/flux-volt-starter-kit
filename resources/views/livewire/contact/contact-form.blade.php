@@ -113,5 +113,5 @@ new class extends Component {
 
     <flux:checkbox wire:model="terms" label="I agree to the terms and conditions" />
 
-    <flux:button class="!w-full" variant="filled" type="submit">Contact us</flux:button>
+    <flux:button class="!w-full" variant="primary" type="submit">Contact us</flux:button>
 </form>

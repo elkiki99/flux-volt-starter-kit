@@ -1,15 +1,5 @@
 <x-app-layout>
-    <!-- Glowing Blob -->
-    <div class="absolute top-1/4 right-1/4 w-96 h-96 dark:lg:bottom-1/4 dark:lg:right-1/4 dark:bottom-3/4 dark:right-1/2 dark:lg:w-96 dark:lg:h-96 dark:h-48 dark:w-48 dark:bg-yellow-100 bg-yellow-600 blur-[150px] animate-pulse opacity-40 rounded-full"
-        style="pointer-events: none;">
-    </div>
-
     <flux:main container>
-        <!-- Glowing Blob -->
-        <div class="absolute top-1/4 right-1/4 w-96 h-96 dark:lg:bottom-1/4 dark:lg:right-1/4 dark:bottom-3/4 dark:right-1/2 dark:lg:w-96 dark:lg:h-96 dark:h-48 dark:w-48 dark:bg-yellow-100 bg-yellow-600 blur-[150px] animate-pulse opacity-40 rounded-full"
-            style="pointer-events: none;">
-        </div>
-
         <!-- Hero section -->
         <section class="min-h-[85vh] flex flex-col space-y-6">
             <div class="flex-grow"></div>
@@ -184,6 +174,56 @@
                         Our plans
                     </flux:button>
                 </div>
+            </div>
+        </section>
+
+        <!-- Success Stories -->
+        <section class="min-h-screen py-6 space-y-6 ">
+            <flux:heading class="font-bold py-6 text-center !text-4xl lg:!text-5xl">Learn more from our
+                <br>customers success
+            </flux:heading>
+
+            <div class="grid grid-cols-1 gap-4 pt-6 sm:grid-cols-2 lg:grid-cols-3">
+                <a wire:navigate href="/blog">
+                    <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
+                        <img class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
+                            src="{{ asset('success1.jpg') }}">
+                        <div class="p-4">
+                            <flux:subheading>SEO</flux:subheading>
+                            <flux:heading>How Cristal Electronics increased its organic traffic (SEO) by 540%
+                            </flux:heading>
+                        </div>
+                    </flux:card>
+                </a>
+
+                <a wire:navigate href="/blog">
+                    <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
+                        <img class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
+                            src="{{ asset('success2.jpg') }}">
+                        <div class="p-4">
+                            <flux:subheading>Analytics</flux:subheading>
+                            <flux:heading>How Mountain Lion optimized their website speed by 40%</flux:heading>
+                        </div>
+                    </flux:card>
+                </a>
+
+                <a wire:navigate href="/blog">
+                    <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
+                        <img class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
+                            src="{{ asset('success3.jpg') }}">
+                        <div class="p-4">
+                            <flux:subheading>Development</flux:subheading>
+                            <flux:heading>How our agency managed to deliver +30 websitesin 2024</flux:heading>
+                        </div>
+                    </flux:card>
+                </a>
+            </div>
+            
+            <div class="flex justify-end">
+                <flux:button icon-trailing="arrow-up-right" as="link" variant="ghost" wire:navigate
+                    href="/blog">
+                    All articles
+                </flux:button>
             </div>
         </section>
     </flux:main>

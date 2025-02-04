@@ -1,15 +1,9 @@
 <x-app-layout>
     <flux:main container>
-        <!-- Glowing Blob -->
-        <div
-            class="absolute top-1/4 right-1/4 w-96 h-96 dark:lg:bottom-1/4 dark:lg:right-1/4 dark:bottom-3/4 dark:right-1/2 dark:lg:w-96 dark:lg:h-96 dark:h-48 dark:w-48 dark:bg-yellow-100 bg-yellow-600 blur-[150px] animate-pulse opacity-40 rounded-full"
-            style="pointer-events: none;">
-        </div>
-            
         <div class="space-y-6">
             <div class="space-y-3">
                 <div class="!text-center lg:!text-start">
-                    <flux:badge icon="globe-alt" color="yellow" size="sm" variant="pill">Global reach</flux:badge>
+                    <flux:badge icon="globe-alt" color="yellow" size="sm" variant="pill" class="mb-3">Global reach</flux:badge>
                 </div>
 
                 <flux:heading
@@ -168,7 +162,7 @@
                 <div class="flex items-center justify-center gap-4">
                     <flux:subheading>Looking for a more customized plan?</flux:subheading>
 
-                    <flux:link wire:navigate href="/contact">Contact us</flux:link>
+                    <flux:link class="!text-sm" wire:navigate href="/contact">Contact us</flux:link>
                 </div>
             </div>
         </div>

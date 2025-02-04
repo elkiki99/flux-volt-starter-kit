@@ -1,40 +1,48 @@
 <x-app-layout>
     <flux:main container>
-        <!-- Glowing Blob -->
-        <div
-            class="absolute top-1/4 right-1/4 w-96 h-96 dark:lg:bottom-1/4 dark:lg:right-1/4 dark:bottom-3/4 dark:right-1/2 dark:lg:w-96 dark:lg:h-96 dark:h-48 dark:w-48 dark:bg-yellow-100 bg-yellow-600 blur-[150px] animate-pulse opacity-40 rounded-full"
-            style="pointer-events: none;">
-        </div>
-
         <!-- Hero section -->
         <section class="min-h-[85vh] flex flex-col space-y-6">
             <div class="flex-grow"></div>
 
             <div class="mt-auto space-y-3">
-                <div class="!text-center lg:!text-start">
-                    <flux:badge icon="rocket-launch" color="yellow" size="sm" variant="pill">Enterprise partner
-                    </flux:badge>
+                <div class="flex flex-col w-full">
+                    <div class="flex items-end justify-center mb-3 lg:justify-start">
+                        <div class="flex">
+                            <flux:icon.star class="text-yellow-500 dark:text-yellow-300" variant="mini" />
+                            <flux:icon.star class="text-yellow-500 dark:text-yellow-300" variant="mini" />
+                            <flux:icon.star class="text-yellow-500 dark:text-yellow-300" variant="mini" />
+                            <flux:icon.star class="text-yellow-500 dark:text-yellow-300" variant="mini" />
+                            <flux:icon.star class="text-yellow-500 dark:text-yellow-300" variant="mini" />
+                        </div>
+
+                        <span class="ml-2 text-xs font-semibold">4.99 AVERAGE RATING</span>
+                    </div>
+
+                    <flux:heading
+                        class="!text-5xl md:!text-7xl font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
+                        Transform low engagement<br class="hidden lg:block"> into <span
+                            class="!text-5xl font-black text-transparent md:!text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">paying
+                            customers</span></flux:heading>
+                    <flux:subheading
+                        class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">
+                        Cut
+                        through the noise and build a strong, lasting
+                        connection with<br class="hidden lg:block">your ideal audience in this vast digital world.<br
+                            class="hidden lg:block">We handle the heavy
+                        lifting.
+                    </flux:subheading>
                 </div>
 
-                <flux:heading
-                    class="!text-5xl md:!text-7xl font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
-                    Transform low engagement<br class="hidden lg:block"> into <span
-                        class="!text-5xl font-black text-transparent md:!text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">paying customers</span></flux:heading>
-                <flux:subheading
-                    class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">Cut
-                    through the noise and build a strong, lasting
-                    connection with<br class="hidden lg:block">your ideal audience in this vast digital world.<br
-                        class="hidden lg:block">We handle the heavy
-                    lifting.
-                </flux:subheading>
+                <div class="flex items-center justify-center gap-4 lg:justify-start">
+                    <flux:button wire:navigate href="/about" icon-trailing="arrow-up-right">About us</flux:button>
+                    <flux:button variant="primary" wire:navigate href="/pricing" icon-trailing="arrow-up-right">Get
+                        started
+                    </flux:button>
+                </div>
             </div>
-
-            <div class="flex items-center justify-center gap-4 lg:justify-start">
-                <flux:button wire:navigate href="/about" icon-trailing="arrow-up-right">About us</flux:button>
-                <flux:button variant="primary" wire:navigate href="/pricing" icon-trailing="arrow-up-right">Get started
-                </flux:button>
-            </div>
-
+            
+            <div class="flex-grow"></div>
+            
             <!-- Pines UI Marquee -->
             <div class="!my-6">
                 <livewire:components.marquee />
@@ -268,7 +276,8 @@
                                 <div class="mt-auto">
                                     <div class="flex items-end gap-2">
                                         <flux:heading class="!text-7xl md:!text-9xl !px-0">3x</flux:heading>
-                                        <flux:subheading class="!px-0 pb-4 md:pb-6">click-through rate</flux:subheading>
+                                        <flux:subheading class="!px-0 pb-4 md:pb-6">click-through rate
+                                        </flux:subheading>
                                     </div>
                                     <flux:separator class="hidden md:block" />
                                 </div>
@@ -300,38 +309,38 @@
                 <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.cursor-arrow-ripple class="justify-center text-amber-400" />
-                        <flux:heading class="text-center !text-xl !font-thin">Human-centered design</flux:heading>
+                        <flux:heading class="text-center">Human-centered design</flux:heading>
                     </li>
                 </flux:card>
                 <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.cube-transparent class="justify-center text-amber-400" />
-                        <flux:heading class="text-center !text-xl !font-thin">Simplicity with depth</flux:heading>
+                        <flux:heading class="text-center">Simplicity</flux:heading>
                     </li>
                 </flux:card>
                 <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.squares-plus variant="mini" class="justify-center text-amber-400" />
-                        <flux:heading class="text-center !text-xl !font-thin">Timeless aesthetics</flux:heading>
+                        <flux:heading class="text-center">Intuitive layouts</flux:heading>
                     </li>
                 </flux:card>
                 <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.arrow-trending-up class="justify-center text-amber-400" />
-                        <flux:heading class="text-center !text-xl !font-thin">Performance as a standard</flux:heading>
+                        <flux:heading class="text-center">Performance as a standard</flux:heading>
                     </li>
                 </flux:card>
                 <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.lock-open class="justify-center text-amber-400" />
-                        <flux:heading class="text-center !text-xl !font-thin">Ethical & transparent practices
+                        <flux:heading class="text-center">Ethical & transparent practices
                         </flux:heading>
                     </li>
                 </flux:card>
                 <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.signal class="justify-center text-amber-400" />
-                        <flux:heading class="text-center !text-xl !font-thin">Relentless curiosity</flux:heading>
+                        <flux:heading class="text-center">Relentless curiosity</flux:heading>
                     </li>
                 </flux:card>
             </ul>
@@ -345,7 +354,7 @@
         </section>
 
         <!-- Our blog -->
-        <section class="min-h-screen py-6 space-y-6">
+        <section class="min-h-screen py-6 mt-6 space-y-6">
             <flux:heading class="font-bold text-center py-6 !text-4xl lg:!text-5xl">Check out our most popular
                 resources
             </flux:heading>
