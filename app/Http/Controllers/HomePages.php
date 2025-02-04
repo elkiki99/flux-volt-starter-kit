@@ -46,4 +46,8 @@ class HomePages extends Controller
         return view('homepages.terms');
     }
 
+    public function privacy()
+    {
+        return view('homepages.privacy');
+    }
 }

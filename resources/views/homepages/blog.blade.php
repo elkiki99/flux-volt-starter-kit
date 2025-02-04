@@ -8,7 +8,7 @@
                     <flux:heading
                         class="!text-5xl md:!text-7xl font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full">
                         Blog by <span
-                            class="!text-5xl font-black text-transparent md:!text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">{{ config('app.name') }}</span>
+                            class="!text-5xl font-black text-transparent md:!text-7xl dark:from-amber-500 dark:via-amber-200 dark:to-amber-600 bg-gradient-to-r from-amber-600 via-amber-300 to-amber-500 bg-clip-text">{{ config('app.name') }}</span>
                     </flux:heading>
 
                     <flux:subheading class="mt-3 mr-0 lg:mr-8 lg:mt-0">

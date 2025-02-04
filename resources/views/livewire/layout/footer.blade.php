@@ -28,7 +28,7 @@ new class extends Component {
                         <x-application-logo class="text-black fill-current dark:text-white size-10" />
                         <flux:heading class="!text-4xl">{{ config('app.name') }}</flux:heading>
                     </div>
-                    <flux:heading>Your favourite digital agency<br> for modern web applications that make real money.
+                    <flux:heading>Your favourite digital agency<br> for modern web applications that make real profits.
                     </flux:heading>
                     <!-- Socials -->
                     <ul class="ml-[-1.25px] flex space-x-2">
@@ -80,7 +80,7 @@ new class extends Component {
                 <div class="w-full space-y-6 lg:w-1/2">
                     <div>
                         <a wire:navigate href="/pricing">
-                            <flux:card class="!bg-transparent hover:border-yellow-50/50 transition duration-300">
+                            <flux:card class="!bg-transparent hover:border-amber-50/50 transition duration-300">
                                 <flux:heading class="text-center">Our prices</flux:heading>
                                 <div class="flex items-center justify-center gap-2">
                                     <flux:subheading>We offer a wide range of pricing</flux:subheading>
@@ -92,7 +92,7 @@ new class extends Component {
 
                     <div>
                         <a wire:navigate href="/contact">
-                            <flux:card class="!bg-transparent hover:border-yellow-50/50 transition duration-300">
+                            <flux:card class="!bg-transparent hover:border-amber-50/50 transition duration-300">
                                 <flux:heading class="text-center">Get in touch</flux:heading>
                                 <div class="flex items-center justify-center gap-2">
                                     <flux:subheading>Got any questions? We're here to help</flux:subheading>

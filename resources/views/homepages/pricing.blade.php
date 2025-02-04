@@ -3,13 +3,13 @@
         <div class="space-y-6">
             <div class="space-y-3">
                 <div class="!text-center lg:!text-start">
-                    <flux:badge icon="globe-alt" color="yellow" size="sm" variant="pill" class="mb-3">Global reach</flux:badge>
+                    <flux:badge icon="globe-alt" color="amber" size="sm" variant="pill" class="mb-3">Global reach</flux:badge>
                 </div>
 
                 <flux:heading
                     class="!text-5xl md:!text-7xl font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
                     Ready for a sleek website<br class="hidden lg:block"> that<span
-                        class="text-5xl font-black text-transparent md:text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">
+                        class="text-5xl font-black text-transparent md:text-7xl dark:from-amber-500 dark:via-amber-200 dark:to-amber-600 bg-gradient-to-r from-amber-600 via-amber-300 to-amber-500 bg-clip-text">
                         boosts your sales?</span></flux:heading>
                 <flux:subheading
                     class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">With our services and your business, you'll thrive as we help you<br class="hidden lg:block"> grow and elevate your success to the next level.
@@ -33,7 +33,7 @@
 
                                 <div class="flex flex-col gap-2">
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.fire class="text-yellow-600 dark:text-yellow-400" variant="solid" />
+                                        <flux:icon.fire class="text-amber-600 dark:text-amber-400" variant="solid" />
                                         <flux:heading>Monthly support</flux:heading>
                                     </div>
 
@@ -78,7 +78,7 @@
 
                                 <div class="flex flex-col gap-2">
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.fire class="text-yellow-600 dark:text-yellow-400" variant="solid" />
+                                        <flux:icon.fire class="text-amber-600 dark:text-amber-400" variant="solid" />
                                         <flux:heading>Weekly support</flux:heading>
                                     </div>
 
@@ -127,7 +127,7 @@
 
                                 <div class="flex flex-col gap-2">
                                     <div class="flex items-center gap-2">
-                                        <flux:icon.fire class="text-yellow-600 dark:text-yellow-400" variant="solid" />
+                                        <flux:icon.fire class="text-amber-600 dark:text-amber-400" variant="solid" />
                                         <flux:heading>24/7 support</flux:heading>
                                     </div>
 
@@ -159,7 +159,7 @@
 
                 <flux:separator variant="subtle" />
 
-                <div class="flex items-center justify-center gap-4">
+                <div class="flex items-center justify-center gap-2">
                     <flux:subheading>Looking for a more customized plan?</flux:subheading>
 
                     <flux:link class="!text-sm" wire:navigate href="/contact">Contact us</flux:link>

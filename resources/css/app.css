@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
+/* 
 @layer base {
     :root {
         --color-accent: var(--color-amber-400);
@@ -14,4 +14,4 @@
         --color-accent-content: var(--color-amber-400);
         --color-accent-foreground: var(--color-amber-950);
     }
-}
+} */

@@ -8,11 +8,11 @@
                 <div class="flex flex-col w-full">
                     <div class="flex items-end justify-center mb-3 lg:justify-start">
                         <div class="flex">
-                            <flux:icon.star class="text-yellow-500 dark:text-yellow-300" variant="mini" />
-                            <flux:icon.star class="text-yellow-500 dark:text-yellow-300" variant="mini" />
-                            <flux:icon.star class="text-yellow-500 dark:text-yellow-300" variant="mini" />
-                            <flux:icon.star class="text-yellow-500 dark:text-yellow-300" variant="mini" />
-                            <flux:icon.star class="text-yellow-500 dark:text-yellow-300" variant="mini" />
+                            <flux:icon.star class="text-amber-500 dark:text-amber-300" variant="mini" />
+                            <flux:icon.star class="text-amber-500 dark:text-amber-300" variant="mini" />
+                            <flux:icon.star class="text-amber-500 dark:text-amber-300" variant="mini" />
+                            <flux:icon.star class="text-amber-500 dark:text-amber-300" variant="mini" />
+                            <flux:icon.star class="text-amber-500 dark:text-amber-300" variant="mini" />
                         </div>
 
                         <span class="ml-2 text-xs font-semibold">4.99 AVERAGE RATING</span>
@@ -21,7 +21,7 @@
                     <flux:heading
                         class="!text-5xl md:!text-7xl font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
                         Transform low engagement<br class="hidden lg:block"> into <span
-                            class="!text-5xl font-black text-transparent md:!text-7xl dark:from-yellow-500 dark:via-yellow-200 dark:to-yellow-600 bg-gradient-to-r from-yellow-600 via-yellow-300 to-yellow-500 bg-clip-text">paying
+                            class="!text-5xl font-black text-transparent md:!text-7xl dark:from-amber-500 dark:via-amber-200 dark:to-amber-600 bg-gradient-to-r from-amber-600 via-amber-300 to-amber-500 bg-clip-text">paying
                             customers</span></flux:heading>
                     <flux:subheading
                         class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">
@@ -239,8 +239,8 @@
                                     </flux:heading>
                                 </div>
                                 <div class="flex items-end gap-2">
-                                    <flux:heading class="!text-7xl md:!text-9xl !px-0">40x</flux:heading>
-                                    <flux:subheading class="!px-0 pb-4 md:pb-6">traffic SEO</flux:subheading>
+                                    <flux:heading class="!text-7xl md:!text-8xl !px-0">40x</flux:heading>
+                                    <flux:subheading class="!px-0 pb-4">traffic SEO</flux:subheading>
                                 </div>
                                 <flux:separator class="hidden md:block" />
                             </div>
@@ -275,8 +275,8 @@
                                 </div>
                                 <div class="mt-auto">
                                     <div class="flex items-end gap-2">
-                                        <flux:heading class="!text-7xl md:!text-9xl !px-0">3x</flux:heading>
-                                        <flux:subheading class="!px-0 pb-4 md:pb-6">click-through rate
+                                        <flux:heading class="!text-7xl md:!text-8xl !px-0">3x</flux:heading>
+                                        <flux:subheading class="!px-0 pb-4">click-through rate
                                         </flux:subheading>
                                     </div>
                                     <flux:separator class="hidden md:block" />
@@ -306,38 +306,38 @@
             </div>
 
             <ul class="grid max-w-4xl grid-cols-1 gap-4 mx-auto sm:grid-cols-2 lg:grid-cols-3">
-                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
+                <flux:card class="!bg-transparent !p-8 hover:border-amber-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.cursor-arrow-ripple class="justify-center text-amber-400" />
                         <flux:heading class="text-center">Human-centered design</flux:heading>
                     </li>
                 </flux:card>
-                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
+                <flux:card class="!bg-transparent !p-8 hover:border-amber-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.cube-transparent class="justify-center text-amber-400" />
                         <flux:heading class="text-center">Simplicity</flux:heading>
                     </li>
                 </flux:card>
-                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
+                <flux:card class="!bg-transparent !p-8 hover:border-amber-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.squares-plus variant="mini" class="justify-center text-amber-400" />
                         <flux:heading class="text-center">Intuitive layouts</flux:heading>
                     </li>
                 </flux:card>
-                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
+                <flux:card class="!bg-transparent !p-8 hover:border-amber-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.arrow-trending-up class="justify-center text-amber-400" />
                         <flux:heading class="text-center">Performance as a standard</flux:heading>
                     </li>
                 </flux:card>
-                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
+                <flux:card class="!bg-transparent !p-8 hover:border-amber-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.lock-open class="justify-center text-amber-400" />
                         <flux:heading class="text-center">Ethical & transparent practices
                         </flux:heading>
                     </li>
                 </flux:card>
-                <flux:card class="!bg-transparent !p-8 hover:border-yellow-50/50 transition duration-300">
+                <flux:card class="!bg-transparent !p-8 hover:border-amber-50/50 transition duration-300">
                     <li class="flex flex-col items-center gap-2">
                         <flux:icon.signal class="justify-center text-amber-400" />
                         <flux:heading class="text-center">Relentless curiosity</flux:heading>
