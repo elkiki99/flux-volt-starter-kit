@@ -70,6 +70,10 @@ To use **Laravel Flux UI Starter Kit**, follow these steps:
     - This will create an Admin account & a User account
     - Emails: admin@laravel.com & user@laravel.com, Password: password
 
+11. **Change flux theme**
+
+    - You can go to https://fluxui.dev/themes and follow the instructions to add or modify the application theme.
+      
 ## Contributions
 
 Contributions are welcome! If you'd like to contribute to **Laravel Flux UI Starter Kit**, please follow these steps:
