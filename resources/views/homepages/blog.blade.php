@@ -46,7 +46,7 @@
         </section>
 
         <!-- Main articles -->
-        <section class="min-h-screen py-6 space-y-6 ">
+        <section class="min-h-screen py-6 space-y-6">
             <flux:heading level="2" class="font-bold py-6 text-center !text-4xl lg:!text-5xl">Our latest content
             </flux:heading>
 
@@ -55,9 +55,9 @@
             <div class="grid grid-cols-1 gap-4 pt-6 sm:grid-cols-2 lg:grid-cols-3">
                 <a wire:navigate href="#">
                     <article>
-                        <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
+                        <flux:card class="!bg-transparent !p-0">
                             <img loading="lazy"
-                                class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
+                                class="rounded-t-lg rounded-b-none h-[30vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
                                 src="{{ asset('success1.jpg') }}">
                             <div class="p-4">
                                 <flux:subheading>SEO</flux:subheading>
@@ -71,9 +71,9 @@
 
                 <a wire:navigate href="#">
                     <article>
-                        <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
+                        <flux:card class="!bg-transparent !p-0">
                             <img loading="lazy"
-                                class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
+                                class="rounded-t-lg rounded-b-none h-[30vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
                                 src="{{ asset('success2.jpg') }}">
                             <div class="p-4">
                                 <flux:subheading>Analytics</flux:subheading>
@@ -86,9 +86,9 @@
 
                 <a wire:navigate href="#">
                     <article>
-                        <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
+                        <flux:card class="!bg-transparent !p-0">
                             <img loading="lazy"
-                                class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
+                                class="rounded-t-lg rounded-b-none h-[30vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
                                 src="{{ asset('success3.jpg') }}">
                             <div class="p-4">
                                 <flux:subheading>Development</flux:subheading>

@@ -8,7 +8,7 @@ new class extends Component {
 
 <flux:navbar class="flex justify-between -mb-px">
     <div class="flex max-md:hidden">
-        <flux:navbar.item badge="24" href="#">All</flux:navbar.item>
+        <flux:navbar.item badge="24" href="#" current>All</flux:navbar.item>
         <flux:navbar.item wire:navigate href="#">AI</flux:navbar.item>
         <flux:navbar.item wire:navigate href="#">Design</flux:navbar.item>
         <flux:navbar.item wire:navigate href="#">Development</flux:navbar.item>

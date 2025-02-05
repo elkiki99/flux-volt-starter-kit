@@ -21,17 +21,18 @@ new class extends Component {
         'bg-transparent': atTop,
         'dark:bg-zinc-800 border-b dark:border-none bg-zinc-100 dark:border-zinc-700': !atTop,
     }">
+
     @if (!request()->routeIs('pricing') && !request()->routeIs('contact'))
         <flux:sidebar.toggle class="md:hidden" icon="bars-2" inset="left" />
 
-        <flux:brand wire:navigate href="/" logo="https://fluxui.dev/img/demo/logo.png"
+        <flux:brand wire:navigate href="/" logo="{{ asset('app-logo-black.png') }}"
             name="{{ config('app.name') }}" class="max-md:hidden dark:hidden" />
-        <flux:brand wire:navigate href="/" logo="https://fluxui.dev/img/demo/dark-mode-logo.png"
+        <flux:brand wire:navigate href="/" logo="{{ asset('app-logo-white.png') }}"
             name="{{ config('app.name') }}" class="max-md:!hidden hidden dark:flex" />
     @else
-        <flux:brand wire:navigate href="/" logo="https://fluxui.dev/img/demo/logo.png"
+        <flux:brand wire:navigate href="/" logo="{{ asset('app-logo-black.png') }}"
             name="{{ config('app.name') }}" class="dark:hidden" />
-        <flux:brand wire:navigate href="/" logo="https://fluxui.dev/img/demo/dark-mode-logo.png"
+        <flux:brand wire:navigate href="/" logo="{{ asset('app-logo-white.png') }}"
             name="{{ config('app.name') }}" class="hidden dark:flex" />
     @endif
 
@@ -66,7 +67,7 @@ new class extends Component {
                 <flux:button x-data x-on:click="$flux.dark = ! $flux.dark" icon="moon" variant="subtle"
                     aria-label="Toggle dark mode" class="md:hidden" />
             @endif
-            
+
             <flux:dropdown position="top" align="start">
                 <flux:profile avatar="{{ Auth::user()->profile_picture ?? 'https://fluxui.dev/img/demo/user.png' }}" />
 

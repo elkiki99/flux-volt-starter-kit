@@ -20,9 +20,9 @@ new class extends Component {
         class="h-screen border-r bg-zinc-100 dark:bg-zinc-800 border-zinc-200 dark:border-zinc-700">
         <flux:sidebar.toggle class="lg:hidden" icon="x-mark" />
 
-        <flux:brand href="/" logo="https://fluxui.dev/img/demo/logo.png" name="{{ config('app.name') }}"
+        <flux:brand href="/" logo="{{ asset('app-logo-black.png') }}" name="{{ config('app.name') }}"
             class="px-2 dark:hidden" />
-        <flux:brand href="/" logo="https://fluxui.dev/img/demo/dark-mode-logo.png" name="{{ config('app.name') }}"
+        <flux:brand href="/" logo="{{ asset('app-logo-white.png') }}" name="{{ config('app.name') }}"
             class="hidden px-2 dark:flex" />
 
         <flux:navlist variant="outline">
