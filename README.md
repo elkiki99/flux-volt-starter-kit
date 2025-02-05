@@ -50,8 +50,8 @@ To use **Laravel Flux UI Starter Kit**, follow these steps:
 6. **Set up your env file:**
    
     ```bash
-     cp .env.example .env
-     ```
+        cp .env.example .env
+        ```
 
 7. **Generate an application key:**
 
@@ -59,9 +59,17 @@ To use **Laravel Flux UI Starter Kit**, follow these steps:
      php artisan key:generate
      ```
 
-9. **Create database/database.sqlite (if applicable)**
+8. **Create database/database.sqlite (if applicable)**
+
+     ```bash
+     New-Item -ItemType File -Path database\database.sqlite
+     ```
+     or
+     ```bash
+     touch database/database.sqlite
+     ```
     
-10. **Run your migrations and seeder:**
+9. **Run your migrations and seeder:**
 
     ```bash
     php artisan migrate && php artisan db:seed
@@ -70,7 +78,7 @@ To use **Laravel Flux UI Starter Kit**, follow these steps:
     - This will create an Admin account & a User account
     - Emails: admin@laravel.com & user@laravel.com, Password: password
 
-11. **Change flux theme**
+10. **Change flux theme**
 
     - You can go to https://fluxui.dev/themes and follow the instructions to add or modify the application theme.
       
