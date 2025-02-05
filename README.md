@@ -16,7 +16,7 @@
 
 ## Getting Started
 
-To use **Laravel Flux UI Starter Kit**, follow these steps:
+To use **Laravel Flux UI Starter Kit**, make sure you have a Flux UI subscription and Tailwind CSS v4.0 installed, then follow this instructions:
 
 1. **Fork the repository.**
 
@@ -50,29 +50,29 @@ To use **Laravel Flux UI Starter Kit**, follow these steps:
 6. **Set up your env file:**
    
     ```bash
-     cp .env.example .env
+    cp .env.example .env
     ```
 
 7. **Generate an application key:**
 
      ```bash
-     php artisan key:generate
+    php artisan key:generate
      ```
 
 8. **Create database/database.sqlite (if applicable)**
 
      ```bash
-     New-Item -ItemType File -Path database\database.sqlite
+    New-Item -ItemType File -Path database\database.sqlite
      ```
-     or
+    or
      ```bash
-     touch database/database.sqlite
+    touch database/database.sqlite
      ```
     
 9. **Run your migrations and seeder:**
 
     ```bash
-     php artisan migrate && php artisan db:seed
+    php artisan migrate && php artisan db:seed
     ```
     
     - This will create an Admin account & a User account
