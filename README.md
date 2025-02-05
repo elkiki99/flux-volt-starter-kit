@@ -23,8 +23,8 @@ To use **Laravel Flux UI Starter Kit**, follow these steps:
 2. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/elkiki99/laraflix
-    cd flux-starter-kit
+    git clone https://github.com/elkiki99/flux-volt-starter-kit new-name
+    cd new-name
     ```
 
 3. **Install the dependencies:**
