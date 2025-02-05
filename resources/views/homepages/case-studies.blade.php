@@ -28,6 +28,8 @@
                 </flux:button>
             </div>
 
+            <div class="flex-grow"></div>
+
             <!-- Pines UI Marquee -->
             <div class="!my-6">
                 <livewire:components.marquee />
@@ -66,8 +68,8 @@
                                     </flux:heading>
                                 </div>
                                 <div class="flex items-end gap-2">
-                                    <flux:heading class="!text-7xl md:!text-9xl !px-0">40x</flux:heading>
-                                    <flux:subheading class="!px-0 pb-4 md:pb-6">traffic SEO</flux:subheading>
+                                    <flux:heading class="!text-7xl md:!text-8xl !px-0">40x</flux:heading>
+                                    <flux:subheading class="!px-0 pb-4">traffic SEO</flux:subheading>
                                 </div>
                                 <flux:separator class="hidden md:block" />
                             </div>
@@ -102,8 +104,8 @@
                                 </div>
                                 <div class="mt-auto">
                                     <div class="flex items-end gap-2">
-                                        <flux:heading class="!text-7xl md:!text-9xl !px-0">3x</flux:heading>
-                                        <flux:subheading class="!px-0 pb-4 md:pb-6">click-through rate</flux:subheading>
+                                        <flux:heading class="!text-7xl md:!text-8xl !px-0">3x</flux:heading>
+                                        <flux:subheading class="!px-0 pb-4">click-through rate</flux:subheading>
                                     </div>
                                     <flux:separator class="hidden md:block" />
                                 </div>

@@ -278,6 +278,14 @@
                         src="{{ asset('camila_fernandez.jpg') }}">
                 </flux:card>
             </div>
+
+            
+            <div class="flex justify-end">
+                <flux:button icon-trailing="arrow-up-right" as="link" variant="ghost" wire:navigate
+                    href="/services">
+                    Our services
+                </flux:button>
+            </div>
         </section>
 
         <!-- What sets us apart -->
@@ -414,8 +422,8 @@
             
             <div class="flex justify-end">
                 <flux:button icon-trailing="arrow-up-right" as="link" variant="ghost" wire:navigate
-                    href="/services">
-                    Our services
+                    href="/pricing">
+                    Our pricing
                 </flux:button>
             </div>
         </section>

@@ -2,7 +2,6 @@
     <flux:main container>
         <!-- Hero section -->
         <section class="flex flex-col min-h-[85vh] mb-12 space-y-6">
-            <!-- Gradient -->
             <div class="space-y-12">
                 <div class="flex flex-col items-center justify-between text-center lg:items-end lg:text-start lg:flex-row">
                     <flux:heading
@@ -49,7 +48,7 @@
             </flux:heading>
 
             <div class="grid grid-cols-1 gap-4 pt-6 sm:grid-cols-2 lg:grid-cols-3">
-                <a wire:navigate href="/blog">
+                <a wire:navigate href="#">
                     <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
                         <img loading="lazy"
                             class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
@@ -62,7 +61,7 @@
                     </flux:card>
                 </a>
 
-                <a wire:navigate href="/blog">
+                <a wire:navigate href="#">
                     <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
                         <img loading="lazy"
                             class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
@@ -74,14 +73,14 @@
                     </flux:card>
                 </a>
 
-                <a wire:navigate href="/blog">
+                <a wire:navigate href="#">
                     <flux:card class="!bg-transparent !p-0 mx-6 sm:mx-0">
                         <img loading="lazy"
                             class="rounded-t-lg rounded-b-none h-[40vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
                             src="{{ asset('success3.jpg') }}">
                         <div class="p-4">
                             <flux:subheading>Development</flux:subheading>
-                            <flux:heading>How our agency managed to deliver +30 websitesin 2024</flux:heading>
+                            <flux:heading>How our agency managed to deliver +30 websites in 2024</flux:heading>
                         </div>
                     </flux:card>
                 </a>
@@ -97,7 +96,7 @@
             <div class="items-center gap-4 space-y-6 lg:flex lg:space-y-0">
                 <flux:card
                     class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
-                    <a wire:navigate href="/blog">
+                    <a wire:navigate href="#">
                         <img loading="lazy" class="object-cover w-full h-full rounded-lg" src="{{ asset('joe.jpg') }}">
                         <div
                             class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
@@ -105,7 +104,7 @@
                         <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">On page SEO optimization
                         </flux:heading>
                         <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
-                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:subheading class="!text-zinc-300">Read article</flux:subheading>
                             <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
                         </div>
                     </a>
@@ -113,7 +112,7 @@
 
                 <flux:card
                     class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
-                    <a wire:navigate href="/blog">
+                    <a wire:navigate href="#">
                         <img loading="lazy" class="object-cover w-full h-full rounded-lg" src="{{ asset('umb.jpg') }}">
                         <div
                             class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
@@ -121,7 +120,7 @@
                         <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">Web data & conversion
                         </flux:heading>
                         <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
-                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:subheading class="!text-zinc-300">Read article</flux:subheading>
                             <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
                         </div>
                     </a>
@@ -129,7 +128,7 @@
 
                 <flux:card
                     class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
-                    <a wire:navigate href="/blog">
+                    <a wire:navigate href="#">
                         <img loading="lazy" class="object-cover w-full h-full rounded-lg"
                             src="{{ asset('blog-3.webp') }}">
                         <div
@@ -138,7 +137,7 @@
                         <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">Performance as a standard
                         </flux:heading>
                         <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
-                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:subheading class="!text-zinc-300">Read article</flux:subheading>
                             <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
                         </div>
                     </a>

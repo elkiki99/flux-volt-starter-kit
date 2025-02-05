@@ -61,7 +61,7 @@ new class extends Component {
     </flux:navbar>
 
     @auth
-        <flux:navbar>
+        <flux:navbar class="-mb-1">
             @if (request()->routeIs('pricing') || request()->routeIs('contact'))
                 <flux:button x-data x-on:click="$flux.dark = ! $flux.dark" icon="moon" variant="subtle"
                     aria-label="Toggle dark mode" class="md:hidden" />
@@ -99,7 +99,7 @@ new class extends Component {
             </flux:dropdown>
         </flux:navbar>
     @else
-        <flux:navbar class="-mb-px ">
+        <flux:navbar class="-mb-1">
             @if (request()->routeIs('pricing') || request()->routeIs('contact'))
                 <flux:button x-data x-on:click="$flux.dark = ! $flux.dark" icon="moon" variant="subtle"
                     aria-label="Toggle dark mode" class="md:hidden" />

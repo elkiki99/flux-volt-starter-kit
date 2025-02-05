@@ -190,6 +190,13 @@
                         with any technical challenges.</flux:subheading>
                 </flux:card>
             </div>
+
+            <div class="flex justify-end">
+                <flux:button icon-trailing="arrow-up-right" as="link" variant="ghost" wire:navigate
+                    href="/about">
+                    About us
+                </flux:button>
+            </div>
         </section>
 
         <!-- FAQs-->
@@ -259,6 +266,13 @@
                     </flux:accordion.item>
                 </flux:accordion>
             </div>
+
+            <div class="flex justify-end">
+                <flux:button icon-trailing="arrow-up-right" as="link" variant="ghost" wire:navigate
+                    href="/pricing">
+                    Our pricing
+                </flux:button>
+            </div>
         </section>
 
         <!-- Our blog -->
@@ -269,7 +283,7 @@
             <div class="items-center gap-4 space-y-6 lg:flex lg:space-y-0">
                 <flux:card
                     class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black duration-300 !border-none">
-                    <a wire:navigate href="/blog">
+                    <a wire:navigate href="#">
                         <img loading="lazy" class="object-cover w-full h-full rounded-lg"
                             src="{{ asset('joe.jpg') }}">
                         <div
@@ -278,7 +292,7 @@
                         <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">On page SEO optimization
                         </flux:heading>
                         <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
-                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:subheading class="!text-zinc-300">Read article</flux:subheading>
                             <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
                         </div>
                     </a>
@@ -286,7 +300,7 @@
 
                 <flux:card
                     class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black duration-300 !border-none">
-                    <a wire:navigate href="/blog">
+                    <a wire:navigate href="#">
                         <img loading="lazy" class="object-cover w-full h-full rounded-lg"
                             src="{{ asset('umb.jpg') }}">
                         <div
@@ -295,7 +309,7 @@
                         <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">Web data & conversion
                         </flux:heading>
                         <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
-                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:subheading class="!text-zinc-300">Read article</flux:subheading>
                             <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
                         </div>
                     </a>
@@ -303,7 +317,7 @@
 
                 <flux:card
                     class="relative !p-0 lg:w-1/3 h-[80vh] hover:opacity-80 hover:bg-black duration-300 !border-none">
-                    <a wire:navigate href="/blog">
+                    <a wire:navigate href="#">
                         <img loading="lazy" class="object-cover w-full h-full rounded-lg"
                             src="{{ asset('blog-3.webp') }}">
                         <div
@@ -312,11 +326,18 @@
                         <flux:heading class="absolute !text-2xl bottom-10 left-4 !text-white">Performance as a standard
                         </flux:heading>
                         <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
-                            <flux:subheading class="!text-zinc-300">Read our blog</flux:subheading>
+                            <flux:subheading class="!text-zinc-300">Read article</flux:subheading>
                             <flux:icon.arrow-up-right variant="mini" class="!text-zinc-300" />
                         </div>
                     </a>
                 </flux:card>
+            </div>
+            
+            <div class="flex justify-end">
+                <flux:button icon-trailing="arrow-up-right" as="link" variant="ghost" wire:navigate
+                    href="/blog">
+                    Our blog
+                </flux:button>
             </div>
         </section>
     </flux:main>
