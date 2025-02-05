@@ -6,12 +6,12 @@
                     <flux:badge icon="globe-alt" color="amber" size="sm" variant="pill" class="mb-3">Global reach</flux:badge>
                 </div>
 
-                <flux:heading
+                <flux:heading level="1"
                     class="!text-5xl md:!text-7xl font-black max-w-4xl mx-auto lg:mx-0 lg:max-w-full text-center lg:text-start">
                     Ready for a sleek website<br class="hidden lg:block"> that<span
                         class="text-5xl font-black text-transparent md:text-7xl dark:from-amber-500 dark:via-amber-200 dark:to-amber-600 bg-gradient-to-r from-amber-600 via-amber-300 to-amber-500 bg-clip-text">
                         boosts your sales?</span></flux:heading>
-                <flux:subheading
+                <flux:subheading level="2"
                     class="max-w-xl mx-auto text-sm text-center md:text-base lg:text-start lg:mx-0 lg:max-w-full">With our services and your business, you'll thrive as we help you<br class="hidden lg:block"> grow and elevate your success to the next level.
                 </flux:subheading>
             </div>

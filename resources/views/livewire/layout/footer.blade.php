@@ -24,9 +24,9 @@ new class extends Component {
         <div class="w-full space-y-6 lg:w-1/2">
             <div class="flex gap-4">
                 <x-application-logo class="text-black fill-current dark:text-white size-10" />
-                <flux:heading class="!text-4xl">{{ config('app.name') }}</flux:heading>
+                <flux:heading level="3" class="!text-4xl">{{ config('app.name') }}</flux:heading>
             </div>
-            <flux:heading>Your favourite digital agency<br> for modern web applications that make real profits.
+            <flux:heading level="4">Your favourite digital agency<br> for modern web applications that make real profits.
             </flux:heading>
             <!-- Socials -->
             <ul class="ml-[-1.25px] flex space-x-2">
@@ -103,13 +103,13 @@ new class extends Component {
 
         <div class="flex justify-between w-full gap-4 mt-6 lg:mt-0 lg:w-1/2 text-start">
             <div class="flex flex-col gap-4">
-                <a wire:navigate href="/" class="text-zinc-800 w-fit dark:text-white">Home</a>
-                <a wire:navigate href="/about" class="text-zinc-800 w-fit dark:text-white">About</a>
-                <a wire:navigate href="/services" class="text-zinc-800 w-fit dark:text-white">Services</a>
-                <a wire:navigate href="/pricing" class="text-zinc-800 w-fit dark:text-white">Pricing</a>
-                <a wire:navigate href="contact" class="text-zinc-800 w-fit dark:text-white">Contact</a>
-                <a wire:navigate href="/case-studies" class="text-zinc-800 w-fit dark:text-white">Case
-                    studies</a>
+                <flux:link wire:navigate href="/">Home</flux:link>
+                <flux:link wire:navigate href="/about">About</flux:link>
+                <flux:link wire:navigate href="/services">Services</flux:link>
+                <flux:link wire:navigate href="/pricing">Pricing</flux:link>
+                <flux:link wire:navigate href="contact">Contact</flux:link>
+                <flux:link wire:navigate href="/case-studies">Case
+                    studies</flux:link>
             </div>
 
             <div wire:poll.10s="updateTime" class="space-y-6">

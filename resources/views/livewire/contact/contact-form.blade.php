@@ -27,7 +27,7 @@ new class extends Component {
     #[Validate('required|string|max:255')]
     public string $company = '';
 
-    #[Validate('required|string|max:255')]
+    #[Validate('nullable|string|max:255')]
     public string $website = '';
 
     #[Validate('nullable|file|mimes:jpg,jpeg,png,webp|max:10240')]
@@ -71,13 +71,13 @@ new class extends Component {
             wire:model='company' required autofocus autocomplete />
 
         <div class="space-y-3">
-            <flux:label>Website link</flux:label>
+            <flux:label badge="Optional">Website link</flux:label>
 
             <flux:input.group>
                 <flux:input.group.prefix>https://</flux:input.group.prefix>
 
                 <flux:input class="flex-1 w-full" wire:model='website'
-                    placeholder="example.com" required></flux:input>
+                    placeholder="example.com"></flux:input>
             </flux:input.group>
         </div>
 
@@ -109,8 +109,11 @@ new class extends Component {
     <flux:textarea label="Message" wire:model='message' placeholder="Tell us about your project" required>
     </flux:textarea>
 
-    <flux:input type="file" wire:model="attachment" label="Attachment" />
-
+    <div class="space-y-3">
+        <flux:label badge="Optional">Attachment</flux:label>
+        <flux:input type="file" wire:model="attachment" />
+    </div>
+    
     <flux:checkbox wire:model="terms" label="I agree to the terms and conditions" />
 
     <flux:button class="!w-full" variant="primary" type="submit">Contact us</flux:button>
