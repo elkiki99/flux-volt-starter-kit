@@ -50,7 +50,7 @@ To use **Laravel Flux UI Starter Kit**, follow these steps:
 6. **Set up your env file:**
    
     ```bash
-        cp .env.example .env
+     cp .env.example .env
     ```
 
 7. **Generate an application key:**
@@ -72,7 +72,7 @@ To use **Laravel Flux UI Starter Kit**, follow these steps:
 9. **Run your migrations and seeder:**
 
     ```bash
-    php artisan migrate && php artisan db:seed
+     php artisan migrate && php artisan db:seed
     ```
     
     - This will create an Admin account & a User account
