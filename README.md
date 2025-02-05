@@ -51,7 +51,7 @@ To use **Laravel Flux UI Starter Kit**, follow these steps:
    
     ```bash
         cp .env.example .env
-        ```
+    ```
 
 7. **Generate an application key:**
 
