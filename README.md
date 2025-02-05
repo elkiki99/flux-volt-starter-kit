@@ -23,7 +23,7 @@ To use **Laravel Flux UI Starter Kit**, follow these steps:
 2. **Clone the repository:**
 
     ```bash
-    git clone https://github.com/elkiki99/laraflix
+    git clone https://github.com/elkiki99/flux-starter-kit
     cd flux-starter-kit
     ```
 
