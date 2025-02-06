@@ -212,7 +212,7 @@
 
             <div class="grid grid-cols-1 gap-8 mt-6 lg:grid-cols-3">
                 <flux:card class="w-full py-6 lg:col-span-1 !bg-transparent">
-                    <img loading="lazy" class="rounded-lg h-[60vh] w-full object-cover" src="{{ asset('ruan.jpg') }}">
+                    <img loading="lazy" class="rounded-lg h-[60vh] w-full object-cover" src="{{ asset('ruan.jpg') }}" alt="Accordion">
                 </flux:card>
 
                 <flux:accordion exclusive transition class="w-full py-6 lg:col-span-2">
@@ -292,7 +292,7 @@
                         class="relative !p-0 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
                         <a wire:navigate href="#">
                             <img loading="lazy" class="object-cover w-full h-full rounded-lg"
-                                src="{{ asset('joe.jpg') }}">
+                                src="{{ asset('joe.jpg') }}" alt="Popular Article 1">
                             <div
                                 class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
                             </div>
@@ -312,7 +312,7 @@
                         class="relative !p-0 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
                         <a wire:navigate href="#">
                             <img loading="lazy" class="object-cover w-full h-full rounded-lg"
-                                src="{{ asset('umb.jpg') }}">
+                                src="{{ asset('umb.jpg') }}" alt="Popular Article 2">
                             <div
                                 class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
                             </div>
@@ -331,7 +331,7 @@
                         class="relative !p-0 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
                         <a wire:navigate href="#">
                             <img loading="lazy" class="object-cover w-full h-full rounded-lg"
-                                src="{{ asset('blog-33.webp') }}">
+                                src="{{ asset('blog-33.webp') }}" alt="Popular Article 3">
                             <div
                                 class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
                             </div>

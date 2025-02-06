@@ -53,7 +53,7 @@
                             <div class="flex flex-col-reverse gap-4 lg:flex-row">
                                 <div class="w-full lg:w-1/2">
                                     <img loading="lazy" class="object-cover md:w-full rounded-lg h-[60vh] lg:h-[40vh]"
-                                        src="{{ asset('33.webp') }}">
+                                        src="{{ asset('33.webp') }}" alt="About 1">
                                 </div>
 
                                 <div class="flex flex-col justify-around w-full ml-0 lg:ml-8 lg:w-1/2">
@@ -82,7 +82,7 @@
                             <div class="flex flex-col-reverse gap-4 lg:flex-row">
                                 <div class="w-full lg:w-1/2">
                                     <img loading="lazy" class="object-cover md:w-full rounded-lg h-[60vh] lg:h-[40vh]"
-                                        src="{{ asset('44.webp') }}">
+                                        src="{{ asset('44.webp') }}" alt="About 2">
                                 </div>
 
                                 <div class="flex flex-col justify-around w-full ml-0 lg:ml-8 lg:w-1/2">
@@ -112,7 +112,7 @@
                             <div class="flex flex-col-reverse gap-4 lg:flex-row">
                                 <div class="w-full lg:w-1/2">
                                     <img loading="lazy" class="object-cover md:w-full rounded-lg h-[60vh] lg:h-[40vh]"
-                                        src="{{ asset('case_study-1.jpg') }}">
+                                        src="{{ asset('case_study-1.jpg') }}" alt="About 3">
                                 </div>
 
                                 <div class="flex flex-col justify-around w-full ml-0 lg:ml-8 lg:w-1/2">
@@ -140,7 +140,7 @@
                             <div class="flex flex-col-reverse gap-4 lg:flex-row">
                                 <div class="w-full lg:w-1/2">
                                     <img loading="lazy" class="object-cover md:w-full rounded-lg h-[60vh] lg:h-[40vh]"
-                                        src="{{ asset('case_study-4.webp') }}">
+                                        src="{{ asset('case_study-4.webp') }}" alt="About 4">
                                 </div>
 
                                 <div class="flex flex-col justify-around w-full ml-0 lg:ml-8 lg:w-1/2">
@@ -169,7 +169,7 @@
                             <div class="flex flex-col-reverse gap-4 lg:flex-row">
                                 <div class="w-full lg:w-1/2">
                                     <img loading="lazy" class="object-cover md:w-full rounded-lg h-[60vh] lg:h-[40vh]"
-                                        src="{{ asset('55.webp') }}">
+                                        src="{{ asset('55.webp') }}" alt="About 5">
                                 </div>
 
                                 <div class="flex flex-col justify-around w-full ml-0 lg:ml-8 lg:w-1/2">
@@ -255,7 +255,7 @@
                             </ul>
                         </div>
                         <img loading="lazy" class="object-cover w-full h-[80vh] rounded-lg"
-                            src="{{ asset('me.webp') }}">
+                            src="{{ asset('me.webp') }}" alt="Member 1">
                     </flux:card>
                 </article>
                 
@@ -306,7 +306,7 @@
                             </ul>
                         </div>
                         <img loading="lazy" class="object-cover w-full h-[80vh] rounded-lg"
-                            src="{{ asset('camila_fernandez.jpg') }}">
+                            src="{{ asset('camila_fernandez.jpg') }}" alt="Member 2">
                     </flux:card>
                 </article>
             </div>
@@ -383,7 +383,7 @@
 
             <div class="grid grid-cols-1 gap-8 mt-6 lg:grid-cols-3">
                 <flux:card class="w-full py-6 lg:col-span-1 !bg-transparent">
-                    <img loading="lazy" class="rounded-lg h-[60vh] w-full object-cover" src="{{ asset('faq.jpg') }}">
+                    <img loading="lazy" class="rounded-lg h-[60vh] w-full object-cover" src="{{ asset('faq.jpg') }}" alt="Accordion">
                 </flux:card>
 
                 <flux:accordion exclusive transition class="w-full py-6 lg:col-span-2">

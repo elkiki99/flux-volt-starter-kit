@@ -139,7 +139,7 @@
                     <article>
                         <flux:card class="!bg-transparent !p-0">
                             <img class="rounded-t-lg rounded-b-none h-[30vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
-                                src="{{ asset('success1.jpg') }}">
+                                src="{{ asset('success1.jpg') }}" alt="Success 1">
                             <div class="p-4">
                                 <flux:subheading>SEO</flux:subheading>
                                 <flux:heading level="3">How Cristal Electronics increased its organic traffic
@@ -154,7 +154,7 @@
                     <article>
                         <flux:card class="!bg-transparent !p-0">
                             <img class="rounded-t-lg rounded-b-none h-[30vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
-                                src="{{ asset('success2.jpg') }}">
+                                src="{{ asset('success2.jpg') }}" alt="Success 2">
                             <div class="p-4">
                                 <flux:subheading>Analytics</flux:subheading>
                                 <flux:heading level="3">How Mountain Lion optimized their website speed by 40%
@@ -168,7 +168,7 @@
                     <article>
                         <flux:card class="!bg-transparent !p-0">
                             <img class="rounded-t-lg rounded-b-none h-[30vh] sm:h-[25vh] md:h-[40vh] w-full object-cover"
-                                src="{{ asset('success3.jpg') }}">
+                                src="{{ asset('success3.jpg') }}" alt="Success 3">
                             <div class="p-4">
                                 <flux:subheading>Development</flux:subheading>
                                 <flux:heading level="3">How our agency managed to deliver +30 websitesin 2024

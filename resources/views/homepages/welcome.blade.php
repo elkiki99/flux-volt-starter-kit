@@ -379,7 +379,7 @@
                         class="relative !p-0 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
                         <a wire:navigate href="#">
                             <img loading="lazy" class="object-cover w-full h-full rounded-lg"
-                                src="{{ asset('joe.jpg') }}">
+                                src="{{ asset('joe.jpg') }}" alt="Popular Article 1">
                             <div
                                 class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
                             </div>
@@ -400,12 +400,12 @@
                         class="relative !p-0 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
                         <a wire:navigate href="#">
                             <img loading="lazy" class="object-cover w-full h-full rounded-lg"
-                                src="{{ asset('umb.jpg') }}">
+                                src="{{ asset('umb.jpg') }}" alt="Popular Article 2">
                             <div
                                 class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
                             </div>
-                            <flux:heading level="3" class="absolute !text-2xl bottom-10 left-4 !text-white">Web
-                                data & conversion
+                            <flux:heading level="3" class="absolute !text-2xl bottom-10 left-4 !text-white">Web data &
+                                conversion
                             </flux:heading>
                             <div class="absolute flex items-center gap-2 font-bold text-white bottom-4 left-4">
                                 <flux:subheading class="!text-zinc-300">Read article</flux:subheading>
@@ -420,7 +420,7 @@
                         class="relative !p-0 h-[80vh] hover:opacity-80 hover:bg-black transition duration-300 !border-none">
                         <a wire:navigate href="#">
                             <img loading="lazy" class="object-cover w-full h-full rounded-lg"
-                                src="{{ asset('blog-33.webp') }}">
+                                src="{{ asset('blog-33.webp') }}" alt="Popular Article 3">
                             <div
                                 class="absolute bottom-0 left-0 w-full h-32 rounded-b-lg bg-gradient-to-t from-black/90 to-transparent">
                             </div>
