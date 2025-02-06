@@ -40,7 +40,6 @@ To use **Laravel Flux UI Starter Kit**, make sure you have a Flux UI subscriptio
     Password: your-flux-licence-key
     ```
     
-
 5. **Set up your env file:**
    
     ```bash
