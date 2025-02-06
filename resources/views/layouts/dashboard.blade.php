@@ -48,9 +48,7 @@
     </div>
 
     <!-- Footer -->
-    {{-- <footer>
-        <livewire:layout.footer />
-    </footer> --}}
+    {{-- <livewire:layout.footer /> --}}
 
     @fluxScripts
 

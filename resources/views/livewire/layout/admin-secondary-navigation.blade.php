@@ -5,6 +5,11 @@ use Livewire\Volt\Component;
 
 new class extends Component {
     /**
+     * Real time update on profile picture when profile information update form is submitted
+     */
+    protected $listeners = ['profilePictureUpdated' => '$refresh'];
+
+    /**
      * Log the current user out of the application.
      */
     public function logout(Logout $logout): void

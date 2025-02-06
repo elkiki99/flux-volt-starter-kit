@@ -5,6 +5,11 @@ use Livewire\Volt\Component;
 
 new class extends Component {
     /**
+     * Real time update on profile picture when profile information update form is submitted
+     */
+    protected $listeners = ['profilePictureUpdated' => '$refresh'];
+
+    /**
      * Log the current user out of the application.
      */
     public function logout(Logout $logout): void
@@ -25,8 +30,8 @@ new class extends Component {
     @if (!request()->routeIs('pricing') && !request()->routeIs('contact'))
         <flux:sidebar.toggle class="md:hidden" icon="bars-2" inset="left" />
 
-        <flux:brand wire:navigate href="/" logo="{{ asset('app-logo-black.png') }}"
-            name="{{ config('app.name') }}" class="max-md:hidden dark:hidden" />
+        <flux:brand wire:navigate href="/" logo="{{ asset('app-logo-black.png') }}" name="{{ config('app.name') }}"
+            class="max-md:hidden dark:hidden" />
         <flux:brand wire:navigate href="/" logo="{{ asset('app-logo-white.png') }}"
             name="{{ config('app.name') }}" class="max-md:!hidden hidden dark:flex" />
     @else

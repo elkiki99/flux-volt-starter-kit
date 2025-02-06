@@ -22,19 +22,11 @@ class ContactUs extends Mailable
         public string $name,
         public string $email,
         public string $message,
-        public array $industry,
-        public string $budget,
-        public string $company,
-        public string $website,
         public ?string $attachment = null
     ) {
         $this->name = $name;
         $this->email = $email;
         $this->message = $message;
-        $this->industry = $industry;
-        $this->budget = $budget;
-        $this->company = $company;
-        $this->website = $website;
         $this->attachment = $attachment;
     }
 
@@ -63,10 +55,6 @@ class ContactUs extends Mailable
                 'name' => $this->name,
                 'email' => $this->email,
                 'message' => $this->message,
-                'industry' => $this->industry,
-                'budget' => $this->budget,
-                'company' => $this->company,
-                'website' => $this->website
             ]
         );
     }

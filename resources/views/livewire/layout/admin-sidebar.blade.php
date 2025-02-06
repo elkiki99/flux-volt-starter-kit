@@ -5,6 +5,11 @@ use Livewire\Volt\Component;
 
 new class extends Component {
     /**
+     * Real time update on profile picture when profile information update form is submitted
+     */
+    protected $listeners = ['profilePictureUpdated' => '$refresh'];
+
+    /**
      * Log the current user out of the application.
      */
     public function logout(Logout $logout): void
@@ -45,7 +50,8 @@ new class extends Component {
 
         <!-- User dropdown -->
         <flux:dropdown position="top" align="end" class="hidden lg:flex">
-            <flux:profile name="{{ Auth::user()->name }}" avatar="{{ Auth::user()->profile_picture ?? 'https://fluxui.dev/img/demo/user.png' }}" />
+            <flux:profile name="{{ Auth::user()->name }}"
+                avatar="{{ Auth::user()->profile_picture ?? 'https://fluxui.dev/img/demo/user.png' }}" />
 
             <flux:menu>
                 <div class="px-2 py-1.5">
