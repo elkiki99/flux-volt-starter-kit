@@ -11,8 +11,7 @@
             <div class="space-y-6">
                 <div>
                     <flux:heading size="lg">Profile information</flux:heading>
-                    <flux:subheading>Update your accounts profile info and email. Update your accounts profile info and
-                        email.</flux:subheading>
+                    <flux:subheading>Update your accounts profile info and email.</flux:subheading>
                 </div>
 
                 <livewire:profile.update-profile-information-form />

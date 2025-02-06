@@ -55,7 +55,7 @@
                             </div>
 
                             <div
-                                class="lg:w-1/2 w-full flex flex-col md:flex-row-reverse lg:flex-col justify-start min-h-[60vh] gap-4">
+                                class="lg:w-1/2 w-full flex flex-col md:flex-row-reverse lg:flex-col justify-start min-h-[40vh] sm:min-h-[60vh] gap-4">
                                 <div
                                     class="flex flex-row w-full gap-4 pt-4 md:flex-col md:w-1/2 lg:flex lg:flex-row lg:w-full lg:space-y-0 lg:pt-0">
                                     <img class="object-cover rounded-lg h-[15vh] sm:h-[25vh] w-full"
@@ -93,7 +93,7 @@
                             </div>
 
                             <div
-                                class="lg:w-1/2 w-full flex flex-col md:flex-row-reverse lg:flex-col justify-start min-h-[60vh] gap-4">
+                                class="lg:w-1/2 w-full flex flex-col md:flex-row-reverse lg:flex-col justify-start min-h-[40vh] sm:min-h-[60vh] gap-4">
                                 <div
                                     class="flex flex-row w-full gap-4 pt-4 md:flex-col md:w-1/2 lg:flex lg:flex-row lg:w-full lg:space-y-0 lg:pt-0">
                                     <img class="object-cover rounded-lg h-[15vh] sm:h-[25vh] w-full"
