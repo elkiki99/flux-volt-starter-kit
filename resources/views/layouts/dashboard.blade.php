@@ -35,7 +35,7 @@
 
     <div class="container flex flex-grow max-w-4xl px-6 mx-auto max-lg:flex-col">
         <!-- Sidebar -->
-        <aside class="w-[220px] shrink-0 sticky top-0 my-12 lg:mr-10 max-lg:hidden">
+        <aside class="w-[220px] sticky top-28 self-start my-12 lg:mr-10 max-lg:hidden">
             <livewire:layout.dashboard-sidebar />
         </aside>
 
