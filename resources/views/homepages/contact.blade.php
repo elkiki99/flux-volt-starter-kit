@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Contact • Flux Kit">
     <flux:main container>
         <section class="space-y-6">
             <div>

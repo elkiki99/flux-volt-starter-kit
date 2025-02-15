@@ -1,4 +1,4 @@
-<x-app-layout>
+<x-app-layout title="Blog • Flux Kit">
     <flux:main container>
         
     </flux:main>

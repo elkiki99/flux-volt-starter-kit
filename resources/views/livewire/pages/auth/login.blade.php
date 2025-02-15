@@ -3,10 +3,10 @@
 use App\Livewire\Forms\LoginForm;
 use Illuminate\Support\Facades\Session;
 use Illuminate\Support\Facades\Auth;
-use Livewire\Attributes\Layout;
+use Livewire\Attributes\{Layout, Title};
 use Livewire\Volt\Component;
 
-new #[Layout('layouts.guest')] class extends Component {
+new #[Layout('layouts.guest')] #[Title('Login • Flux Kit')] class extends Component {
     public LoginForm $form;
 
     /**
@@ -45,7 +45,8 @@ new #[Layout('layouts.guest')] class extends Component {
                         <flux:label>Password</flux:label>
 
                         @if (Route::has('password.request'))
-                            <flux:link wire:navigate href="{{ route('password.request') }}" variant="subtle" class="text-sm">Forgot
+                            <flux:link wire:navigate href="{{ route('password.request') }}" variant="subtle"
+                                class="text-sm">Forgot
                                 your
                                 password?</flux:link>
                         @endif
@@ -63,7 +64,8 @@ new #[Layout('layouts.guest')] class extends Component {
             <div class="space-y-2">
                 <flux:button type="submit" variant="primary" class="w-full">Log in</flux:button>
 
-                <flux:button variant="ghost" class="w-full" wire:navigate href="{{ route('register') }}">Sign up for a new account
+                <flux:button variant="ghost" class="w-full" wire:navigate href="{{ route('register') }}">Sign up for a
+                    new account
                 </flux:button>
             </div>
         </flux:card>

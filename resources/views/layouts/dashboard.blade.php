@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
-    <title>{{ config('app.name', 'Laravel') }}</title>
+    <title>{{ $title ?? config('app.name', 'Dashboard • Flux Kit') }}</title>
 
     <!-- Fonts -->
     <link rel="icon" href="{{ asset('faviconn.png') }}" />
@@ -46,9 +46,6 @@
             </div>
         </main>
     </div>
-
-    <!-- Footer -->
-    {{-- <livewire:layout.footer /> --}}
 
     @fluxScripts
 

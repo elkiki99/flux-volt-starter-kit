@@ -1,10 +1,10 @@
 <?php
 
 use Illuminate\Support\Facades\Password;
-use Livewire\Attributes\Layout;
+use Livewire\Attributes\{Layout, Title};
 use Livewire\Volt\Component;
 
-new #[Layout('layouts.guest')] class extends Component {
+new #[Layout('layouts.guest')] #[Title('Forgot password • Flux Kit')] class extends Component {
     public string $email = '';
 
     /**
@@ -29,11 +29,7 @@ new #[Layout('layouts.guest')] class extends Component {
 
         $this->reset('email');
 
-        Flux::toast(
-            heading: 'Verification link sent.',
-            text: __($status),
-            variant: 'success',
-        );
+        Flux::toast(heading: 'Verification link sent.', text: __($status), variant: 'success');
     }
 }; ?>
 
@@ -54,7 +50,8 @@ new #[Layout('layouts.guest')] class extends Component {
                     {{ __('Send reset link') }}
                 </flux:button>
 
-                <flux:button wire:navigate variant="ghost" class="w-full" href="{{ route('login') }}">Back to login</flux:button>
+                <flux:button wire:navigate variant="ghost" class="w-full" href="{{ route('login') }}">Back to login
+                </flux:button>
             </div>
         </flux:card>
     </form>

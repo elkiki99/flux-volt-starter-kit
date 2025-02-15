@@ -3,10 +3,10 @@
 use App\Livewire\Actions\Logout;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Validation\ValidationException;
-use Livewire\Attributes\Layout;
+use Livewire\Attributes\{Layout, Title};
 use Livewire\Volt\Component;
 
-new #[Layout('layouts.guest')] class extends Component {
+new #[Layout('layouts.guest')] #[Title('Confirm password • Flux Kit')] class extends Component {
     public string $password = '';
 
     /**
@@ -37,7 +37,7 @@ new #[Layout('layouts.guest')] class extends Component {
     /**
      * Log the current user out of the application.
      */
-     public function logout(Logout $logout): void
+    public function logout(Logout $logout): void
     {
         $logout();
 
@@ -63,5 +63,3 @@ new #[Layout('layouts.guest')] class extends Component {
         </div>
     </form>
 </flux:card>
-
-

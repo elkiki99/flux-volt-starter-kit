@@ -3,10 +3,10 @@
 use App\Livewire\Actions\Logout;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Session;
-use Livewire\Attributes\Layout;
+use Livewire\Attributes\{Layout, Title};
 use Livewire\Volt\Component;
 
-new #[Layout('layouts.guest')] class extends Component {
+new #[Layout('layouts.guest')] #[Title('Verify email • Flux Kit')] class extends Component {
     /**
      * Send an email verification notification to the user.
      */

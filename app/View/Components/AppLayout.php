@@ -8,6 +8,14 @@ use Illuminate\View\View;
 class AppLayout extends Component
 {
     /**
+     * Create a new component instance.
+     */
+    public function __construct
+    (
+        public string $title = 'Flux Kit'
+    ){}
+
+    /**
      * Get the view / contents that represents the component.
      */
     public function render(): View

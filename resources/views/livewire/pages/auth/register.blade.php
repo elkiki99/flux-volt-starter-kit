@@ -5,10 +5,10 @@ use Illuminate\Auth\Events\Registered;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Validation\Rules;
-use Livewire\Attributes\Layout;
+use Livewire\Attributes\{Layout, Title};
 use Livewire\Volt\Component;
 
-new #[Layout('layouts.guest')] class extends Component {
+new #[Layout('layouts.guest')] #[Title('Register • Flux Kit')] class extends Component {
     public string $name = '';
     public string $email = '';
     public string $password = '';
@@ -42,20 +42,24 @@ new #[Layout('layouts.guest')] class extends Component {
             <flux:subheading>Create your account!</flux:subheading>
         </div>
 
-        <flux:input label="Name" type="text" autofocus placeholder="Your name" id="name" wire:model="name" required />
+        <flux:input label="Name" type="text" autofocus placeholder="Your name" id="name" wire:model="name"
+            required />
 
-        <flux:input label="Email" type="email" placeholder="Your email address" id="email" wire:model="email" required />
+        <flux:input label="Email" type="email" placeholder="Your email address" id="email" wire:model="email"
+            required />
 
-        <flux:input viewable label="Password" type="password" placeholder="Your password" id="password" wire:model="password" required/>
+        <flux:input viewable label="Password" type="password" placeholder="Your password" id="password"
+            wire:model="password" required />
 
-        <flux:input viewable label="Confirm Password" type="password" placeholder="Confirm your password" id="password_confirmation" wire:model="password_confirmation" required/>
+        <flux:input viewable label="Confirm Password" type="password" placeholder="Confirm your password"
+            id="password_confirmation" wire:model="password_confirmation" required />
 
         <div class="space-y-2">
             <flux:button type="submit" variant="primary" class="w-full">Register</flux:button>
 
-            <flux:button variant="ghost" class="w-full" wire:navigate href="{{ route('login') }}">Already have an account?
+            <flux:button variant="ghost" class="w-full" wire:navigate href="{{ route('login') }}">Already have an
+                account?
             </flux:button>
         </div>
     </flux:card>
 </form>
-
