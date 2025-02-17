@@ -1,4 +1,4 @@
-<x-app-layout title="Billing • Flux Kit">
+<x-dashboard-layout title="Billing • Flux Kit">
     <div class="self-stretch flex-1 space-y-8 max-lg:max-w-2xl max-lg:mx-auto">
         <div class="space-y-6">
             <div>

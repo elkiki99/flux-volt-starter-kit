@@ -1,4 +1,4 @@
-<x-admin-panel-layout>
+<x-admin-panel-layout title="Panel • Flux Kit">
     <div class="self-stretch flex-1 space-y-8 max-lg:max-w-2xl max-lg:mx-auto">
         <div>
             <flux:heading level="1" size="xl">Good afternoon, {{ Auth::user()->name }}</flux:heading>
